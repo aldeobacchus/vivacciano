@@ -1,0 +1,42 @@
+@reference "tailwindcss";
+
+
+@layer components {
+
+  /* =======================
+     BUTTONS
+  ======================= */
+
+  .btn {
+    @apply inline-block px-6 py-3 rounded-none font-medium transition;
+  }
+
+  .btn-primary {
+    background-color: #B05A2F;
+    color: white; /* slate-800 */
+  }
+
+  .btn-primary:hover {
+    background-color: #c07e5d;
+  }
+
+  .btn-outline {
+    @apply border border-black text-black hover:bg-black hover:text-white;
+  }
+
+  .btn-outline-white {
+    @apply border border-white text-white hover:bg-white hover:text-black;
+  }
+
+  /* =======================
+     TEXT
+  ======================= */
+
+  .text-muted {
+    @apply text-slate-500;
+  }
+
+  .text-title {
+    @apply text-slate-800 font-semibold;
+  }
+}
