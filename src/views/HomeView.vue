@@ -75,7 +75,7 @@ import { gites } from "../data/gites"
           <!-- IMAGE -->
           <div class="h-56 overflow-hidden">
             <img
-              :src="gite.image"
+              :src="gite.images[0]"
               :alt="gite.nom"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
             />
@@ -89,7 +89,7 @@ import { gites } from "../data/gites"
             </h3>
 
             <p class="text-slate-500 mt-2 text-sm">
-              {{ gite.description }}
+              {{ gite.shortDescription }}
             </p>
 
             <div class="mt-5 flex justify-between items-center">
@@ -118,46 +118,63 @@ import { gites } from "../data/gites"
       </div>
     </section>
 
-    <!-- BLOC EXPERIENCE -->
-    <section class="bg-stone-100 py-20">
+        <!-- LE VILLAGE -->
+    <section class="py-24 bg-negroni-200">
 
-      <div class="max-w-5xl mx-auto text-center px-6">
+    <div class="max-w-7xl mx-auto px-6">
 
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-800">
-          Une expérience authentique
-        </h2>
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-        <p class="mt-4 text-slate-600 leading-relaxed">
-          Entre champs de lavande, villages perchés et marchés provençaux,
-          profitez d’un séjour paisible dans un cadre naturel exceptionnel.
-        </p>
+        <!-- TEXTE -->
+        <div>
 
-        <div class="mt-10 grid md:grid-cols-3 gap-6">
+          <p class="uppercase tracking-[0.3em] text-sm text-slate-500 mb-4">
+            Le village
+          </p>
 
-          <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-            <h3 class="font-semibold mt-2">Nature</h3>
-            <p class="text-sm text-slate-500 mt-1">
-              Randonnées, paysages et calme
-            </p>
-          </div>
+          <h2 class="text-4xl md:text-6xl font-light text-slate-800 leading-tight">
+            Acciano,
+            <br />
+            suspendu dans le temps
+          </h2>
 
-          <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-            <h3 class="font-semibold mt-2">Soleil</h3>
-            <p class="text-sm text-slate-500 mt-1">
-              Climat méditerranéen idéal
-            </p>
-          </div>
+          <p class="mt-8 text-lg text-slate-600 leading-relaxed">
+           Entourée de bois de chênes verts, Acciano est perchée sur un éperon de roche entre les montagnes Bufame et Pietre Fitte, 
+           qui offre une belle vue sur les crêtes rocheuses de Sirente. 
+           Les pentes abruptes qui bordent la ville encadrent la vallée dans laquelle coule la rivière Aterno-Pescara. 
+           Le territoire de la municipalité se situe entre 450 et 1 303 mètres d'altitude. 
+          </p>
 
-          <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-            <h3 class="font-semibold mt-2">Authenticité</h3>
-            <p class="text-sm text-slate-500 mt-1">
-              Gîtes de charme rénovés
-            </p>
+          <p class="mt-4 text-lg text-slate-600 leading-relaxed">
+            Entre patrimoine, nature et traditions italiennes, chaque promenade
+            devient une invitation à découvrir un art de vivre simple et chaleureux.
+          </p>
+
+          <div class="mt-10">
+            <RouterLink
+              to="/village"
+              class="btn btn-primary"
+            >
+              Découvrir le village
+            </RouterLink>
           </div>
 
         </div>
 
+        <!-- IMAGE -->
+        <div class="relative">
+
+          <img
+            src="/images/village/acciano2.jpg"
+            alt="Village d'Acciano"
+            class="w-full h-[500px] object-cover shadow-lg"
+          />
+
+        </div>
+
       </div>
+
+    </div>
 
     </section>
 

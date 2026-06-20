@@ -4,6 +4,17 @@
 @layer base {
   :root {
     --primary: 251 146 60; /* orange-400 */
+    --color-negroni-50: #fff6ed;
+    --color-negroni-100: #ffecd5;
+    --color-negroni-200: #ffdfbf;
+    --color-negroni-300: #ffb572;
+    --color-negroni-400: #fd8b3a;
+    --color-negroni-500: #fc6a13;
+    --color-negroni-600: #ed4f09;
+    --color-negroni-700: #c43a0a;
+    --color-negroni-800: #9c2e10;
+    --color-negroni-900: #7d2911;
+    --color-negroni-950: #441106;
   }
   body {
     @apply bg-stone-50 text-slate-800;
