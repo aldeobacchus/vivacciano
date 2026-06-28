@@ -14,33 +14,33 @@
       <div class="max-w-7xl mx-auto px-6 py-10 grid gap-6 md:grid-cols-3">
 
         <div>
-          <h3 class="text-lg font-semibold mb-2">Nos gîtes</h3>
+          <h3 class="text-lg font-semibold mb-2" style="font-family: 'Cormorant Garamond', Georgia, serif;">les Case di Jérôme</h3>
           <p class="text-sm text-slate-300">
-            Séjours authentiques au cœur de la nature.
+            {{ $t('contact.tagline') }}
           </p>
         </div>
 
         <div>
-          <h3 class="text-lg font-semibold mb-2">Navigation</h3>
+          <h3 class="text-lg font-semibold mb-2">{{ $t('contact.navigation') }}</h3>
           <ul class="space-y-1 text-sm text-slate-300">
-            <li><RouterLink to="/" class="hover:text-white">Accueil</RouterLink></li>
-            <li><RouterLink to="/village" class="hover:text-white">Le village</RouterLink></li>
-            <li><RouterLink to="/contact" class="hover:text-white">Contact</RouterLink></li>
+            <li><RouterLink to="/" class="hover:text-white">{{ $t('nav.home') }}</RouterLink></li>
+            <li><RouterLink to="/village" class="hover:text-white">{{ $t('nav.village') }}</RouterLink></li>
+            <li><RouterLink to="/contact" class="hover:text-white">{{ $t('nav.contact') }}</RouterLink></li>
           </ul>
         </div>
 
         <div>
-          <h3 class="text-lg font-semibold mb-2">Contact</h3>
+          <h3 class="text-lg font-semibold mb-2">{{ $t('contact.title') }}</h3>
           <p class="text-sm text-slate-300">
-            Email :  <br />
-            Téléphone : 
+            {{ $t('contact.emailLabel') }} : {{ $t('contact.emailAddress') }} <br />
+            {{ $t('contact.phoneLabel') }} : {{ $t('contact.phone') }}
           </p>
         </div>
 
       </div>
 
       <div class="border-t border-slate-700 text-center py-4 text-xs text-slate-400">
-        © {{ new Date().getFullYear() }} - Jérome Jabès
+                © {{ new Date().getFullYear() }} — les Case di Jérôme
       </div>
     </footer>
 

@@ -9,6 +9,8 @@ const gite = computed(() =>
   gites.find((g) => g.id === route.params.id)
 )
 
+const showAmenities = ref(false)
+
 // carousel
 const currentImage = ref(0)
 
@@ -77,7 +79,7 @@ function prevImage() {
       </h1>
 
       <p class="text-slate-500 mt-2">
-        {{ gite.shortDescription }}
+        {{ $t('gites_data.' + gite.id + '.shortDescription') }}
       </p>
 
     </div>
@@ -88,15 +90,15 @@ function prevImage() {
     <div class="grid md:grid-cols-3 gap-4 mt-6">
 
       <div class="bg-white p-4 border">
-        👥 {{ gite.maxPersons }} personnes
+        👥 {{ gite.maxPersons }} {{ $t('gite.persons') }}
       </div>
 
       <div class="bg-white p-4 border">
-        🛏 {{ gite.bedrooms }} chambres
+        🛏 {{ gite.bedrooms }} {{ $t('gite.bedrooms') }}
       </div>
 
       <div class="bg-white p-4 border">
-        🚿 {{ gite.bathrooms }} salles de bain
+        🚿 {{ gite.bathrooms }} {{ $t('gite.bathrooms') }}
       </div>
 
     </div>
@@ -107,8 +109,62 @@ function prevImage() {
     <div class="mt-10 space-y-6">
 
       <p class="text-slate-700 leading-relaxed">
-        {{ gite.longDescription }}
+        {{ $t('gites_data.' + gite.id + '.longDescription') }}
       </p>
+
+    </div>
+
+    <!-- ÉQUIPEMENTS -->
+    <div class="mt-12">
+
+      <h2 class="text-2xl font-semibold text-slate-800 mb-6">
+        {{ $t('gite.equipment') }}
+      </h2>
+
+      <div class="relative">
+
+        <!-- LISTE -->
+        <div
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 overflow-hidden transition-all duration-500"
+          :class="showAmenities ? 'max-h-[2000px]' : 'max-h-40'"
+        >
+
+          <div
+            v-for="amenity in gite.amenities"
+            :key="amenity"
+            class="bg-white border border-slate-200 p-4 flex items-center gap-3"
+          >
+            <span>✓</span>
+            <span>{{ $t('amenities.' + amenity) }}</span>
+          </div>
+
+          <div
+            v-for="item in gite.extraAmenities || []"
+            :key="item"
+            class="bg-[#F7F2E9] border border-[#E8DDCB] p-4 flex items-center gap-3"
+          >
+            <span>★</span>
+            <span>{{ item }}</span>
+          </div>
+
+        </div>
+
+        <!-- DÉGRADÉ -->
+        <div
+          v-if="!showAmenities"
+          class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-b from-transparent to-[#FBF8F2] pointer-events-none"
+        />
+      </div>
+
+      <!-- BOUTON -->
+      <div class="mt-6 flex justify-center">
+        <button
+          @click="showAmenities = !showAmenities"
+          class="btn btn-outline cursor-pointer"
+        >
+          {{ showAmenities ? $t('gite.seeLess') : $t('gite.seeMore') }}
+        </button>
+      </div>
 
     </div>
 
@@ -118,15 +174,15 @@ function prevImage() {
     <div class="mt-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
 
       <div class="text-2xl font-semibold text-slate-800">
-        {{ gite.price }}€ / nuit
+        {{ gite.price }}€ / {{ $t('gite.night') }}
       </div>
 
       <a
         :href="gite.airbnb"
         target="_blank"
-        class="btn btn-primary"
+        class="btn btn-primary cursor-pointer"
       >
-        Réserver sur Airbnb
+        {{ $t('gite.book') }}
       </a>
 
     </div>
@@ -135,6 +191,6 @@ function prevImage() {
 
   <!-- fallback -->
   <div v-else class="text-center py-20">
-    <h1 class="text-xl">Gîte introuvable</h1>
+    <h1 class="text-xl">{{ $t('gite.notFound') }}</h1>
   </div>
 </template>

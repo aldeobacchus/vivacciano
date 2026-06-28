@@ -1,0 +1,142 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "gites": "Nos Case",
+    "village": "Le village",
+    "contact": "Nous contacter"
+  },
+  "home": {
+    "hero": {
+      "title": "les Case di Jérôme",
+      "subtitle": "Séjournez au cœur des Abruzzes, entre nature, calme et soleil."
+    },
+    "discover": "Découvrir les Case",
+    "village": {
+      "title": "Le village",
+      "acciano": "suspendu dans le temps",
+      "desc1": "Entourée de bois de chênes verts, Acciano est perchée sur un éperon de roche entre les montagnes Bufame et Pietre Fitte, qui offre une belle vue sur les crêtes rocheuses de Sirente. Les pentes abruptes qui bordent la ville encadrent la vallée dans laquelle coule la rivière Aterno-Pescara. Le territoire de la municipalité se situe entre 450 et 1 303 mètres d'altitude.",
+      "desc2": "Entre patrimoine, nature et traditions italiennes, chaque promenade devient une invitation à découvrir un art de vivre simple et chaleureux.",
+      "discover": "Découvrir le village"
+    },
+    "gites": {
+      "title": "Nos Case",
+      "subtitle": "Chaque logement a son charme unique et une vue imprenable sur les montagnes des Abruzzes",
+      "viewGite": "Voir la Casa",
+      "book": "Réserver"
+    }
+  },
+  "gite": {
+    "equipment": "Équipements",
+    "seeMore": "+ Voir plus",
+    "seeLess": "Voir moins",
+    "book": "Réserver sur Airbnb",
+    "persons": "personnes",
+    "bedrooms": "chambres",
+    "bathrooms": "salles de bain",
+    "night": "nuit",
+    "notFound": "Casa introuvable"
+  },
+  "gites_data": {
+    "gite-1": {
+      "shortDescription": "Studio lumineux et charmant au cœur d'Acciano.",
+      "longDescription": "Un studio lumineux situé dans le centre historique d'Acciano, idéal pour se ressourcer en pleine nature avec vue sur les montagnes des Abruzzes."
+    },
+    "gite-2": {
+      "shortDescription": "Confort généreux, vues splendides sur les montagnes.",
+      "longDescription": "Un gîte de deux pièces lumineux situé dans un environnement calme, idéal pour se ressourcer en pleine nature avec vue sur les crêtes du Sirente."
+    },
+    "gite-3": {
+      "shortDescription": "Gîte spacieux et convivial pour les familles.",
+      "longDescription": "Un gîte spacieux et lumineux pouvant accueillir jusqu'à 6 personnes, idéal pour des vacances en famille au cœur du centre historique d'Acciano."
+    }
+  },
+  "amenities": {
+    "kitchen": "Cuisine complète",
+    "heating": "Chauffage",
+    "hot_water": "Eau chaude non limitée",
+    "coffee_capsules": "Machine à café capsules",
+    "coffee_italian": "Cafetière italienne",
+    "candles": "Bougies d'ambiance",
+    "hairdryer": "Sèche-cheveux",
+    "clock": "Horloge et réveil",
+    "extra_beds": "Lit(s) d'appoint",
+    "fireplaces": "2 cheminées",
+    "terrace": "Terrasse de 25 m²",
+    "dining_table": "Table à manger 6 à 10 personnes",
+    "sun_loungers": "Chaises longues",
+    "parasol": "Parasol",
+    "awning": "Auvent",
+    "plancha": "Plancha électrique",
+    "mini_oven": "Mini-four",
+    "outdoor_sink": "Évier extérieur",
+    "private_shower": "Douche et lavabo privatifs dans une chambre",
+    "sink_each_floor": "Lavabo à chaque étage",
+    "bathrobes": "Peignoirs de bain",
+    "tv": "Télévision"
+  },
+  "village": {
+    "title": "Découvrir Acciano",
+    "hero": {
+      "title": "Acciano, Abruzzes",
+      "subtitle": "Un village médiéval du XIIe siècle, suspendu dans le temps au cœur des montagnes."
+    },
+    "history": {
+      "title": "Histoire & Patrimoine",
+      "desc": "Entourée de bois de chênes verts, Acciano est perchée sur un éperon de roche entre les montagnes Bufame et Pietre Fitte, offrant une vue saisissante sur les crêtes rocheuses du Sirente. Les pentes abruptes encadrent la vallée où coule la rivière Aterno-Pescara. Le village, fondé au XIIe siècle, conserve l'authenticité de son centre historique et ses traditions séculaires."
+    },
+    "access": {
+      "title": "Comment venir",
+      "airport": "À 2h de l'aéroport International Roma Fiumicino",
+      "car": {
+        "title": "En voiture",
+        "desc": "Location de voiture disponible à l'aéroport. Accès facile en voiture jusqu'au centre historique, parking gratuit à 20-60m selon la maison."
+      },
+      "bus": {
+        "title": "En bus",
+        "desc": "Bus divers depuis Rome, arrêt à 10 km d'Acciano. Nous venons vous chercher sans frais."
+      },
+      "shuttle": {
+        "title": "Navette privée",
+        "desc": "Sur réservation depuis l'aéroport : Auto (3-4 pers.) 120€ / Mini Van (7 pers.) 280€"
+      },
+      "taxi": {
+        "title": "En taxi",
+        "desc": "Taxis disponibles à l'aéroport — environ 360€"
+      }
+    },
+    "welcome": {
+      "title": "Votre arrivée",
+      "desc": "Accueil chaleureux par Jérôme ou le staff des Case. Aliments d'accueil fournis le temps de vous installer.",
+      "flowers": "Toutes les case sont fleuries à l'occasion de votre arrivée."
+    },
+    "practical": {
+      "title": "Informations pratiques",
+      "location": "Les Case di Jérôme sont situées dans le centre historique d'Acciano (XIIe siècle), accès en voiture facile avec parking à 20-60m selon la maison.",
+      "breakfast": {
+        "title": "Petit-déjeuner",
+        "desc": "Petit-déjeuner optionnel à La Cantina : 4,60€ par personne. Située face à la place principale, Piazza del Municipio."
+      },
+      "parking": {
+        "title": "Parking",
+        "desc": "Accès voiture facile, parking gratuit à 20-60m selon la maison."
+      }
+    },
+    "activities": {
+      "title": "Activités & Découvertes",
+      "desc": "Randonnées dans le parc naturel du Sirente-Velino, découverte de villages médiévaux, gastronomie des Abruzzes, marchés locaux et bien plus encore."
+    }
+  },
+  "contact": {
+    "title": "Nous contacter",
+    "subtitle": "N'hésitez pas à nous joindre pour toute question ou réservation.",
+    "phone": "+39 371 733 9368",
+    "phoneLabel": "Téléphone",
+    "emergency": "+33 6 09 48 89 34",
+    "emergencyLabel": "Urgences",
+    "emailLabel": "Email",
+    "sendEmail": "Envoyer un email",
+    "emailSubject": "Demande d'information — les Case di Jérôme",
+    "tagline": "Séjours authentiques au cœur de l'Italie.",
+    "navigation": "Navigation"
+  }
+}

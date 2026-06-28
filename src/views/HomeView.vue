@@ -21,28 +21,27 @@ import { gites } from "../data/gites"
       <div class="relative text-center max-w-3xl px-6 animate-fade-in">
 
         <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-          Séjournez au cœur de l'Italie
+          {{ $t('home.hero.title') }}
         </h1>
 
         <p class="mt-4 text-lg md:text-xl text-white/90">
-          Découvrez nos gîtes authentiques entre nature, calme et soleil.
+          {{ $t('home.hero.subtitle') }}
         </p>
 
         <div class="mt-8 flex justify-center gap-4 flex-wrap">
 
-          <RouterLink
+          <BaseButton
             to="#gites"
-            class="btn btn-primary"
-          >
-            Découvrir les gîtes
-          </RouterLink>
+            variant="primary"          >
+            {{ $t('home.discover') }}
+          </BaseButton>
 
-          <RouterLink
+          <BaseButton
             to="/village"
-            class="btn btn-outline-white"
+            variant="outline-white"
           >
-            Le village
-          </RouterLink>
+            {{ $t('nav.village') }}
+          </BaseButton>
 
         </div>
 
@@ -54,10 +53,10 @@ import { gites } from "../data/gites"
 
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-slate-800">
-          Nos gîtes
+          {{ $t('home.gites.title') }}
         </h2>
         <p class="text-slate-500 mt-2">
-          Chaque logement a son charme unique
+          {{ $t('home.gites.subtitle') }}
         </p>
       </div>
 
@@ -89,25 +88,25 @@ import { gites } from "../data/gites"
             </h3>
 
             <p class="text-slate-500 mt-2 text-sm">
-              {{ gite.shortDescription }}
+              {{ $t('gites_data.' + gite.id + '.shortDescription') }}
             </p>
 
             <div class="mt-5 flex justify-between items-center">
 
-              <RouterLink
+              <BaseButton
                 :to="`/gites/${gite.id}`"
-                class="text-orange-700 font-medium hover:underline"
+                variant="link"
               >
-                Voir le gîte
-              </RouterLink>
+                {{ $t('home.gites.viewGite') }}
+              </BaseButton>
 
-              <a
+              <BaseButton
                 :href="gite.airbnb"
-                target="_blank"
-                class="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-full text-sm transition"
+                variant="primary"
+                size="sm"
               >
-                Réserver
-              </a>
+                {{ $t('home.gites.book') }}
+              </BaseButton>
 
             </div>
 
@@ -118,63 +117,61 @@ import { gites } from "../data/gites"
       </div>
     </section>
 
-        <!-- LE VILLAGE -->
+    <!-- LE VILLAGE -->
     <section class="py-24 bg-negroni-200">
 
-    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-7xl mx-auto px-6">
 
-      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-        <!-- TEXTE -->
-        <div>
+          <!-- TEXTE -->
+          <div>
 
-          <p class="uppercase tracking-[0.3em] text-sm text-slate-500 mb-4">
-            Le village
-          </p>
+            <p class="uppercase tracking-[0.3em] text-sm text-slate-500 mb-4">
+              {{ $t('home.village.title') }}
+            </p>
 
-          <h2 class="text-4xl md:text-6xl font-light text-slate-800 leading-tight">
-            Acciano,
-            <br />
-            suspendu dans le temps
-          </h2>
+            <h2 class="text-4xl md:text-6xl font-light text-slate-800 leading-tight">
+              Acciano,
+            </h2>
+            <h2 class="text-4xl md:text-6xl italic font-light text-slate-800 leading-tight">
+              {{ $t('home.village.acciano') }}
+            </h2>
+            
 
-          <p class="mt-8 text-lg text-slate-600 leading-relaxed">
-           Entourée de bois de chênes verts, Acciano est perchée sur un éperon de roche entre les montagnes Bufame et Pietre Fitte, 
-           qui offre une belle vue sur les crêtes rocheuses de Sirente. 
-           Les pentes abruptes qui bordent la ville encadrent la vallée dans laquelle coule la rivière Aterno-Pescara. 
-           Le territoire de la municipalité se situe entre 450 et 1 303 mètres d'altitude. 
-          </p>
+            <p class="mt-8 text-lg text-slate-600 leading-relaxed">
+              {{ $t('home.village.desc1') }}
+            </p>
 
-          <p class="mt-4 text-lg text-slate-600 leading-relaxed">
-            Entre patrimoine, nature et traditions italiennes, chaque promenade
-            devient une invitation à découvrir un art de vivre simple et chaleureux.
-          </p>
+            <p class="mt-4 text-lg text-slate-600 leading-relaxed">
+              {{ $t('home.village.desc2') }}
+            </p>
 
-          <div class="mt-10">
-            <RouterLink
-              to="/village"
-              class="btn btn-primary"
-            >
-              Découvrir le village
-            </RouterLink>
+            <div class="mt-10">
+              <BaseButton
+                to="/village"
+                variant="primary"
+              >
+                {{ $t('home.village.discover') }}
+              </BaseButton>
+            </div>
+
+          </div>
+
+          <!-- IMAGE -->
+          <div class="relative">
+
+            <img
+              src="/images/village/acciano2.jpg"
+              alt="Village d'Acciano"
+              class="w-full h-[500px] object-cover shadow-lg"
+            />
+
           </div>
 
         </div>
 
-        <!-- IMAGE -->
-        <div class="relative">
-
-          <img
-            src="/images/village/acciano2.jpg"
-            alt="Village d'Acciano"
-            class="w-full h-[500px] object-cover shadow-lg"
-          />
-
-        </div>
-
       </div>
-
-    </div>
 
     </section>
 

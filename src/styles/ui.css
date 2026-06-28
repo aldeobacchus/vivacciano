@@ -8,24 +8,32 @@
   ======================= */
 
   .btn {
-    @apply inline-block px-6 py-3 rounded-none font-medium transition;
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-300 active:scale-95 cursor-pointer;
   }
 
   .btn-primary {
     background-color: #B05A2F;
-    color: white; /* slate-800 */
+    color: white;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
 
   .btn-primary:hover {
     background-color: #c07e5d;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
   }
 
   .btn-outline {
-    @apply border border-black text-black hover:bg-black hover:text-white;
+    border: 1px solid #8D7A68;
+    color: #5C4D3C;
+  }
+
+  .btn-outline:hover {
+    background-color: #5C4D3C;
+    color: white;
   }
 
   .btn-outline-white {
-    @apply border border-white text-white hover:bg-white hover:text-black;
+    @apply border border-white text-white hover:bg-white hover:text-slate-900;
   }
 
   /* =======================

@@ -1,0 +1,142 @@
+{
+  "nav": {
+    "home": "Home",
+    "gites": "Our Case",
+    "village": "The village",
+    "contact": "Contact us"
+  },
+  "home": {
+    "hero": {
+      "title": "les Case di Jérôme",
+      "subtitle": "Stay in the heart of the Abruzzi, between nature, quietness and sunshine."
+    },
+    "discover": "Discover our Case",
+    "village": {
+      "title": "The village",
+      "acciano": "frozen in time",
+      "desc1": "Surrounded by woods of holm oaks, Acciano is perched on a rocky spur between the Bufame and Pietre Fitte mountains, offering a beautiful view of the rocky ridges of Sirente. The steep slopes bordering the town frame the valley in which the Aterno-Pescara river flows. The municipality's territory lies between 450 and 1,303 meters above sea level.",
+      "desc2": "Between heritage, nature and Italian traditions, every stroll becomes an invitation to discover a simple and warm way of life.",
+      "discover": "Discover the village"
+    },
+    "gites": {
+      "title": "Our Case",
+      "subtitle": "Each lodging has its own unique charm and a breathtaking view of the Abruzzi mountains",
+      "viewGite": "View Casa",
+      "book": "Book"
+    }
+  },
+  "gite": {
+    "equipment": "Amenities",
+    "seeMore": "+ See more",
+    "seeLess": "See less",
+    "book": "Book on Airbnb",
+    "persons": "guests",
+    "bedrooms": "bedrooms",
+    "bathrooms": "bathrooms",
+    "night": "night",
+    "notFound": "Casa not found"
+  },
+  "gites_data": {
+    "gite-1": {
+      "shortDescription": "A bright and charming studio in the heart of Acciano.",
+      "longDescription": "A bright studio located in the historic center of Acciano, ideal for recharging in the heart of nature with views of the Abruzzi mountains."
+    },
+    "gite-2": {
+      "shortDescription": "Generous comfort, splendid mountain views.",
+      "longDescription": "A bright two-room apartment in a quiet setting, ideal for relaxing in nature with views of the Sirente ridges."
+    },
+    "gite-3": {
+      "shortDescription": "Spacious and family-friendly lodging.",
+      "longDescription": "A spacious and bright lodging accommodating up to 6 guests, perfect for family holidays in the historic center of Acciano."
+    }
+  },
+  "amenities": {
+    "kitchen": "Fully equipped kitchen",
+    "heating": "Heating",
+    "hot_water": "Unlimited hot water",
+    "coffee_capsules": "Capsule coffee machine",
+    "coffee_italian": "Italian moka pot",
+    "candles": "Ambiance candles",
+    "hairdryer": "Hairdryer",
+    "clock": "Clock and alarm",
+    "extra_beds": "Extra bed(s)",
+    "fireplaces": "2 fireplaces",
+    "terrace": "25 m² terrace",
+    "dining_table": "Dining table for 6 to 10 guests",
+    "sun_loungers": "Sun loungers",
+    "parasol": "Parasol",
+    "awning": "Awning",
+    "plancha": "Electric griddle (plancha)",
+    "mini_oven": "Mini-oven",
+    "outdoor_sink": "Outdoor sink",
+    "private_shower": "Private shower and sink in one bedroom",
+    "sink_each_floor": "Sink on each floor",
+    "bathrobes": "Bathrobes",
+    "tv": "Television"
+  },
+  "village": {
+    "title": "Discover Acciano",
+    "hero": {
+      "title": "Acciano, Abruzzi",
+      "subtitle": "A 12th-century medieval village, frozen in time in the heart of the mountains."
+    },
+    "history": {
+      "title": "History & Heritage",
+      "desc": "Surrounded by holm oak woods, Acciano is perched on a rocky spur between the Bufame and Pietre Fitte mountains, offering a striking view of the rocky ridges of Sirente. The steep slopes frame the valley where the Aterno-Pescara river flows. Founded in the 12th century, the village preserves the authenticity of its historic center and its centuries-old traditions."
+    },
+    "access": {
+      "title": "How to get there",
+      "airport": "2 hours from Roma Fiumicino International Airport",
+      "car": {
+        "title": "By car",
+        "desc": "Car rental available at the airport. Easy access by car to the historic center, free parking 20-60m from the house."
+      },
+      "bus": {
+        "title": "By bus",
+        "desc": "Various buses from Rome, stop 10 km from Acciano. We will pick you up free of charge."
+      },
+      "shuttle": {
+        "title": "Private shuttle",
+        "desc": "On reservation from the airport: Car (3-4 pers.) €120 / Mini Van (7 pers.) €280"
+      },
+      "taxi": {
+        "title": "By taxi",
+        "desc": "Taxis available at the airport — approximately €360"
+      }
+    },
+    "welcome": {
+      "title": "Your arrival",
+      "desc": "A warm welcome by Jérôme or the Case staff. Welcome food provided while you settle in.",
+      "flowers": "All case are decorated with fresh flowers for your arrival."
+    },
+    "practical": {
+      "title": "Practical information",
+      "location": "Les Case di Jérôme are located in the historic center of Acciano (12th century), with easy car access and parking 20-60m from the house.",
+      "breakfast": {
+        "title": "Breakfast",
+        "desc": "Optional breakfast at La Cantina: €4.60 per person. Located across from the main square, Piazza del Municipio."
+      },
+      "parking": {
+        "title": "Parking",
+        "desc": "Easy car access, free parking 20-60m from the house."
+      }
+    },
+    "activities": {
+      "title": "Activities & Discoveries",
+      "desc": "Hiking in the Sirente-Velino Natural Park, discovery of medieval villages, Abruzzi gastronomy, local markets and much more."
+    }
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Don't hesitate to reach out for any question or booking.",
+    "phone": "+39 371 733 9368",
+    "phoneLabel": "Phone",
+    "emergency": "+33 6 09 48 89 34",
+    "emergencyLabel": "Emergency",
+    "emailLabel": "Email",
+    "sendEmail": "Send an email",
+    "emailSubject": "Information request — les Case di Jérôme",
+    "tagline": "Authentic stays in the heart of Italy.",
+    "navigation": "Navigation"
+  }
+}

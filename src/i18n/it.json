@@ -1,0 +1,142 @@
+{
+  "nav": {
+    "home": "Home",
+    "gites": "Le nostre Case",
+    "village": "Il borgo",
+    "contact": "Contattaci"
+  },
+  "home": {
+    "hero": {
+      "title": "les Case di Jérôme",
+      "subtitle": "Soggiorna nel cuore degli Abruzzi, tra natura, pace e sole."
+    },
+    "discover": "Scopri le nostre Case",
+    "village": {
+      "title": "Il borgo",
+      "acciano": "sospeso nel tempo",
+      "desc1": "Circondata da boschi di lecci, Acciano è arroccata su uno sperone di roccia tra i monti Bufame e Pietre Fitte, offrendo una splendida vista sulle creste rocciose del Sirente. I ripidi pendii che costeggiano l'abitato incorniciano la valle in cui scorre il fiume Aterno-Pescara. Il territorio comunale si trova tra i 450 e i 1.303 metri di altitudine.",
+      "desc2": "Tra patrimonio, natura e tradizioni italiane, ogni passeggiata diventa un invito a scoprire uno stile di vita semplice e accogliente.",
+      "discover": "Scopri il borgo"
+    },
+    "gites": {
+      "title": "Le nostre Case",
+      "subtitle": "Ogni alloggio ha il suo fascino unico e una vista mozzafiato sulle montagne abruzzesi",
+      "viewGite": "Vedi la Casa",
+      "book": "Prenota"
+    }
+  },
+  "gite": {
+    "equipment": "Servizi",
+    "seeMore": "+ Mostra altro",
+    "seeLess": "Mostra meno",
+    "book": "Prenota su Airbnb",
+    "persons": "ospiti",
+    "bedrooms": "camere",
+    "bathrooms": "bagni",
+    "night": "notte",
+    "notFound": "Casa non trovata"
+  },
+  "gites_data": {
+    "gite-1": {
+      "shortDescription": "Monolocale luminoso e affascinante nel cuore di Acciano.",
+      "longDescription": "Un luminoso monolocale situato nel centro storico di Acciano, ideale per rigenerarsi in mezzo alla natura con vista sulle montagne abruzzesi."
+    },
+    "gite-2": {
+      "shortDescription": "Comfort generoso, viste splendide sulle montagne.",
+      "longDescription": "Un luminoso bilocale in un ambiente tranquillo, ideale per rilassarsi in mezzo alla natura con vista sulle creste del Sirente."
+    },
+    "gite-3": {
+      "shortDescription": "Alloggio spazioso e accogliente per le famiglie.",
+      "longDescription": "Un alloggio spazioso e luminoso che può ospitare fino a 6 persone, perfetto per vacanze in famiglia nel centro storico di Acciano."
+    }
+  },
+  "amenities": {
+    "kitchen": "Cucina completa",
+    "heating": "Riscaldamento",
+    "hot_water": "Acqua calda illimitata",
+    "coffee_capsules": "Macchina da caffè a capsule",
+    "coffee_italian": "Caffettiera moka",
+    "candles": "Candele d'atmosfera",
+    "hairdryer": "Asciugacapelli",
+    "clock": "Orologio e sveglia",
+    "extra_beds": "Letto/i supplementare/i",
+    "fireplaces": "2 caminetti",
+    "terrace": "Terrazza di 25 m²",
+    "dining_table": "Tavolo da pranzo per 6-10 persone",
+    "sun_loungers": "Lettini prendisole",
+    "parasol": "Ombrellone",
+    "awning": "Tenda da sole",
+    "plancha": "Plancha elettrica",
+    "mini_oven": "Mini forno",
+    "outdoor_sink": "Lavandino esterno",
+    "private_shower": "Doccia e lavandino privati in una camera",
+    "sink_each_floor": "Lavandino ad ogni piano",
+    "bathrobes": "Accappatoi",
+    "tv": "Televisione"
+  },
+  "village": {
+    "title": "Scopri Acciano",
+    "hero": {
+      "title": "Acciano, Abruzzi",
+      "subtitle": "Un borgo medievale del XII secolo, sospeso nel tempo nel cuore delle montagne."
+    },
+    "history": {
+      "title": "Storia & Patrimonio",
+      "desc": "Circondata da boschi di lecci, Acciano è arroccata su uno sperone di roccia tra i monti Bufame e Pietre Fitte, offrendo una vista suggestiva sulle creste rocciose del Sirente. I ripidi pendii incorniciano la valle dove scorre il fiume Aterno-Pescara. Fondato nel XII secolo, il borgo conserva l'autenticità del suo centro storico e le sue tradizioni secolari."
+    },
+    "access": {
+      "title": "Come arrivare",
+      "airport": "A 2 ore dall'aeroporto Internazionale Roma Fiumicino",
+      "car": {
+        "title": "In auto",
+        "desc": "Noleggio auto disponibile in aeroporto. Accesso facile in auto al centro storico, parcheggio gratuito a 20-60m dalla casa."
+      },
+      "bus": {
+        "title": "In autobus",
+        "desc": "Vari autobus da Roma, fermata a 10 km da Acciano. Veniamo a prendervi gratuitamente."
+      },
+      "shuttle": {
+        "title": "Navetta privata",
+        "desc": "Su prenotazione dall'aeroporto: Auto (3-4 pers.) 120€ / Mini Van (7 pers.) 280€"
+      },
+      "taxi": {
+        "title": "In taxi",
+        "desc": "Taxi disponibili in aeroporto — circa 360€"
+      }
+    },
+    "welcome": {
+      "title": "Il vostro arrivo",
+      "desc": "Accoglienza calorosa da parte di Jérôme o dello staff delle Case. Alimenti di benvenuto forniti per il tempo di sistemarvi.",
+      "flowers": "Tutte le case sono addobbate con fiori freschi per il vostro arrivo."
+    },
+    "practical": {
+      "title": "Informazioni pratiche",
+      "location": "Les Case di Jérôme si trovano nel centro storico di Acciano (XII secolo), con facile accesso in auto e parcheggio a 20-60m dalla casa.",
+      "breakfast": {
+        "title": "Colazione",
+        "desc": "Colazione opzionale alla Cantina: 4,60€ a persona. Situata di fronte alla piazza principale, Piazza del Municipio."
+      },
+      "parking": {
+        "title": "Parcheggio",
+        "desc": "Facile accesso in auto, parcheggio gratuito a 20-60m dalla casa."
+      }
+    },
+    "activities": {
+      "title": "Attività & Scoperte",
+      "desc": "Escursioni nel Parco Naturale del Sirente-Velino, scoperta di borghi medievali, gastronomia abruzzese, mercati locali e molto altro."
+    }
+  },
+  "contact": {
+    "title": "Contattaci",
+    "subtitle": "Non esitate a contattarci per qualsiasi domanda o prenotazione.",
+    "phone": "+39 371 733 9368",
+    "phoneLabel": "Telefono",
+    "emergency": "+33 6 09 48 89 34",
+    "emergencyLabel": "Emergenze",
+    "emailLabel": "Email",
+    "sendEmail": "Invia un'email",
+    "emailSubject": "Richiesta informazioni — les Case di Jérôme",
+    "tagline": "Soggiorni autentici nel cuore d'Italia.",
+    "navigation": "Navigazione"
+  }
+}

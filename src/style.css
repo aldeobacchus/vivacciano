@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 
 @layer base {
   :root {
-    --primary: 251 146 60; /* orange-400 */
+    --primary: 176 90 47; /* #B05A2F - terracotta */
     --color-negroni-50: #fff6ed;
     --color-negroni-100: #ffecd5;
     --color-negroni-200: #ffdfbf;
@@ -17,12 +18,13 @@
     --color-negroni-950: #441106;
   }
   body {
-    @apply bg-stone-50 text-slate-800;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: #FBF8F2;
     @apply text-slate-800;
   }
 
-  h1, h2, h3 {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', Georgia, Cambria, "Times New Roman", Times, serif;
     @apply tracking-tight;
   }
 }
