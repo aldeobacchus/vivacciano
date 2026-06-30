@@ -11,7 +11,7 @@ import { gites } from "../data/gites"
       <!-- IMAGE BACKGROUND -->
       <div
         class="absolute inset-0 bg-cover bg-center"
-        style="background-image: url('/images/village/acciano.jpg');"
+        style="background-image: url('/images/village/acciano3.jpg');"
       ></div>
 
       <!-- OVERLAY -->

@@ -5,7 +5,7 @@
     <section class="relative h-[40vh] flex items-center justify-center text-white">
       <div
         class="absolute inset-0 bg-cover bg-center"
-        style="background-image: url('/images/village/acciano.jpg');"
+        style="background-image: url('/images/village/acciano3.jpg');"
       ></div>
       <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/80"></div>
       <div class="relative text-center max-w-3xl px-6 animate-fade-in">
