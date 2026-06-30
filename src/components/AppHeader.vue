@@ -10,7 +10,7 @@
           class="text-xl md:text-2xl font-bold tracking-wide text-[#B05A2F] hover:opacity-80 transition-opacity"
           style="font-family: 'Playfair Display', Georgia, serif;"
         >
-          Bell'acciano
+          Bell'Acciano
         </RouterLink>
 
         <!-- BURGER BUTTON (mobile) -->
