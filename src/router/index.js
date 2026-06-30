@@ -7,6 +7,12 @@ import ContactView from "../views/ContactView.vue";
 
 const router = createRouter({
   history: createWebHistory(),
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    }
+    return { top: 0 };
+  },
   routes: [
     {
       path: "/",
