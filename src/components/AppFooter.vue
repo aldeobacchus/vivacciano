@@ -10,7 +10,7 @@
       <!-- Marque -->
       <div class="space-y-4">
         <h3 class="text-2xl font-bold" style="font-family: 'Playfair Display', Georgia, serif;">
-          les Case di Jérôme
+          Bell'acciano
         </h3>
         <p class="text-sm text-slate-300 leading-relaxed max-w-sm">
           {{ $t('contact.tagline') }}
@@ -72,7 +72,7 @@
     <!-- Copyright -->
     <div class="border-t border-slate-800 relative z-10">
       <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
-        <p>© {{ new Date().getFullYear() }} — les Case di Jérôme. {{ $t('footer.allRightsReserved', 'Tous droits réservés.') }}</p>
+        <p>© {{ new Date().getFullYear() }} — Bell'acciano. {{ $t('footer.allRightsReserved', 'Tous droits réservés.') }}</p>
         <p class="mt-2 md:mt-0">
           Conçu avec <span class="text-[#B05A2F]">♥</span> en Italie
         </p>
