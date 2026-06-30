@@ -8,6 +8,11 @@ const commonAmenities = [
   "hairdryer",
   "clock",
   "extra_beds",
+  "tv"
+]
+
+const casa2628Amenities = [
+  ...commonAmenities,
   "fireplaces",
   "terrace",
   "dining_table",
@@ -19,8 +24,7 @@ const commonAmenities = [
   "outdoor_sink",
   "private_shower",
   "sink_each_floor",
-  "bathrobes",
-  "tv"
+  "bathrobes"
 ]
 
 
@@ -73,7 +77,7 @@ export const gites = [
     bedrooms: 3,
     bathrooms: 2,
     price: 210,
-    amenities: commonAmenities,
+    amenities: casa2628Amenities,
     airbnb: "https://www.airbnb.fr/"
   }
 

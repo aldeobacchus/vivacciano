@@ -169,6 +169,48 @@ function prevImage() {
     </div>
 
     <!-- =====================
+         INFORMATIONS PRATIQUES
+    ====================== -->
+    <div class="mt-12 bg-negroni-200 rounded-xl p-8 mb-8">
+      <p class="uppercase tracking-[0.3em] text-sm text-[#B05A2F] mb-4 font-medium text-center">
+        {{ $t('village.practical.title') }}
+      </p>
+      <h2 class="text-2xl md:text-3xl font-light text-slate-800 text-center mb-8">
+        {{ $t('village.practical.title') }}
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Localisation -->
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center">
+          <span class="text-3xl block mb-4">📍</span>
+          <p class="text-slate-600 leading-relaxed text-sm">
+            {{ $t('village.practical.location') }}
+          </p>
+        </div>
+
+        <!-- Petit-déjeuner -->
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center">
+          <span class="text-3xl block mb-4">☕</span>
+          <h3 class="text-lg font-semibold text-slate-800 mb-2">{{ $t('village.practical.breakfast.title') }}</h3>
+          <p class="text-slate-600 leading-relaxed text-sm">
+            {{ $t('village.practical.breakfast.desc') }}
+          </p>
+        </div>
+
+        <!-- Parking -->
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center">
+          <span class="text-3xl block mb-4">🅿️</span>
+          <h3 class="text-lg font-semibold text-slate-800 mb-2">{{ $t('village.practical.parking.title') }}</h3>
+          <p class="text-slate-600 leading-relaxed text-sm">
+            {{ $t('village.practical.parking.desc') }}
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- =====================
          PRIX + CTA
     ====================== -->
     <div class="mt-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
