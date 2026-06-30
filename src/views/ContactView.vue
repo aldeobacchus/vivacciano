@@ -5,9 +5,9 @@
     <section class="relative h-[40vh] flex items-center justify-center text-white">
       <div
         class="absolute inset-0 bg-cover bg-center"
-        style="background-image: url('/images/village/acciano.jpg');"
+        style="background-image: url('/images/village/hero_acciano.jpg');"
       ></div>
-      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/80"></div>
       <div class="relative text-center max-w-3xl px-6 animate-fade-in">
         <h1 class="text-4xl md:text-6xl font-bold leading-tight">
           {{ $t('contact.title') }}
@@ -24,7 +24,7 @@
       <div class="grid md:grid-cols-2 gap-8">
 
         <!-- CARTE TÉLÉPHONE -->
-        <div class="bg-white rounded-xl p-8 shadow-sm border border-slate-100 flex flex-col items-center text-center gap-4 hover:shadow-md transition-shadow duration-300">
+        <div class="bg-white rounded-2xl p-8 premium-shadow border border-slate-50 flex flex-col items-center text-center gap-4 hover:-translate-y-2 transition-all duration-300">
           <span class="text-4xl">📞</span>
           <h2 class="text-xl font-semibold text-slate-800">{{ $t('contact.phoneLabel') }}</h2>
           <a
@@ -36,7 +36,7 @@
         </div>
 
         <!-- CARTE URGENCES -->
-        <div class="bg-white rounded-xl p-8 shadow-sm border border-slate-100 flex flex-col items-center text-center gap-4 hover:shadow-md transition-shadow duration-300">
+        <div class="bg-white rounded-2xl p-8 premium-shadow border border-slate-50 flex flex-col items-center text-center gap-4 hover:-translate-y-2 transition-all duration-300">
           <span class="text-4xl">🚨</span>
           <h2 class="text-xl font-semibold text-slate-800">{{ $t('contact.emergencyLabel') }}</h2>
           <a
@@ -50,7 +50,7 @@
       </div>
 
       <!-- CARTE EMAIL (pleine largeur) -->
-      <div class="mt-8 bg-white rounded-xl p-8 shadow-sm border border-slate-100 flex flex-col items-center text-center gap-6 hover:shadow-md transition-shadow duration-300">
+      <div class="mt-8 bg-white rounded-2xl p-8 premium-shadow border border-slate-50 flex flex-col items-center text-center gap-6 hover:-translate-y-2 transition-all duration-300">
         <span class="text-4xl">✉️</span>
         <h2 class="text-xl font-semibold text-slate-800">{{ $t('contact.emailLabel') }}</h2>
         <a

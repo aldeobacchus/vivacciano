@@ -5,9 +5,9 @@
     <section class="relative h-[60vh] flex items-center justify-center text-white">
       <div
         class="absolute inset-0 bg-cover bg-center"
-        style="background-image: url('/images/village/acciano.jpg');"
+        style="background-image: url('/images/village/hero_acciano.jpg');"
       ></div>
-      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/70"></div>
       <div class="relative text-center max-w-3xl px-6 animate-fade-in">
         <h1 class="text-4xl md:text-6xl font-bold leading-tight">
           {{ $t('village.hero.title') }}
@@ -36,11 +36,11 @@
           </p>
         </div>
         <div class="relative">
-          <img
-            src="/images/village/acciano2.jpg"
-            alt="Acciano"
-            class="w-full h-[400px] object-cover rounded-lg shadow-lg"
-          />
+            <img
+              src="/images/village/acciano2.jpg"
+              alt="Acciano"
+              class="w-full h-[400px] object-cover rounded-2xl premium-shadow animate-slide-in-right"
+            />
         </div>
       </div>
     </section>
@@ -120,10 +120,10 @@
             {{ $t('village.welcome.desc') }}
           </p>
         </div>
-        <div class="lg:col-span-2 flex flex-col gap-4">
-          <div class="bg-white rounded-xl p-5 shadow-sm border border-slate-100 flex items-center gap-4">
-            <span class="text-2xl">🌸</span>
-            <p class="text-slate-700">{{ $t('village.welcome.flowers') }}</p>
+        <div class="lg:col-span-2 flex flex-col gap-4 animate-slide-in-right">
+          <div class="bg-white rounded-2xl p-6 premium-shadow border border-slate-50 flex items-center gap-4 hover:-translate-y-1 transition-transform">
+            <span class="text-3xl">🌸</span>
+            <p class="text-slate-700 font-medium">{{ $t('village.welcome.flowers') }}</p>
           </div>
         </div>
       </div>
@@ -143,16 +143,16 @@
         <div class="grid md:grid-cols-3 gap-6">
 
           <!-- Localisation -->
-          <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center">
-            <span class="text-3xl block mb-4">📍</span>
+          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 premium-shadow border border-white text-center hover:-translate-y-1 transition-transform">
+            <span class="text-4xl block mb-4">📍</span>
             <p class="text-slate-600 leading-relaxed text-sm">
               {{ $t('village.practical.location') }}
             </p>
           </div>
 
           <!-- Petit-déjeuner -->
-          <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center">
-            <span class="text-3xl block mb-4">☕</span>
+          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 premium-shadow border border-white text-center hover:-translate-y-1 transition-transform">
+            <span class="text-4xl block mb-4">☕</span>
             <h3 class="text-lg font-semibold text-slate-800 mb-2">{{ $t('village.practical.breakfast.title') }}</h3>
             <p class="text-slate-600 leading-relaxed text-sm">
               {{ $t('village.practical.breakfast.desc') }}
@@ -160,8 +160,8 @@
           </div>
 
           <!-- Parking -->
-          <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center">
-            <span class="text-3xl block mb-4">🅿️</span>
+          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 premium-shadow border border-white text-center hover:-translate-y-1 transition-transform">
+            <span class="text-4xl block mb-4">🅿️</span>
             <h3 class="text-lg font-semibold text-slate-800 mb-2">{{ $t('village.practical.parking.title') }}</h3>
             <p class="text-slate-600 leading-relaxed text-sm">
               {{ $t('village.practical.parking.desc') }}

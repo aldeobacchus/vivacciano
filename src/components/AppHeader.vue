@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white shadow-sm sticky top-0 z-50">
+  <header class="glass-effect sticky top-0 z-50">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex justify-between h-16 items-center">
@@ -7,8 +7,8 @@
         <!-- LOGO -->
         <RouterLink
           to="/"
-          class="text-xl md:text-2xl font-semibold tracking-wide text-[#B05A2F]"
-          style="font-family: 'Cormorant Garamond', Georgia, serif;"
+          class="text-xl md:text-2xl font-bold tracking-wide text-[#B05A2F] hover:opacity-80 transition-opacity"
+          style="font-family: 'Playfair Display', Georgia, serif;"
         >
           les Case di Jérôme
         </RouterLink>

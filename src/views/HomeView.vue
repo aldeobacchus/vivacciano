@@ -11,11 +11,11 @@ import { gites } from "../data/gites"
       <!-- IMAGE BACKGROUND -->
       <div
         class="absolute inset-0 bg-cover bg-center"
-        style="background-image: url('/images/village/acciano.jpg');"
+        style="background-image: url('/images/village/hero_acciano.jpg');"
       ></div>
 
       <!-- OVERLAY -->
-      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/70"></div>
 
       <!-- CONTENT -->
       <div class="relative text-center max-w-3xl px-6 animate-fade-in">
@@ -66,8 +66,8 @@ import { gites } from "../data/gites"
         <article
           v-for="(gite, index) in gites"
           :key="gite.id"
-          class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300
-                 hover:-translate-y-1 animate-fade-up"
+          class="group bg-white rounded-2xl overflow-hidden premium-shadow transition-all duration-300
+                 hover:-translate-y-2 animate-fade-up"
           :style="{ animationDelay: index * 100 + 'ms' }"
         >
 
@@ -164,7 +164,7 @@ import { gites } from "../data/gites"
             <img
               src="/images/village/acciano2.jpg"
               alt="Village d'Acciano"
-              class="w-full h-[500px] object-cover shadow-lg"
+              class="w-full h-[500px] object-cover rounded-2xl premium-shadow animate-slide-in-right"
             />
 
           </div>

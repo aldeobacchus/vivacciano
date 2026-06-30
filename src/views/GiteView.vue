@@ -34,7 +34,7 @@ function prevImage() {
     <!-- =====================
          CAROUSEL IMAGES
     ====================== -->
-    <div class="relative rounded-none overflow-hidden shadow-lg">
+    <div class="relative rounded-2xl overflow-hidden premium-shadow animate-fade-up">
 
       <img
         :src="gite.images[currentImage]"
@@ -87,18 +87,21 @@ function prevImage() {
     <!-- =====================
          INFOS
     ====================== -->
-    <div class="grid md:grid-cols-3 gap-4 mt-6">
+    <div class="grid md:grid-cols-3 gap-6 mt-8 animate-slide-in-right">
 
-      <div class="bg-white p-4 border">
-        👥 {{ gite.maxPersons }} {{ $t('gite.persons') }}
+      <div class="bg-white p-5 rounded-xl premium-shadow border border-slate-50 flex items-center justify-center gap-3">
+        <span class="text-xl">👥</span>
+        <span class="font-medium text-slate-700">{{ gite.maxPersons }} {{ $t('gite.persons') }}</span>
       </div>
 
-      <div class="bg-white p-4 border">
-        🛏 {{ gite.bedrooms }} {{ $t('gite.bedrooms') }}
+      <div class="bg-white p-5 rounded-xl premium-shadow border border-slate-50 flex items-center justify-center gap-3">
+        <span class="text-xl">🛏</span>
+        <span class="font-medium text-slate-700">{{ gite.bedrooms }} {{ $t('gite.bedrooms') }}</span>
       </div>
 
-      <div class="bg-white p-4 border">
-        🚿 {{ gite.bathrooms }} {{ $t('gite.bathrooms') }}
+      <div class="bg-white p-5 rounded-xl premium-shadow border border-slate-50 flex items-center justify-center gap-3">
+        <span class="text-xl">🚿</span>
+        <span class="font-medium text-slate-700">{{ gite.bathrooms }} {{ $t('gite.bathrooms') }}</span>
       </div>
 
     </div>
@@ -132,19 +135,19 @@ function prevImage() {
           <div
             v-for="amenity in gite.amenities"
             :key="amenity"
-            class="bg-white border border-slate-200 p-4 flex items-center gap-3"
+            class="bg-white border border-slate-100 rounded-xl premium-shadow p-4 flex items-center gap-3 hover:-translate-y-1 transition-transform"
           >
-            <span>✓</span>
-            <span>{{ $t('amenities.' + amenity) }}</span>
+            <span class="text-[#B05A2F]">✓</span>
+            <span class="text-slate-600 font-medium">{{ $t('amenities.' + amenity) }}</span>
           </div>
 
           <div
             v-for="item in gite.extraAmenities || []"
             :key="item"
-            class="bg-[#F7F2E9] border border-[#E8DDCB] p-4 flex items-center gap-3"
+            class="bg-orange-50 border border-orange-100 rounded-xl premium-shadow p-4 flex items-center gap-3 hover:-translate-y-1 transition-transform"
           >
-            <span>★</span>
-            <span>{{ item }}</span>
+            <span class="text-[#B05A2F]">★</span>
+            <span class="text-orange-900 font-medium">{{ item }}</span>
           </div>
 
         </div>
@@ -152,7 +155,7 @@ function prevImage() {
         <!-- DÉGRADÉ -->
         <div
           v-if="!showAmenities"
-          class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-b from-transparent to-[#FBF8F2] pointer-events-none"
+          class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-[#FAFAFA] pointer-events-none"
         />
       </div>
 
