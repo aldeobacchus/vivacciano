@@ -51,7 +51,7 @@ const variantClass = computed(() => {
     case "outline-black":
       return "btn-outline"
     case "outline-white":
-      return "btn-outline-white"
+      return "border border-white text-white hover:bg-white hover:text-slate-900"
     case "link":
       return "!p-0 bg-transparent text-[#B05A2F] hover:text-[#c07e5d] underline underline-offset-4 active:scale-100 hover:shadow-none shadow-none cursor-pointer inline font-medium"
     default:

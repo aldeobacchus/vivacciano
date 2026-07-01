@@ -33,15 +33,7 @@
     color: white;
   }
 
-  .btn-outline-white {
-    border: 1px solid white;
-    color: white;
-  }
 
-  .btn-outline-white:hover {
-    background-color: white;
-    color: #0f172a;
-  }
 
   /* =======================
      TEXT
