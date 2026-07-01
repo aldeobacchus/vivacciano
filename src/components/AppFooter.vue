@@ -73,9 +73,6 @@
     <div class="border-t border-slate-800 relative z-10">
       <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
         <p>© {{ new Date().getFullYear() }} — Bell'Acciano. {{ $t('footer.allRightsReserved', 'Tous droits réservés.') }}</p>
-        <p class="mt-2 md:mt-0">
-          Conçu avec <span class="text-[#B05A2F]">♥</span> en Italie
-        </p>
       </div>
     </div>
   </footer>

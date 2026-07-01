@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "gites": "Le nostre Case",
+    "gites": "Le case",
     "village": "Il borgo",
     "contact": "Contattaci"
   },
@@ -10,7 +10,7 @@
       "title": "Bell'Acciano",
       "subtitle": "Soggiorna nel cuore degli Abruzzi, tra natura, pace e sole."
     },
-    "discover": "Scopri le nostre Case",
+    "discover": "Scopri le case",
     "village": {
       "title": "Il borgo",
       "acciano": "sospeso nel tempo",
@@ -19,9 +19,9 @@
       "discover": "Scopri il borgo"
     },
     "gites": {
-      "title": "Le nostre Case",
+      "title": "Le case",
       "subtitle": "Ogni alloggio ha il suo fascino unico e una vista mozzafiato sulle montagne abruzzesi",
-      "viewGite": "Vedi la Casa",
+      "viewGite": "Vedi la casa",
       "book": "Prenota"
     }
   },
@@ -29,30 +29,32 @@
     "equipment": "Servizi",
     "seeMore": "+ Mostra altro",
     "seeLess": "Mostra meno",
-    "book": "Prenota su Airbnb",
-    "persons": "ospiti",
-    "bedrooms": "camere",
-    "bathrooms": "bagni",
+    "book_airbnb": "Prenota su Airbnb",
+    "book_booking": "Prenota su Booking",
+    "persons": "ospite | ospiti",
+    "bedrooms": "camera | camere",
+    "bathrooms": "bagno | bagni",
     "night": "notte",
     "notFound": "Casa non trovata"
   },
   "gites_data": {
     "gite-1": {
-      "shortDescription": "Monolocale luminoso e affascinante nel cuore di Acciano.",
+      "shortDescription": "Monolocale luminoso e affascinante.",
       "longDescription": "Un luminoso monolocale situato nel centro storico di Acciano, ideale per rigenerarsi in mezzo alla natura con vista sulle montagne abruzzesi."
     },
     "gite-2": {
       "shortDescription": "Comfort generoso, viste splendide sulle montagne.",
-      "longDescription": "Un luminoso bilocale in un ambiente tranquillo, ideale per rilassarsi in mezzo alla natura con vista sulle creste del Sirente."
+      "longDescription": "Una luminosa casa di due stanze in un ambiente tranquillo, ideale per rilassarsi in mezzo alla natura con vista sulle creste del Sirente."
     },
     "gite-3": {
-      "shortDescription": "Alloggio spazioso e accogliente per le famiglie.",
-      "longDescription": "Un alloggio spazioso e luminoso che può ospitare fino a 6 persone, perfetto per vacanze in famiglia nel centro storico di Acciano."
+      "shortDescription": "Casa spaziosa e accogliente, con bella terrazza.",
+      "longDescription": "Casa spaziosa e accogliente, con bella terrazza."
     }
   },
   "amenities": {
-    "kitchen": "Cucina completa",
+    "kitchen": "Cucina attrezzata",
     "heating": "Riscaldamento",
+    "fireplaces": "2 caminetti",
     "hot_water": "Acqua calda illimitata",
     "coffee_capsules": "Macchina da caffè a capsule",
     "coffee_italian": "Caffettiera moka",
@@ -60,7 +62,6 @@
     "hairdryer": "Asciugacapelli",
     "clock": "Orologio e sveglia",
     "extra_beds": "Letto/i supplementare/i",
-    "fireplaces": "2 caminetti",
     "terrace": "Terrazza di 25 m²",
     "dining_table": "Tavolo da pranzo per 6-10 persone",
     "sun_loungers": "Lettini prendisole",
@@ -72,6 +73,7 @@
     "private_shower": "Doccia e lavandino privati in una camera",
     "sink_each_floor": "Lavandino ad ogni piano",
     "bathrobes": "Accappatoi",
+    "panoramic_view": "Vista panoramica",
     "tv": "Televisione"
   },
   "village": {
@@ -118,7 +120,7 @@
       },
       "parking": {
         "title": "Parcheggio",
-        "desc": "Facile accesso in auto, parcheggio gratuito a 20-60m dalla casa."
+        "desc": "Accesso facile e gratuito."
       }
     },
     "activities": {
@@ -130,13 +132,13 @@
     "title": "Contattaci",
     "subtitle": "Non esitate a contattarci per qualsiasi domanda o prenotazione.",
     "phone": "+39 371 733 9368",
-    "phoneLabel": "Telefono",
+    "phoneLabel": "Dall'Italia",
     "emergency": "+33 6 09 48 89 34",
-    "emergencyLabel": "Emergenze",
+    "emergencyLabel": "Dalla Francia",
     "emailLabel": "Email",
     "sendEmail": "Invia un'email",
-    "emailSubject": "Richiesta informazioni — les Case di Jérôme",
-    "tagline": "Soggiorni autentici nel cuore d'Italia.",
+    "emailSubject": "Richiesta informazioni — le case di Jérôme",
+    "tagline": "Soggiorni autentici nel cuore del Parco Nazionale Sirente Velino.",
     "navigation": "Navigazione"
   }
 }

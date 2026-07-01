@@ -1,11 +1,41 @@
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
+import HoverCard from '../components/ui/HoverCard.vue'
+
+const scrollY = ref(0)
+let ticking = false
+
+const handleScroll = () => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      scrollY.value = window.scrollY
+      ticking = false
+    })
+    ticking = true
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll, { passive: true })
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
+</script>
+
 <template>
   <div>
 
     <!-- HERO -->
-    <section class="relative h-[60vh] flex items-center justify-center text-white">
+    <section class="relative h-[60vh] flex items-center justify-center text-white overflow-hidden">
       <div
-        class="absolute inset-0 bg-cover bg-center"
-        style="background-image: url('/images/village/acciano.jpg');"
+        class="absolute inset-0 bg-cover bg-center scale-125 will-change-transform"
+        :style="{
+          backgroundImage: `url('/images/village/acciano-upscale.jpg')`,
+          transform: `translate3d(0, ${scrollY * 0.4}px, 0)`,
+          filter: `blur(${Math.min(12, 2 + scrollY * 0.015)}px) brightness(0.95)`
+        }"
       ></div>
       <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/70"></div>
       <div class="relative text-center max-w-3xl px-6 animate-fade-in">
@@ -39,7 +69,7 @@
             <img
               src="/images/village/acciano2.jpg"
               alt="Acciano"
-              class="w-full h-[400px] object-cover rounded-2xl premium-shadow animate-slide-in-right"
+              class="w-full h-[400px] object-cover rounded-2xl shadow-xl animate-slide-in-right"
             />
         </div>
       </div>
@@ -121,10 +151,10 @@
           </p>
         </div>
         <div class="lg:col-span-2 flex flex-col gap-4 animate-slide-in-right">
-          <div class="bg-white rounded-2xl p-6 premium-shadow border border-slate-50 flex items-center gap-4 hover:-translate-y-1 transition-transform">
+          <HoverCard contentClass="bg-white p-6 border border-slate-50 flex items-center gap-4">
             <span class="text-3xl">🌸</span>
             <p class="text-slate-700 font-medium">{{ $t('village.welcome.flowers') }}</p>
-          </div>
+          </HoverCard>
         </div>
       </div>
     </section>
@@ -143,30 +173,30 @@
         <div class="grid md:grid-cols-3 gap-6">
 
           <!-- Localisation -->
-          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 premium-shadow border border-white text-center hover:-translate-y-1 transition-transform">
+          <HoverCard contentClass="bg-white/80 backdrop-blur-sm p-6 border border-white text-center">
             <span class="text-4xl block mb-4">📍</span>
             <p class="text-slate-600 leading-relaxed text-sm">
               {{ $t('village.practical.location') }}
             </p>
-          </div>
+          </HoverCard>
 
           <!-- Petit-déjeuner -->
-          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 premium-shadow border border-white text-center hover:-translate-y-1 transition-transform">
+          <HoverCard contentClass="bg-white/80 backdrop-blur-sm p-6 border border-white text-center">
             <span class="text-4xl block mb-4">☕</span>
             <h3 class="text-lg font-semibold text-slate-800 mb-2">{{ $t('village.practical.breakfast.title') }}</h3>
             <p class="text-slate-600 leading-relaxed text-sm">
               {{ $t('village.practical.breakfast.desc') }}
             </p>
-          </div>
+          </HoverCard>
 
           <!-- Parking -->
-          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 premium-shadow border border-white text-center hover:-translate-y-1 transition-transform">
+          <HoverCard contentClass="bg-white/80 backdrop-blur-sm p-6 border border-white text-center">
             <span class="text-4xl block mb-4">🅿️</span>
             <h3 class="text-lg font-semibold text-slate-800 mb-2">{{ $t('village.practical.parking.title') }}</h3>
             <p class="text-slate-600 leading-relaxed text-sm">
               {{ $t('village.practical.parking.desc') }}
             </p>
-          </div>
+          </HoverCard>
 
         </div>
       </div>

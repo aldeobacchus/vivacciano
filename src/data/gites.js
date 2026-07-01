@@ -15,13 +15,7 @@ const casa2628Amenities = [
   ...commonAmenities,
   "fireplaces",
   "terrace",
-  "dining_table",
-  "sun_loungers",
-  "parasol",
-  "awning",
-  "plancha",
-  "mini_oven",
-  "outdoor_sink",
+  "panoramic_view",
   "private_shower",
   "sink_each_floor",
   "bathrobes"
@@ -31,8 +25,8 @@ const casa2628Amenities = [
 export const gites = [
   {
     id: "gite-1",
-    nom: "Casa Sole",
-    shortDescription: "Charmant studio au cœur de l'italie.",
+    nom: "Sole",
+    shortDescription: "Studio lumineux et charmant.",
     longDescription:
       "Un studio lumineux situé dans un environnement calme, idéal pour se ressourcer en pleine nature avec vue sur les montagnes.",
     images: [
@@ -43,11 +37,12 @@ export const gites = [
     bathrooms: 1,
     price: 120,
     amenities: commonAmenities,
-    airbnb: "https://www.airbnb.fr/"
+    airbnb: "https://www.airbnb.fr/",
+    booking: ""
   },
   {
     id: "gite-2",
-    nom: "Casa del Gigante",
+    nom: "Il Gigante",
     shortDescription: "Top confort, visite bellissime.",
     longDescription:
       "Un gite de deux pieces lumineux situé dans un environnement calme, idéal pour se ressourcer en pleine nature avec vue sur les montagnes.",
@@ -63,11 +58,12 @@ export const gites = [
     price: 180,
     amenities: commonAmenities,
     airbnb: "https://www.airbnb.fr/",
+    booking: ""
   },
    {
     id: "gite-3",
-    nom: "Casa 26-28",
-    shortDescription: "Charmant gîte au cœur de l'italie.",
+    nom: "26-28",
+    shortDescription: "Maison spacieuse et conviviale, avec belle terrasse",
     longDescription:
       "Un gite spacieux et lumineux situé dans un environnement calme, idéal pour se ressourcer en pleine nature avec vue sur les montagnes.",
     images: [
@@ -78,7 +74,8 @@ export const gites = [
     bathrooms: 2,
     price: 210,
     amenities: casa2628Amenities,
-    airbnb: "https://www.airbnb.fr/"
+    airbnb: "https://www.airbnb.fr/",
+    booking: ""
   }
 
 ];

@@ -19,6 +19,7 @@
   body {
     font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: #FAFAFA;
+    overflow-x: hidden;
     @apply text-slate-800;
   }
 
@@ -47,10 +48,6 @@
 
   .glass-effect {
     @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-[0_4px_30px_rgba(0,0,0,0.05)];
-  }
-
-  .premium-shadow {
-    @apply shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.12)];
   }
 
   @keyframes fadeIn {

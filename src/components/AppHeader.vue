@@ -79,21 +79,21 @@
                 class="block w-full text-left px-4 py-2 text-sm hover:bg-orange-50 text-slate-700 transition cursor-pointer"
                 :class="{ 'font-semibold text-orange-600': locale === 'fr' }"
               >
-                Français
+                🇫🇷 Français
               </button>
               <button
                 @click="changeLocale('en')"
                 class="block w-full text-left px-4 py-2 text-sm hover:bg-orange-50 text-slate-700 transition cursor-pointer"
                 :class="{ 'font-semibold text-orange-600': locale === 'en' }"
               >
-                English
+                🇬🇧 English
               </button>
               <button
                 @click="changeLocale('it')"
                 class="block w-full text-left px-4 py-2 text-sm hover:bg-orange-50 text-slate-700 transition cursor-pointer"
                 :class="{ 'font-semibold text-orange-600': locale === 'it' }"
               >
-                Italiano
+                🇮🇹 Italiano
               </button>
             </div>
           </div>
@@ -153,21 +153,21 @@
             class="px-3 py-1 rounded text-sm transition cursor-pointer"
             :class="locale === 'fr' ? 'bg-orange-500 text-white font-medium' : 'bg-slate-100 text-slate-700'"
           >
-            FR
+            🇫🇷 FR
           </button>
           <button
             @click="changeLocale('en'); closeMenu()"
             class="px-3 py-1 rounded text-sm transition cursor-pointer"
             :class="locale === 'en' ? 'bg-orange-500 text-white font-medium' : 'bg-slate-100 text-slate-700'"
           >
-            EN
+            🇬🇧 EN
           </button>
           <button
             @click="changeLocale('it'); closeMenu()"
             class="px-3 py-1 rounded text-sm transition cursor-pointer"
             :class="locale === 'it' ? 'bg-orange-500 text-white font-medium' : 'bg-slate-100 text-slate-700'"
           >
-            IT
+            🇮🇹 IT
           </button>
         </div>
 

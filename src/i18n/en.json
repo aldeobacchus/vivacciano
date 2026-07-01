@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "gites": "Our Case",
+    "gites": "The houses",
     "village": "The village",
     "contact": "Contact us"
   },
@@ -10,7 +10,7 @@
       "title": "Bell'Acciano",
       "subtitle": "Stay in the heart of the Abruzzi, between nature, quietness and sunshine."
     },
-    "discover": "Discover our Case",
+    "discover": "Discover our houses",
     "village": {
       "title": "The village",
       "acciano": "frozen in time",
@@ -19,9 +19,9 @@
       "discover": "Discover the village"
     },
     "gites": {
-      "title": "Our Case",
+      "title": "Our houses",
       "subtitle": "Each lodging has its own unique charm and a breathtaking view of the Abruzzi mountains",
-      "viewGite": "View Casa",
+      "viewGite": "View house",
       "book": "Book"
     }
   },
@@ -29,30 +29,32 @@
     "equipment": "Amenities",
     "seeMore": "+ See more",
     "seeLess": "See less",
-    "book": "Book on Airbnb",
-    "persons": "guests",
-    "bedrooms": "bedrooms",
-    "bathrooms": "bathrooms",
+    "book_airbnb": "Book on Airbnb",
+    "book_booking": "Book on Booking",
+    "persons": "guest | guests",
+    "bedrooms": "bedroom | bedrooms",
+    "bathrooms": "bathroom | bathrooms",
     "night": "night",
-    "notFound": "Casa not found"
+    "notFound": "House not found"
   },
   "gites_data": {
     "gite-1": {
-      "shortDescription": "A bright and charming studio in the heart of Acciano.",
+      "shortDescription": "A bright and charming studio.",
       "longDescription": "A bright studio located in the historic center of Acciano, ideal for recharging in the heart of nature with views of the Abruzzi mountains."
     },
     "gite-2": {
       "shortDescription": "Generous comfort, splendid mountain views.",
-      "longDescription": "A bright two-room apartment in a quiet setting, ideal for relaxing in nature with views of the Sirente ridges."
+      "longDescription": "A bright two-room house in a quiet setting, ideal for relaxing in nature with views of the Sirente ridges."
     },
     "gite-3": {
-      "shortDescription": "Spacious and family-friendly lodging.",
-      "longDescription": "A spacious and bright lodging accommodating up to 6 guests, perfect for family holidays in the historic center of Acciano."
+      "shortDescription": "Spacious and friendly house, with a beautiful terrace.",
+      "longDescription": "Spacious and friendly house, with a beautiful terrace."
     }
   },
   "amenities": {
     "kitchen": "Fully equipped kitchen",
     "heating": "Heating",
+    "fireplaces": "2 fireplaces",
     "hot_water": "Unlimited hot water",
     "coffee_capsules": "Capsule coffee machine",
     "coffee_italian": "Italian moka pot",
@@ -60,7 +62,6 @@
     "hairdryer": "Hairdryer",
     "clock": "Clock and alarm",
     "extra_beds": "Extra bed(s)",
-    "fireplaces": "2 fireplaces",
     "terrace": "25 m² terrace",
     "dining_table": "Dining table for 6 to 10 guests",
     "sun_loungers": "Sun loungers",
@@ -72,6 +73,7 @@
     "private_shower": "Private shower and sink in one bedroom",
     "sink_each_floor": "Sink on each floor",
     "bathrobes": "Bathrobes",
+    "panoramic_view": "Panoramic view",
     "tv": "Television"
   },
   "village": {
@@ -106,19 +108,19 @@
     },
     "welcome": {
       "title": "Your arrival",
-      "desc": "A warm welcome by Jérôme or the Case staff. Welcome food provided while you settle in.",
-      "flowers": "All case are decorated with fresh flowers for your arrival."
+      "desc": "A warm welcome by Jérôme or the house staff. Welcome food provided while you settle in.",
+      "flowers": "All houses are decorated with fresh flowers for your arrival."
     },
     "practical": {
       "title": "Practical information",
-      "location": "Le Case di Jérôme are located in the historic center of Acciano (12th century).",
+      "location": "Jérôme's houses are located in the historic center of Acciano (12th century).",
       "breakfast": {
         "title": "Breakfast",
         "desc": "Optional breakfast at La Cantina: €4.60 per person. Located across from the main square, Piazza del Municipio."
       },
       "parking": {
         "title": "Parking",
-        "desc": "Easy car access, free parking 20-60m from the house."
+        "desc": "Easy access and free parking."
       }
     },
     "activities": {
@@ -130,13 +132,13 @@
     "title": "Contact us",
     "subtitle": "Don't hesitate to reach out for any question or booking.",
     "phone": "+39 371 733 9368",
-    "phoneLabel": "Phone",
+    "phoneLabel": "From Italy",
     "emergency": "+33 6 09 48 89 34",
-    "emergencyLabel": "Emergency",
+    "emergencyLabel": "From France",
     "emailLabel": "Email",
     "sendEmail": "Send an email",
-    "emailSubject": "Information request — les Case di Jérôme",
-    "tagline": "Authentic stays in the heart of Italy.",
+    "emailSubject": "Information request — Jérôme's houses",
+    "tagline": "Authentic stays in the heart of Sirente Velino National Park.",
     "navigation": "Navigation"
   }
 }

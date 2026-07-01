@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Accueil",
-    "gites": "Nos Case",
+    "gites": "Les maisons",
     "village": "Le village",
     "contact": "Nous contacter"
   },
@@ -10,7 +10,7 @@
       "title": "Bell'Acciano",
       "subtitle": "Séjournez au cœur des Abruzzes, entre nature, calme et soleil."
     },
-    "discover": "Découvrir les Case",
+    "discover": "Découvrir les maisons",
     "village": {
       "title": "Le village",
       "acciano": "suspendu dans le temps",
@@ -19,9 +19,9 @@
       "discover": "Découvrir le village"
     },
     "gites": {
-      "title": "Nos Case",
+      "title": "Les maisons",
       "subtitle": "Chaque logement a son charme unique et une vue imprenable sur les montagnes des Abruzzes",
-      "viewGite": "Voir la Casa",
+      "viewGite": "Voir la maison",
       "book": "Réserver"
     }
   },
@@ -29,38 +29,39 @@
     "equipment": "Équipements",
     "seeMore": "+ Voir plus",
     "seeLess": "Voir moins",
-    "book": "Réserver sur Airbnb",
-    "persons": "personnes",
-    "bedrooms": "chambres",
-    "bathrooms": "salles de bain",
+    "book_airbnb": "Réserver sur Airbnb",
+    "book_booking": "Réserver sur Booking",
+    "persons": "personne | personnes",
+    "bedrooms": "chambre | chambres",
+    "bathrooms": "salle de bain | salles de bain",
     "night": "nuit",
-    "notFound": "Casa introuvable"
+    "notFound": "Maison introuvable"
   },
   "gites_data": {
     "gite-1": {
-      "shortDescription": "Studio lumineux et charmant au cœur d'Acciano.",
+      "shortDescription": "Studio lumineux et charmant.",
       "longDescription": "Un studio lumineux situé dans le centre historique d'Acciano, idéal pour se ressourcer en pleine nature avec vue sur les montagnes des Abruzzes."
     },
     "gite-2": {
       "shortDescription": "Confort généreux, vues splendides sur les montagnes.",
-      "longDescription": "Un gîte de deux pièces lumineux situé dans un environnement calme, idéal pour se ressourcer en pleine nature avec vue sur les crêtes du Sirente."
+      "longDescription": "Une maison de deux pièces lumineuse située dans un environnement calme, idéale pour se ressourcer en pleine nature avec vue sur les crêtes du Sirente."
     },
     "gite-3": {
-      "shortDescription": "Gîte spacieux et convivial pour les familles.",
-      "longDescription": "Un gîte spacieux et lumineux pouvant accueillir jusqu'à 6 personnes, idéal pour des vacances en famille au cœur du centre historique d'Acciano."
+      "shortDescription": "Maison spacieuse et conviviale, avec belle terrasse.",
+      "longDescription": "Maison spacieuse et conviviale, avec belle terrasse."
     }
   },
   "amenities": {
-    "kitchen": "Cuisine complète",
+    "kitchen": "Cuisine équipée",
     "heating": "Chauffage",
+    "fireplaces": "2 cheminées",
     "hot_water": "Eau chaude non limitée",
     "coffee_capsules": "Machine à café capsules",
     "coffee_italian": "Cafetière italienne",
     "candles": "Bougies d'ambiance",
     "hairdryer": "Sèche-cheveux",
     "clock": "Horloge et réveil",
-    "extra_beds": "Lit(s) d'appoint",
-    "fireplaces": "2 cheminées",
+    "extra_beds": "Couchage d'appoint",
     "terrace": "Terrasse de 25 m²",
     "dining_table": "Table à manger 6 à 10 personnes",
     "sun_loungers": "Chaises longues",
@@ -72,6 +73,7 @@
     "private_shower": "Douche et lavabo privatifs dans une chambre",
     "sink_each_floor": "Lavabo à chaque étage",
     "bathrobes": "Peignoirs de bain",
+    "panoramic_view": "Vue panoramique",
     "tv": "Télévision"
   },
   "village": {
@@ -106,19 +108,19 @@
     },
     "welcome": {
       "title": "Votre arrivée",
-      "desc": "Accueil chaleureux par Jérôme ou le staff des Case. Aliments d'accueil fournis le temps de vous installer.",
-      "flowers": "Toutes les case sont fleuries à l'occasion de votre arrivée."
+      "desc": "Accueil chaleureux par Jérôme ou le staff des maisons. Aliments d'accueil fournis le temps de vous installer.",
+      "flowers": "Toutes les maisons sont fleuries à l'occasion de votre arrivée."
     },
     "practical": {
       "title": "Informations pratiques",
-      "location": "Les Case di Jérôme sont situées dans le centre historique d'Acciano (XIIe siècle).",
+      "location": "Les maisons de Jérôme sont situées dans le centre historique d'Acciano (XIIe siècle).",
       "breakfast": {
         "title": "Petit-déjeuner",
         "desc": "Petit-déjeuner optionnel à La Cantina : 4,60€ par personne. Située face à la place principale, Piazza del Municipio."
       },
       "parking": {
         "title": "Parking",
-        "desc": "Accès voiture facile, parking gratuit à 20-60m selon la maison."
+        "desc": "Accès facile et gratuit."
       }
     },
     "activities": {
@@ -130,13 +132,13 @@
     "title": "Nous contacter",
     "subtitle": "N'hésitez pas à nous joindre pour toute question ou réservation.",
     "phone": "+39 371 733 9368",
-    "phoneLabel": "Téléphone",
+    "phoneLabel": "Depuis l'Italie",
     "emergency": "+33 6 09 48 89 34",
-    "emergencyLabel": "Urgences",
+    "emergencyLabel": "Depuis la France",
     "emailLabel": "Email",
     "sendEmail": "Envoyer un email",
-    "emailSubject": "Demande d'information — les Case di Jérôme",
-    "tagline": "Séjours authentiques au cœur de l'Italie.",
+    "emailSubject": "Demande d'information — les maisons de Jérôme",
+    "tagline": "Séjours authentiques au cœur du parc national Sirente Velino.",
     "navigation": "Navigation"
   }
 }

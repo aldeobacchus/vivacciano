@@ -1,17 +1,45 @@
 <script setup>
 import { gites } from "../data/gites"
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const scrollY = ref(0)
+let ticking = false
+
+const handleScroll = () => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      scrollY.value = window.scrollY
+      ticking = false
+    })
+    ticking = true
+  }
+}
+
+import HoverCard from '../components/ui/HoverCard.vue'
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll, { passive: true })
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <template>
   <div>
 
     <!-- HERO -->
-    <section class="relative h-[90vh] flex items-center justify-center text-white">
+    <section class="relative h-[100dvh] flex items-center justify-center text-white overflow-hidden">
 
       <!-- IMAGE BACKGROUND -->
       <div
-        class="absolute inset-0 bg-cover bg-center"
-        style="background-image: url('/images/village/acciano.jpg');"
+        class="absolute inset-0 bg-cover bg-center scale-125 will-change-transform"
+        :style="{
+          backgroundImage: `url('/images/village/acciano-upscale.jpg')`,
+          transform: `translate3d(0, ${scrollY * 0.4}px, 0)`,
+          filter: `blur(${Math.min(12, 0.5 + scrollY * 0.015)}px) brightness(0.95)`
+        }"
       ></div>
 
       <!-- OVERLAY -->
@@ -63,25 +91,25 @@ import { gites } from "../data/gites"
       <!-- GRID -->
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-        <article
+        <HoverCard
+          as="article"
           v-for="(gite, index) in gites"
           :key="gite.id"
-          class="group bg-white rounded-2xl overflow-hidden premium-shadow transition-all duration-300
-                 hover:-translate-y-2 animate-fade-up"
+          class="animate-fade-up"
           :style="{ animationDelay: index * 100 + 'ms' }"
         >
 
           <!-- IMAGE -->
-          <div class="h-56 overflow-hidden">
+          <router-link :to="`/gites/${gite.id}`" class="block h-56 overflow-hidden">
             <img
               :src="gite.images[0]"
               :alt="gite.nom"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
             />
-          </div>
+          </router-link>
 
           <!-- CONTENT -->
-          <div class="p-5">
+          <div class="p-5 bg-white">
 
             <h3 class="text-xl font-semibold text-slate-800">
               {{ gite.nom }}
@@ -91,28 +119,21 @@ import { gites } from "../data/gites"
               {{ $t('gites_data.' + gite.id + '.shortDescription') }}
             </p>
 
-            <div class="mt-5 flex justify-between items-center">
+            <div class="mt-5 flex justify-center items-center">
 
               <BaseButton
                 :to="`/gites/${gite.id}`"
                 variant="link"
+                class="relative z-50"
               >
                 {{ $t('home.gites.viewGite') }}
-              </BaseButton>
-
-              <BaseButton
-                :href="gite.airbnb"
-                variant="primary"
-                size="sm"
-              >
-                {{ $t('home.gites.book') }}
               </BaseButton>
 
             </div>
 
           </div>
 
-        </article>
+        </HoverCard>
 
       </div>
     </section>
@@ -164,7 +185,7 @@ import { gites } from "../data/gites"
             <img
               src="/images/village/acciano2.jpg"
               alt="Village d'Acciano"
-              class="w-full h-[500px] object-cover rounded-2xl premium-shadow animate-slide-in-right"
+              class="w-full h-[500px] object-cover rounded-2xl shadow-xl animate-slide-in-right"
             />
 
           </div>
