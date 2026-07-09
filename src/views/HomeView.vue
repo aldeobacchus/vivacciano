@@ -3,11 +3,9 @@ import { gites } from "../data/gites"
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const scrollY = ref(0)
-const isMobile = ref(false)
 let ticking = false
 
 const handleScroll = () => {
-  if (isMobile.value) return;
   if (!ticking) {
     window.requestAnimationFrame(() => {
       scrollY.value = window.scrollY
@@ -17,20 +15,13 @@ const handleScroll = () => {
   }
 }
 
-const handleResize = () => {
-  isMobile.value = window.innerWidth <= 768;
-}
-
 import HoverCard from '../components/ui/HoverCard.vue'
 
 onMounted(() => {
-  handleResize();
-  window.addEventListener('resize', handleResize, { passive: true })
   window.addEventListener('scroll', handleScroll, { passive: true })
 })
 
 onUnmounted(() => {
-  window.removeEventListener('resize', handleResize)
   window.removeEventListener('scroll', handleScroll)
 })
 </script>
@@ -39,15 +30,12 @@ onUnmounted(() => {
   <div>
 
     <!-- HERO -->
-    <section class="relative h-[100dvh] flex items-center justify-center text-white overflow-hidden">
+    <section class="relative h-[100svh] flex items-center justify-center text-white overflow-hidden">
 
       <!-- IMAGE BACKGROUND -->
       <div
-        class="absolute inset-0 bg-cover bg-center will-change-transform"
-        :class="{ 'scale-125': !isMobile }"
-        :style="isMobile ? {
-          backgroundImage: `url('/images/village/acciano-upscale.jpg')`
-        } : {
+        class="absolute inset-0 bg-cover bg-center scale-125 will-change-transform"
+        :style="{
           backgroundImage: `url('/images/village/acciano-upscale.jpg')`,
           transform: `translate3d(0, ${scrollY * 0.4}px, 0)`,
           filter: `blur(${Math.min(12, 0.5 + scrollY * 0.015)}px) brightness(0.95)`
