@@ -21,6 +21,8 @@
     "gites": {
       "title": "Our houses",
       "subtitle": "Each lodging has its own unique charm and a breathtaking view of the Abruzzi mountains",
+      "parkTitle": "Privileged access to nature",
+      "parkDesc": "The houses have access to a park with a splendid view where it is possible to have private picnics.",
       "viewGite": "View house",
       "book": "Book"
     }
@@ -113,6 +115,7 @@
     },
     "practical": {
       "title": "Practical information",
+      "locationTitle": "Location",
       "location": "Jérôme's houses are located in the historic center of Acciano (12th century).",
       "breakfast": {
         "title": "Breakfast",
@@ -126,6 +129,25 @@
     "activities": {
       "title": "Activities & Discoveries",
       "desc": "Hiking in the Sirente-Velino Natural Park, discovery of medieval villages, Abruzzi gastronomy, local markets and much more."
+    },
+    "places": {
+      "title": "Shops & Local Life",
+      "cantina": { "title": "La Cantina", "desc": "The village bar, with its micro Market where you will find food, toiletries, cleaning products and more. 8am>1pm 4pm>7pm. Extended hours in August. Closed on Sundays." },
+      "tabac": { "title": "Tobacco Shop, betting", "desc": "Luca, very professional and smiling. Great atmosphere for this kind of place. Tabacchi di Castelvecchio." },
+      "komodo": { "title": "Le Komodo Bar", "desc": "Simple meals. Open 7/7 from 7am to 1am. Delicious 100% locally produced ice cream. Young and professional team. Diverse clientele." },
+      "alkhaffe": { "title": "Al Khaffè", "desc": "Run by Carmine and his children. More mature clientele." },
+      "achillopolis": { "title": "Achillopolis", "desc": "The main village association. Organizes the legendary \"Pizza fritta e birra artigianale\" festival for three evenings in mid-August. You will also find for sale the book on the history of the Giant of Acciano, a traveler and benefactor." },
+      "giuseppe": { "title": "Giuseppe cuoio", "desc": "Leatherworker, creative and high-quality artisan." },
+      "klab": { "title": "K’lab", "desc": "Billiard room." },
+      "pizzeria": { "title": "Pizzeria", "desc": "Local pizzeria." }
+    },
+    "events": {
+      "title": "Events & Festivals",
+      "kap": { "title": "\"La Kap\" Festival", "desc": "In Fontecchio, 20min from Acciano." },
+      "cerises": { "title": "Cherry Festival \"La Sagra delle Ciliegie\"", "desc": "In Raiano, 20min from Acciano." },
+      "patronali": { "title": "Programma Feste Patronali", "desc": "Acciano Patronal Festivals." },
+      "parc": { "title": "Park Program and Info", "desc": "Natural park information and activities." },
+      "artichaut": { "title": "Artichoke Festival", "desc": "Local festival celebrating artichokes." }
     }
   },
   "contact": {

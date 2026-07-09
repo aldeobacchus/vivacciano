@@ -3,9 +3,11 @@ import { gites } from "../data/gites"
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const scrollY = ref(0)
+const isMobile = ref(false)
 let ticking = false
 
 const handleScroll = () => {
+  if (isMobile.value) return;
   if (!ticking) {
     window.requestAnimationFrame(() => {
       scrollY.value = window.scrollY
@@ -15,13 +17,20 @@ const handleScroll = () => {
   }
 }
 
+const handleResize = () => {
+  isMobile.value = window.innerWidth <= 768;
+}
+
 import HoverCard from '../components/ui/HoverCard.vue'
 
 onMounted(() => {
+  handleResize();
+  window.addEventListener('resize', handleResize, { passive: true })
   window.addEventListener('scroll', handleScroll, { passive: true })
 })
 
 onUnmounted(() => {
+  window.removeEventListener('resize', handleResize)
   window.removeEventListener('scroll', handleScroll)
 })
 </script>
@@ -34,8 +43,11 @@ onUnmounted(() => {
 
       <!-- IMAGE BACKGROUND -->
       <div
-        class="absolute inset-0 bg-cover bg-center scale-125 will-change-transform"
-        :style="{
+        class="absolute inset-0 bg-cover bg-center will-change-transform"
+        :class="{ 'scale-125': !isMobile }"
+        :style="isMobile ? {
+          backgroundImage: `url('/images/village/acciano-upscale.jpg')`
+        } : {
           backgroundImage: `url('/images/village/acciano-upscale.jpg')`,
           transform: `translate3d(0, ${scrollY * 0.4}px, 0)`,
           filter: `blur(${Math.min(12, 0.5 + scrollY * 0.015)}px) brightness(0.95)`
@@ -136,6 +148,23 @@ onUnmounted(() => {
         </HoverCard>
 
       </div>
+
+      <!-- PARC & PICNIC INFO -->
+      <div class="mt-16 mx-auto max-w-3xl bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-100 relative overflow-hidden">
+        <div class="relative z-10 flex flex-col md:flex-row items-center gap-8">
+          <div class="flex-1 text-left">
+            <h3 class="text-xl font-semibold text-slate-800 mb-3 flex items-center gap-2">
+              <span class="text-2xl">🌲</span> {{ $t('home.gites.parkTitle') }}
+            </h3>
+            <p class="text-slate-600 leading-relaxed text-[15px]">
+              {{ $t('home.gites.parkDesc') }}
+            </p>
+          </div>
+          <div class="w-full md:w-2/5 shrink-0">
+            <img src="/images/village/acciano-picnic.jpeg" alt="Picnic" class="rounded-xl shadow-sm object-cover w-full h-48 md:h-40 hover:scale-105 transition-transform duration-500" />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- LE VILLAGE -->
@@ -183,7 +212,7 @@ onUnmounted(() => {
           <div class="relative">
 
             <img
-              src="/images/village/acciano2.jpg"
+              src="/images/village/acciano-village.jpg"
               alt="Village d'Acciano"
               class="w-full h-[500px] object-cover rounded-2xl shadow-xl animate-slide-in-right"
             />

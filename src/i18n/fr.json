@@ -21,6 +21,8 @@
     "gites": {
       "title": "Les maisons",
       "subtitle": "Chaque logement a son charme unique et une vue imprenable sur les montagnes des Abruzzes",
+      "parkTitle": "Un accès privilégié à la nature",
+      "parkDesc": "Les gîtes ont un accès à un parc avec une vue splendide où il est possible de faire des pique-niques privés.",
       "viewGite": "Voir la maison",
       "book": "Réserver"
     }
@@ -113,6 +115,7 @@
     },
     "practical": {
       "title": "Informations pratiques",
+      "locationTitle": "Localisation",
       "location": "Les maisons de Jérôme sont situées dans le centre historique d'Acciano (XIIe siècle).",
       "breakfast": {
         "title": "Petit-déjeuner",
@@ -126,6 +129,25 @@
     "activities": {
       "title": "Activités & Découvertes",
       "desc": "Randonnées dans le parc naturel du Sirente-Velino, découverte de villages médiévaux, gastronomie des Abruzzes, marchés locaux et bien plus encore."
+    },
+    "places": {
+      "title": "Commerces & Vie Locale",
+      "cantina": { "title": "La Cantina", "desc": "Le Bar du village, et son micro Market où vous trouverez plusieurs produits alimentaires, toilette, ménage et autres. 8h>13h 16h>19h. Horaires plus amples en août. Ferme le dimanche." },
+      "tabac": { "title": "Bureau de Tabac, paris", "desc": "Luca, très pro et souriant. super ambiance pour ce genre de lieu. Tabacchi di Castelvecchio." },
+      "komodo": { "title": "Le Komodo Bar", "desc": "Repas simples. Ouvert 7j/7 de 7h à 1h. Glaces délicieuses de production locale à 100%. Équipe jeune et pro. Clientèle variée." },
+      "alkhaffe": { "title": "Al Khaffè", "desc": "Tenue par Carmine et ses enfants. Clientèle plus mature." },
+      "achillopolis": { "title": "Achillopolis", "desc": "La principale association du village. Organise la légendaire fête \"Pizza fritta e birra artigianale\" de trois soirs à la mi-août. Vous y trouverez aussi en vente le livre sur l'histoire du Géant d'Acciano, un voyageur et bienfaiteur." },
+      "giuseppe": { "title": "Giuseppe cuoio", "desc": "Travaille le cuir, artisan créatif et de qualité." },
+      "klab": { "title": "K’lab", "desc": "Salle de billard." },
+      "pizzeria": { "title": "Pizzeria", "desc": "Pizzeria locale." }
+    },
+    "events": {
+      "title": "Événements & Fêtes",
+      "kap": { "title": "Fête \"la Kap\"", "desc": "À Fontecchio, à 20min d'Acciano." },
+      "cerises": { "title": "La fête des Cerises \"La Sagra delle Ciliegie\"", "desc": "À Raiano, à 20min d'Acciano." },
+      "patronali": { "title": "Programma Feste Patronali", "desc": "Fêtes patronales d'Acciano." },
+      "parc": { "title": "Programme et info parc", "desc": "Informations et activités du parc naturel." },
+      "artichaut": { "title": "Fête des artichauts", "desc": "Fête locale célébrant les artichauts." }
     }
   },
   "contact": {

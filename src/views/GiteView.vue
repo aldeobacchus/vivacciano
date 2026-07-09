@@ -1,6 +1,7 @@
 <script setup>
 import { computed, ref } from "vue"
 import { useRoute } from "vue-router"
+import { Users, BedDouble, Bath, MapPin, Coffee, Car } from "lucide-vue-next"
 import HoverCard from "../components/ui/HoverCard.vue"
 import { gites } from "../data/gites"
 
@@ -35,35 +36,38 @@ function prevImage() {
     <!-- =====================
          CAROUSEL IMAGES
     ====================== -->
-    <div class="relative rounded-2xl overflow-hidden shadow-xl animate-fade-up">
+    <div class="relative rounded-2xl overflow-hidden shadow-xl animate-fade-up h-[60vh]">
 
       <img
-        :src="gite.images[currentImage]"
-        class="w-full h-[60vh] object-cover"
+        v-for="(img, i) in gite.images"
+        :key="img"
+        :src="img"
+        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500"
+        :class="i === currentImage ? 'opacity-100 z-10' : 'opacity-0 z-0'"
         :alt="gite.nom"
       />
 
       <!-- controls -->
       <button
         @click="prevImage"
-        class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/40 text-white px-3 py-2"
+        class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/40 text-white px-3 py-2 z-20 cursor-pointer"
       >
         ‹
       </button>
 
       <button
         @click="nextImage"
-        class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/40 text-white px-3 py-2"
+        class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/40 text-white px-3 py-2 z-20 cursor-pointer"
       >
         ›
       </button>
 
       <!-- dots -->
-      <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+      <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-20">
         <span
           v-for="(img, i) in gite.images"
           :key="i"
-          class="w-2 h-2 rounded-full"
+          class="w-2 h-2 rounded-full transition-colors duration-300"
           :class="i === currentImage ? 'bg-white' : 'bg-white/40'"
         />
       </div>
@@ -91,17 +95,17 @@ function prevImage() {
     <div class="grid md:grid-cols-3 gap-6 mt-8 animate-slide-in-right">
 
       <HoverCard contentClass="bg-white p-5 border border-slate-50 flex items-center justify-center gap-3">
-        <span class="text-xl">👥</span>
+        <Users class="w-6 h-6 text-slate-400" />
         <span class="font-medium text-slate-700">{{ gite.maxPersons }} {{ $t('gite.persons', gite.maxPersons) }}</span>
       </HoverCard>
 
       <HoverCard contentClass="bg-white p-5 border border-slate-50 flex items-center justify-center gap-3">
-        <span class="text-xl">🛏</span>
+        <BedDouble class="w-6 h-6 text-slate-400" />
         <span class="font-medium text-slate-700">{{ gite.bedrooms }} {{ $t('gite.bedrooms', gite.bedrooms) }}</span>
       </HoverCard>
 
       <HoverCard contentClass="bg-white p-5 border border-slate-50 flex items-center justify-center gap-3">
-        <span class="text-xl">🚿</span>
+        <Bath class="w-6 h-6 text-slate-400" />
         <span class="font-medium text-slate-700">{{ gite.bathrooms }} {{ $t('gite.bathrooms', gite.bathrooms) }}</span>
       </HoverCard>
 
@@ -225,16 +229,16 @@ function prevImage() {
       <div class="grid md:grid-cols-3 gap-6">
 
         <!-- Localisation -->
-        <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center">
-          <span class="text-3xl block mb-4">📍</span>
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center flex flex-col items-center">
+          <MapPin class="w-10 h-10 text-[#B05A2F] mb-4" />
           <p class="text-slate-600 leading-relaxed text-sm">
             {{ $t('village.practical.location') }}
           </p>
         </div>
 
         <!-- Petit-déjeuner -->
-        <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center">
-          <span class="text-3xl block mb-4">☕</span>
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center flex flex-col items-center">
+          <Coffee class="w-10 h-10 text-[#B05A2F] mb-4" />
           <h3 class="text-lg font-semibold text-slate-800 mb-2">{{ $t('village.practical.breakfast.title') }}</h3>
           <p class="text-slate-600 leading-relaxed text-sm">
             {{ $t('village.practical.breakfast.desc') }}
@@ -242,8 +246,8 @@ function prevImage() {
         </div>
 
         <!-- Parking -->
-        <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center">
-          <span class="text-3xl block mb-4">🅿️</span>
+        <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center flex flex-col items-center">
+          <Car class="w-10 h-10 text-[#B05A2F] mb-4" />
           <h3 class="text-lg font-semibold text-slate-800 mb-2">{{ $t('village.practical.parking.title') }}</h3>
           <p class="text-slate-600 leading-relaxed text-sm">
             {{ $t('village.practical.parking.desc') }}

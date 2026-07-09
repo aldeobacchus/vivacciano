@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { Phone, Mail } from 'lucide-vue-next'
 import HoverCard from '../components/ui/HoverCard.vue'
 
 const scrollY = ref(0)
@@ -55,7 +56,7 @@ onUnmounted(() => {
 
         <!-- CARTE TÉLÉPHONES (Italie & France) -->
         <HoverCard contentClass="bg-white p-8 border border-slate-50 flex flex-col items-center text-center gap-6">
-          <span class="text-4xl">📞</span>
+          <Phone class="w-10 h-10 text-[#B05A2F]" />
           
           <div class="space-y-4">
             <div>
@@ -82,7 +83,7 @@ onUnmounted(() => {
 
         <!-- CARTE EMAIL -->
         <HoverCard contentClass="bg-white p-8 border border-slate-50 flex flex-col items-center text-center gap-6">
-          <span class="text-4xl">✉️</span>
+          <Mail class="w-10 h-10 text-[#B05A2F]" />
           <h2 class="text-xl font-semibold text-slate-800">{{ $t('contact.emailLabel') }}</h2>
           <a
             :href="'mailto:' + $t('contact.emailAddress')"

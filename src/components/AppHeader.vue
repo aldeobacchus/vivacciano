@@ -18,7 +18,7 @@
           class="md:hidden p-2 rounded-md text-slate-700"
           @click="mobileMenu = !mobileMenu"
         >
-          ☰
+          <Menu class="w-6 h-6" />
         </button>
 
         <!-- DESKTOP MENU -->
@@ -66,7 +66,7 @@
           <!-- SELECTEUR DE LANGUE (desktop) -->
           <div class="relative group">
             <button class="text-slate-700 hover:text-[#B05A2F] font-medium flex items-center gap-1 uppercase cursor-pointer">
-              🌐 {{ locale }}
+              <Globe class="w-4 h-4" /> {{ locale }}
               <span class="text-xs transition-transform group-hover:rotate-180">▼</span>
             </button>
             <div
@@ -79,21 +79,21 @@
                 class="block w-full text-left px-4 py-2 text-sm hover:bg-orange-50 text-slate-700 transition cursor-pointer"
                 :class="{ 'font-semibold text-orange-600': locale === 'fr' }"
               >
-                🇫🇷 Français
+                Français
               </button>
               <button
                 @click="changeLocale('en')"
                 class="block w-full text-left px-4 py-2 text-sm hover:bg-orange-50 text-slate-700 transition cursor-pointer"
                 :class="{ 'font-semibold text-orange-600': locale === 'en' }"
               >
-                🇬🇧 English
+                English
               </button>
               <button
                 @click="changeLocale('it')"
                 class="block w-full text-left px-4 py-2 text-sm hover:bg-orange-50 text-slate-700 transition cursor-pointer"
                 :class="{ 'font-semibold text-orange-600': locale === 'it' }"
               >
-                🇮🇹 Italiano
+                Italiano
               </button>
             </div>
           </div>
@@ -147,27 +147,27 @@
 
         <!-- SELECTEUR DE LANGUE (mobile) -->
         <div class="pt-4 border-t border-slate-200 mt-2 flex gap-3 justify-start items-center">
-          <span class="text-sm text-slate-500 pl-1">🌐</span>
+          <span class="text-sm text-slate-500 pl-1"><Globe class="w-5 h-5" /></span>
           <button
             @click="changeLocale('fr'); closeMenu()"
             class="px-3 py-1 rounded text-sm transition cursor-pointer"
             :class="locale === 'fr' ? 'bg-orange-500 text-white font-medium' : 'bg-slate-100 text-slate-700'"
           >
-            🇫🇷 FR
+            FR
           </button>
           <button
             @click="changeLocale('en'); closeMenu()"
             class="px-3 py-1 rounded text-sm transition cursor-pointer"
             :class="locale === 'en' ? 'bg-orange-500 text-white font-medium' : 'bg-slate-100 text-slate-700'"
           >
-            🇬🇧 EN
+            EN
           </button>
           <button
             @click="changeLocale('it'); closeMenu()"
             class="px-3 py-1 rounded text-sm transition cursor-pointer"
             :class="locale === 'it' ? 'bg-orange-500 text-white font-medium' : 'bg-slate-100 text-slate-700'"
           >
-            🇮🇹 IT
+            IT
           </button>
         </div>
 
@@ -181,6 +181,7 @@
 import { ref } from "vue"
 import { RouterLink } from "vue-router"
 import { useI18n } from "vue-i18n"
+import { Globe, Menu } from "lucide-vue-next"
 import { gites } from "../data/gites"
 
 const { locale } = useI18n()
