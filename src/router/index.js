@@ -4,6 +4,7 @@ import HomeView from "../views/HomeView.vue";
 import GiteView from "../views/GiteView.vue";
 import VillageView from "../views/VillageView.vue";
 import ContactView from "../views/ContactView.vue";
+import ReservationView from "../views/ReservationView.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -32,6 +33,10 @@ const router = createRouter({
     {
       path: "/contact",
       component: ContactView,
+    },
+    {
+      path: "/reservation",
+      component: ReservationView,
     },
   ],
 });

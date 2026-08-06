@@ -1,8 +1,9 @@
 <script setup>
 import { computed, ref } from "vue"
 import { useRoute } from "vue-router"
-import { Users, BedDouble, Bath, MapPin, Coffee, Car } from "lucide-vue-next"
+import { Users, BedDouble, Bath, MapPin, Coffee, Car, Mail } from "lucide-vue-next"
 import HoverCard from "../components/ui/HoverCard.vue"
+import GiteCarousel from "../components/GiteCarousel.vue"
 import { gites } from "../data/gites"
 
 const route = useRoute()
@@ -12,22 +13,6 @@ const gite = computed(() =>
 )
 
 const showAmenities = ref(false)
-
-// carousel
-const currentImage = ref(0)
-
-function nextImage() {
-  if (!gite.value) return
-  currentImage.value =
-    (currentImage.value + 1) % gite.value.images.length
-}
-
-function prevImage() {
-  if (!gite.value) return
-  currentImage.value =
-    (currentImage.value - 1 + gite.value.images.length) %
-    gite.value.images.length
-}
 </script>
 
 <template>
@@ -36,42 +21,8 @@ function prevImage() {
     <!-- =====================
          CAROUSEL IMAGES
     ====================== -->
-    <div class="relative rounded-2xl overflow-hidden shadow-xl animate-fade-up h-[60vh]">
-
-      <img
-        v-for="(img, i) in gite.images"
-        :key="img"
-        :src="img"
-        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500"
-        :class="i === currentImage ? 'opacity-100 z-10' : 'opacity-0 z-0'"
-        :alt="gite.nom"
-      />
-
-      <!-- controls -->
-      <button
-        @click="prevImage"
-        class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/40 text-white px-3 py-2 z-20 cursor-pointer"
-      >
-        ‹
-      </button>
-
-      <button
-        @click="nextImage"
-        class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/40 text-white px-3 py-2 z-20 cursor-pointer"
-      >
-        ›
-      </button>
-
-      <!-- dots -->
-      <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-20">
-        <span
-          v-for="(img, i) in gite.images"
-          :key="i"
-          class="w-2 h-2 rounded-full transition-colors duration-300"
-          :class="i === currentImage ? 'bg-white' : 'bg-white/40'"
-        />
-      </div>
-
+    <div class="animate-fade-up">
+      <GiteCarousel :images="gite.images" :alt-title="gite.nom" />
     </div>
 
     <!-- =====================
@@ -112,13 +63,61 @@ function prevImage() {
     </div>
 
     <!-- =====================
-         DESCRIPTION
+         DESCRIPTION & AILES
     ====================== -->
     <div class="mt-10 space-y-6">
 
-      <p class="text-slate-700 leading-relaxed">
+      <p class="text-slate-700 leading-relaxed text-lg">
         {{ $t('gites_data.' + gite.id + '.longDescription') }}
       </p>
+
+      <!-- SECTIONS AILES (si Gran Gigante) -->
+      <div v-if="gite.wings && gite.wings.length" class="mt-8 bg-orange-50/60 border border-orange-100 rounded-2xl p-6 sm:p-8">
+        <h3 class="text-xl font-semibold text-slate-800 mb-2">
+          {{ $t('gites_data.' + gite.id + '.wingsTitle') }}
+        </h3>
+        <p class="text-slate-600 text-sm mb-6">
+          {{ $t('gites_data.' + gite.id + '.wingsDesc') }}
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div class="bg-white p-5 rounded-xl border border-orange-100/80 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-800 text-lg">
+                  {{ $t('gites_data.' + gite.id + '.wingGigante') }}
+                </h4>
+                <span class="px-3 py-1 bg-orange-100 text-[#B05A2F] text-xs font-semibold rounded-full">
+                  2 couchages
+                </span>
+              </div>
+              <p class="text-slate-600 text-sm">
+                {{ $t('gites_data.' + gite.id + '.wingGiganteDesc') }}
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white p-5 rounded-xl border border-orange-100/80 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h4 class="font-bold text-slate-800 text-lg">
+                  {{ $t('gites_data.' + gite.id + '.wing26') }}
+                </h4>
+                <span class="px-3 py-1 bg-orange-100 text-[#B05A2F] text-xs font-semibold rounded-full">
+                  4 couchages
+                </span>
+              </div>
+              <p class="text-slate-600 text-sm">
+                {{ $t('gites_data.' + gite.id + '.wing26Desc') }}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-orange-200/60 text-sm text-slate-600 font-medium text-center">
+          {{ $t('gites_data.' + gite.id + '.wingsBookingNote') }}
+        </div>
+      </div>
 
     </div>
 
@@ -157,7 +156,7 @@ function prevImage() {
           </HoverCard>
 
           <!-- TERRASSE CARD (inside the grid, spanning full width) -->
-          <div v-if="gite.id === 'gite-3'" class="md:col-span-2 lg:col-span-3 bg-white rounded-xl p-6 border border-slate-100 shadow-sm mt-2 relative overflow-hidden">
+          <div v-if="gite.amenities && gite.amenities.includes('terrace')" class="md:col-span-2 lg:col-span-3 bg-white rounded-xl p-6 border border-slate-100 shadow-sm mt-2 relative overflow-hidden">
             <div class="absolute -top-12 -right-12 w-32 h-32 bg-orange-100 rounded-full blur-2xl opacity-50 pointer-events-none"></div>
             <h3 class="text-lg font-semibold text-slate-800 mb-4 flex items-center gap-2 relative z-10">
               La Terrasse
@@ -258,15 +257,28 @@ function prevImage() {
     </div>
 
     <!-- =====================
-         PRIX + CTA
+         RESERVATION & CTA
     ====================== -->
-    <div class="mt-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+    <div class="mt-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4 p-6 bg-orange-50/50 border border-orange-100 rounded-2xl">
 
-      <div class="text-2xl font-semibold text-slate-800">
-        {{ gite.price }}€ / {{ $t('gite.night') }}
+      <div>
+        <h3 class="text-xl font-bold text-slate-800">
+          {{ $t('gite.book_email') }}
+        </h3>
+        <p class="text-sm text-slate-600 mt-1">
+          Demandez votre séjour directement par formulaire ou réservez via les plateformes.
+        </p>
       </div>
 
-      <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto mt-4 md:mt-0">
+      <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto mt-2 md:mt-0">
+        <router-link
+          :to="`/reservation?gite=${gite.id}`"
+          class="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium text-white transition-all duration-300 rounded-full bg-[#B05A2F] hover:bg-[#964a25] shadow-md hover:shadow-lg hover:-translate-y-1 cursor-pointer"
+        >
+          <Mail class="w-5 h-5" />
+          {{ $t('gite.book_email') }}
+        </router-link>
+
         <a
           :href="gite.airbnb"
           target="_blank"

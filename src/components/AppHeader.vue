@@ -24,7 +24,7 @@
         <!-- DESKTOP MENU -->
         <div class="hidden md:flex items-center gap-8">
 
-          <!-- NOS GÎTES DROPDOWN -->
+          <!-- NOS MAISONS DROPDOWN -->
           <div class="relative group">
 
             <button class="text-slate-700 hover:text-[#B05A2F] font-medium flex items-center gap-1 cursor-pointer">
@@ -65,35 +65,39 @@
 
           <!-- SELECTEUR DE LANGUE (desktop) -->
           <div class="relative group">
-            <button class="text-slate-700 hover:text-[#B05A2F] font-medium flex items-center gap-1 uppercase cursor-pointer">
-              <Globe class="w-4 h-4" /> {{ locale }}
-              <span class="text-xs transition-transform group-hover:rotate-180">▼</span>
+            <button class="text-slate-700 hover:text-[#B05A2F] font-medium flex items-center gap-1.5 uppercase cursor-pointer py-1 px-2 rounded-md hover:bg-slate-50 transition">
+              <span class="text-base">{{ locale === 'fr' ? '🇫🇷' : locale === 'en' ? '🇬🇧' : '🇮🇹' }}</span>
+              <span class="text-sm font-semibold">{{ locale }}</span>
+              <span class="text-[10px] text-slate-400 transition-transform group-hover:rotate-180">▼</span>
             </button>
             <div
-              class="absolute right-0 mt-2 w-28 bg-white border border-slate-100 rounded-lg shadow-lg
+              class="absolute right-0 mt-1 w-36 bg-white border border-slate-100 rounded-xl shadow-lg
                      opacity-0 invisible group-hover:opacity-100 group-hover:visible
-                     transition-all duration-200 z-50 py-1"
+                     transition-all duration-200 z-50 py-1.5 overflow-hidden"
             >
               <button
                 @click="changeLocale('fr')"
-                class="block w-full text-left px-4 py-2 text-sm hover:bg-orange-50 text-slate-700 transition cursor-pointer"
-                :class="{ 'font-semibold text-orange-600': locale === 'fr' }"
+                class="flex items-center gap-2.5 w-full text-left px-3.5 py-2 text-sm hover:bg-orange-50/80 text-slate-700 transition cursor-pointer"
+                :class="{ 'font-semibold text-orange-600 bg-orange-50/50': locale === 'fr' }"
               >
-                Français
+                <span class="text-base">🇫🇷</span>
+                <span>Français</span>
               </button>
               <button
                 @click="changeLocale('en')"
-                class="block w-full text-left px-4 py-2 text-sm hover:bg-orange-50 text-slate-700 transition cursor-pointer"
-                :class="{ 'font-semibold text-orange-600': locale === 'en' }"
+                class="flex items-center gap-2.5 w-full text-left px-3.5 py-2 text-sm hover:bg-orange-50/80 text-slate-700 transition cursor-pointer"
+                :class="{ 'font-semibold text-orange-600 bg-orange-50/50': locale === 'en' }"
               >
-                English
+                <span class="text-base">🇬🇧</span>
+                <span>English</span>
               </button>
               <button
                 @click="changeLocale('it')"
-                class="block w-full text-left px-4 py-2 text-sm hover:bg-orange-50 text-slate-700 transition cursor-pointer"
-                :class="{ 'font-semibold text-orange-600': locale === 'it' }"
+                class="flex items-center gap-2.5 w-full text-left px-3.5 py-2 text-sm hover:bg-orange-50/80 text-slate-700 transition cursor-pointer"
+                :class="{ 'font-semibold text-orange-600 bg-orange-50/50': locale === 'it' }"
               >
-                Italiano
+                <span class="text-base">🇮🇹</span>
+                <span>Italiano</span>
               </button>
             </div>
           </div>
@@ -107,7 +111,7 @@
         class="md:hidden pb-4 space-y-2"
       >
 
-        <!-- NOS GÎTES (mobile dropdown) -->
+        <!-- NOS MAISONS (mobile dropdown) -->
         <div>
           <button
             class="w-full text-left py-2 font-medium text-slate-700"
@@ -146,28 +150,31 @@
         </RouterLink>
 
         <!-- SELECTEUR DE LANGUE (mobile) -->
-        <div class="pt-4 border-t border-slate-200 mt-2 flex gap-3 justify-start items-center">
-          <span class="text-sm text-slate-500 pl-1"><Globe class="w-5 h-5" /></span>
+        <div class="pt-4 border-t border-slate-200 mt-2 flex gap-2 justify-start items-center">
+          <span class="text-sm text-slate-500 pl-1 mr-1"><Globe class="w-4 h-4" /></span>
           <button
             @click="changeLocale('fr'); closeMenu()"
-            class="px-3 py-1 rounded text-sm transition cursor-pointer"
-            :class="locale === 'fr' ? 'bg-orange-500 text-white font-medium' : 'bg-slate-100 text-slate-700'"
+            class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm transition cursor-pointer border"
+            :class="locale === 'fr' ? 'bg-orange-500 text-white font-medium border-orange-500 shadow-xs' : 'bg-slate-50 text-slate-700 border-slate-200/80 hover:bg-slate-100'"
           >
-            FR
+            <span>🇫🇷</span>
+            <span>FR</span>
           </button>
           <button
             @click="changeLocale('en'); closeMenu()"
-            class="px-3 py-1 rounded text-sm transition cursor-pointer"
-            :class="locale === 'en' ? 'bg-orange-500 text-white font-medium' : 'bg-slate-100 text-slate-700'"
+            class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm transition cursor-pointer border"
+            :class="locale === 'en' ? 'bg-orange-500 text-white font-medium border-orange-500 shadow-xs' : 'bg-slate-50 text-slate-700 border-slate-200/80 hover:bg-slate-100'"
           >
-            EN
+            <span>🇬🇧</span>
+            <span>EN</span>
           </button>
           <button
             @click="changeLocale('it'); closeMenu()"
-            class="px-3 py-1 rounded text-sm transition cursor-pointer"
-            :class="locale === 'it' ? 'bg-orange-500 text-white font-medium' : 'bg-slate-100 text-slate-700'"
+            class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm transition cursor-pointer border"
+            :class="locale === 'it' ? 'bg-orange-500 text-white font-medium border-orange-500 shadow-xs' : 'bg-slate-50 text-slate-700 border-slate-200/80 hover:bg-slate-100'"
           >
-            IT
+            <span>🇮🇹</span>
+            <span>IT</span>
           </button>
         </div>
 

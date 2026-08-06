@@ -114,7 +114,7 @@ const villageImages = [
         </div>
         <div class="relative">
             <img
-              src="/images/village/acciano-village.jpg"
+              src="/images/village/acciano-view.jpeg"
               alt="Acciano"
               class="w-full h-[400px] object-cover rounded-2xl shadow-xl animate-slide-in-right"
             />

@@ -36,7 +36,7 @@ onUnmounted(() => {
       <div
         class="absolute inset-0 bg-cover bg-center scale-125 will-change-transform"
         :style="{
-          backgroundImage: `url('/images/village/acciano-upscale.jpg')`,
+          backgroundImage: `url('/images/village/acciano-view.jpeg')`,
           transform: `translate3d(0, ${scrollY * 0.4}px, 0)`,
           filter: `blur(${Math.min(12, 0.5 + scrollY * 0.015)}px) brightness(0.95)`
         }"
@@ -76,7 +76,7 @@ onUnmounted(() => {
       </div>
     </section>
 
-    <!-- SECTION GÎTES -->
+    <!-- SECTION MAISONS -->
     <section id="gites" class="max-w-7xl mx-auto px-6 py-20">
 
       <div class="text-center mb-12">
@@ -89,7 +89,7 @@ onUnmounted(() => {
       </div>
 
       <!-- GRID -->
-      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
 
         <HoverCard
           as="article"
@@ -102,7 +102,7 @@ onUnmounted(() => {
           <!-- IMAGE -->
           <router-link :to="`/gites/${gite.id}`" class="block h-56 overflow-hidden">
             <img
-              :src="gite.images[0]"
+              :src="typeof gite.images[0] === 'string' ? gite.images[0] : gite.images[0].url"
               :alt="gite.nom"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
             />

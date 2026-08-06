@@ -2,7 +2,7 @@
   "nav": {
     "home": "Home",
     "gites": "The houses",
-    "village": "The village",
+    "village": "The village and surroundings",
     "contact": "Contact us"
   },
   "home": {
@@ -31,6 +31,7 @@
     "equipment": "Amenities",
     "seeMore": "+ See more",
     "seeLess": "See less",
+    "book_email": "Book via email",
     "book_airbnb": "Book on Airbnb",
     "book_booking": "Book on Booking",
     "persons": "guest | guests",
@@ -39,18 +40,47 @@
     "night": "night",
     "notFound": "House not found"
   },
+  "reservation": {
+    "title": "Booking Request",
+    "subtitle": "Fill out the form below to request a booking at Jérôme's houses.",
+    "selectGite": "Select House",
+    "allGites": "Choose house...",
+    "name": "Full Name",
+    "namePlaceholder": "e.g. John Doe",
+    "email": "Email Address",
+    "emailPlaceholder": "e.g. john.doe{'@'}gmail.com",
+    "phone": "Phone Number",
+    "phonePlaceholder": "e.g. +33 6 12 34 56 78",
+    "arrival": "Check-in Date",
+    "departure": "Check-out Date",
+    "guests": "Number of Guests",
+    "guestsPlaceholder": "e.g. 4 guests",
+    "message": "Message / Special Requests",
+    "messagePlaceholder": "Provide any additional details about your stay (arrival time, special needs...)",
+    "submit": "Send Booking Request",
+    "submitting": "Sending...",
+    "successTitle": "Request Sent Successfully!",
+    "successMessage": "Thank you for your booking request. We will contact you by email very soon to confirm availability.",
+    "backHome": "Back to Home",
+    "sendNew": "Submit another request",
+    "errorTitle": "Submission Error",
+    "errorMessage": "An error occurred while sending your request. Please try again or contact us directly."
+  },
   "gites_data": {
     "gite-1": {
       "shortDescription": "A bright and charming studio.",
       "longDescription": "A bright studio located in the historic center of Acciano, ideal for recharging in the heart of nature with views of the Abruzzi mountains."
     },
     "gite-2": {
-      "shortDescription": "Generous comfort, splendid mountain views.",
-      "longDescription": "A bright two-room house in a quiet setting, ideal for relaxing in nature with views of the Sirente ridges."
-    },
-    "gite-3": {
-      "shortDescription": "Spacious and friendly house, with a beautiful terrace.",
-      "longDescription": "Spacious and friendly house, with a beautiful terrace."
+      "shortDescription": "Large modular house made of two wings, with a beautiful terrace.",
+      "longDescription": "Gran Gigante is a large house composed of two wings (the Gigante wing and the 26 wing). It offers great accommodation capacity (6 guests) and can be rented either in its entirety or by individual wing.",
+      "wingsTitle": "House Composition",
+      "wingsDesc": "This house consists of two modular wings:",
+      "wingGigante": "Gigante Wing",
+      "wingGiganteDesc": "2 guests — Cozy and independent space",
+      "wing26": "26 Wing",
+      "wing26Desc": "4 guests — Spacious with direct access to the 25 m² terrace",
+      "wingsBookingNote": "You can book either the entire house (6 guests) or just one of the two wings."
     }
   },
   "amenities": {
@@ -158,9 +188,13 @@
     "emergency": "+33 6 09 48 89 34",
     "emergencyLabel": "From France",
     "emailLabel": "Email",
+    "emailAddress": "gabord35{'@'}gmail.com",
     "sendEmail": "Send an email",
     "emailSubject": "Information request — Jérôme's houses",
     "tagline": "Authentic stays in the heart of Sirente Velino National Park.",
     "navigation": "Navigation"
+  },
+  "footer": {
+    "allRightsReserved": "All rights reserved."
   }
 }

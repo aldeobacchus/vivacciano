@@ -38,12 +38,29 @@ export const gites = [
     shortDescription: "Studio lumineux et charmant.",
     longDescription:
       "Un studio lumineux situé dans un environnement calme, idéal pour se ressourcer en pleine nature avec vue sur les montagnes.",
+    // Vous pouvez inscrire les images sous forme d'objet { url: "...", caption: "Description..." }
+    // ou sous forme de simple chemin texte "/images/...". Si caption est présent, il s'affichera dans le carrousel.
     images: [
-      "/images/gites/sole/sole-1.jpg",
-      "/images/gites/sole/sole-2.jpg",
-      "/images/gites/sole/sole-3.jpg",
-      "/images/gites/sole/sole-4.jpg",
-      "/images/gites/sole/sole-key.jpeg"
+      {
+        url: "/images/gites/sole/sole-1.jpg",
+        caption: "Salon."
+      },
+      {
+        url: "/images/gites/sole/sole-2.jpg",
+        caption: "Tablme à manger."
+      },
+      {
+        url: "/images/gites/sole/sole-3.jpg",
+        caption: "Sublime vue depuis la fenetre du salon."
+      },
+      {
+        url: "/images/gites/sole/sole-4.jpg",
+        caption: "Vue sur les abruzzes."
+      },
+      {
+        url: "/images/gites/sole/sole-key.jpeg",
+        caption: "Accès autonome et sécurisé par boîte à clés."
+      }
     ],
     maxPersons: 2,
     bedrooms: 1,
@@ -55,44 +72,26 @@ export const gites = [
   },
   {
     id: "gite-2",
-    nom: "Il Gigante",
-    shortDescription: "Top confort, visite bellissime.",
+    nom: "Gran Gigante",
+    shortDescription: "Grande maison modulable en deux ailes avec belle terrasse.",
     longDescription:
-      "Un gite de deux pieces lumineux situé dans un environnement calme, idéal pour se ressourcer en pleine nature avec vue sur les montagnes.",
-    images: [
-      "/images/gites/gigante/gigante-1.jpeg",
-      "/images/gites/gigante/gigante-2.jpeg",
-      "/images/gites/gigante/gigante-3.jpeg",
-      "/images/gites/gigante/gigante-4.jpeg",
-      "/images/gites/gigante/gigante-5.jpeg",
-      "/images/gites/gigante/gigante-6.jpeg",
-      "/images/gites/gigante/gigante-7.jpeg",
-      "/images/gites/gigante/gigante-8.jpeg",
-      "/images/gites/gigante/gigante-key.jpeg",
-      "/images/gites/gigante/gigante-street.jpeg",
-      "/images/gites/gigante/gigante-street2.jpeg",
-      "/images/gites/gigante/gigante-street3.jpeg"
+      "Le Gran Gigante est une grande maison composée de deux ailes (l'aile Gigante et l'aile 26). Il est possible de réserver soit la totalité de la maison pour 6 personnes, soit seulement une aile en fonction de vos besoins.",
+    wings: [
+      { id: "gigante", name: "Aile Gigante", maxPersons: 2 },
+      { id: "26", name: "Aile 26", maxPersons: 4 }
     ],
-    maxPersons: 3,
-    bedrooms: 2,
-    bathrooms: 2,
-    price: 180,
-    amenities: commonAmenities,
-    airbnb: "https://www.airbnb.fr/",
-    booking: ""
-  },
-  {
-    id: "gite-3",
-    nom: "Il 26",
-    shortDescription: "Maison spacieuse et conviviale, avec belle terrasse",
-    longDescription:
-      "Un gite spacieux et lumineux situé dans un environnement calme, idéal pour se ressourcer en pleine nature avec vue sur les montagnes.",
     images: [
-      "/images/gites/26/26-1.jpeg",
+      {
+        url: "/images/gites/26/26-1.jpeg",
+        caption: "Grande cuisine toute équipée."
+      },
       "/images/gites/26/26-2.jpeg",
-      "/images/gites/26/26-3.jpeg",
+      {
+        url: "/images/gites/26/26-5.jpeg",
+        caption: "Espace repas extérieur pour vos soirées d'été."
+      },
       "/images/gites/26/26-4.jpeg",
-      "/images/gites/26/26-5.jpeg",
+      "/images/gites/26/26-3.jpeg",
       "/images/gites/26/26-6.jpeg",
       "/images/gites/26/26-7.jpeg",
       "/images/gites/26/26-8.jpeg",
@@ -129,15 +128,26 @@ export const gites = [
       "/images/gites/26/26-street2.jpeg",
       "/images/gites/26/26-street3.jpeg",
       "/images/gites/26/26-street4.jpeg",
-      "/images/gites/26/26-street5.jpeg"
+      "/images/gites/26/26-street5.jpeg",
+      "/images/gites/gigante/gigante-1.jpeg",
+      "/images/gites/gigante/gigante-2.jpeg",
+      "/images/gites/gigante/gigante-3.jpeg",
+      "/images/gites/gigante/gigante-4.jpeg",
+      "/images/gites/gigante/gigante-5.jpeg",
+      "/images/gites/gigante/gigante-6.jpeg",
+      "/images/gites/gigante/gigante-7.jpeg",
+      "/images/gites/gigante/gigante-8.jpeg",
+      "/images/gites/gigante/gigante-key.jpeg",
+      "/images/gites/gigante/gigante-street.jpeg",
+      "/images/gites/gigante/gigante-street2.jpeg",
+      "/images/gites/gigante/gigante-street3.jpeg"
     ],
     maxPersons: 6,
-    bedrooms: 3,
-    bathrooms: 2,
-    price: 210,
+    bedrooms: 5,
+    bathrooms: 4,
+    price: 240,
     amenities: casa2628Amenities,
     airbnb: "https://www.airbnb.fr/",
     booking: ""
   }
-
 ];

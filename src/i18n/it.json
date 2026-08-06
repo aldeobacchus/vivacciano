@@ -2,7 +2,7 @@
   "nav": {
     "home": "Home",
     "gites": "Le case",
-    "village": "Il borgo",
+    "village": "Il borgo e i suoi dintorni",
     "contact": "Contattaci"
   },
   "home": {
@@ -29,6 +29,7 @@
     "equipment": "Servizi",
     "seeMore": "+ Mostra altro",
     "seeLess": "Mostra meno",
+    "book_email": "Prenota via email",
     "book_airbnb": "Prenota su Airbnb",
     "book_booking": "Prenota su Booking",
     "persons": "ospite | ospiti",
@@ -37,18 +38,47 @@
     "night": "notte",
     "notFound": "Casa non trovata"
   },
+  "reservation": {
+    "title": "Richiesta di Prenotazione",
+    "subtitle": "Compila il modulo sottostante per richiedere una prenotazione per le case di Jérôme.",
+    "selectGite": "Seleziona Casa",
+    "allGites": "Scegli la casa...",
+    "name": "Nome e Cognome",
+    "namePlaceholder": "es. Mario Rossi",
+    "email": "Indirizzo Email",
+    "emailPlaceholder": "es. mario.rossi{'@'}gmail.com",
+    "phone": "Numero di Telefono",
+    "phonePlaceholder": "es. +39 340 123 4567",
+    "arrival": "Data di Arrivo",
+    "departure": "Data di Partenza",
+    "guests": "Numero di Ospiti",
+    "guestsPlaceholder": "es. 4 persone",
+    "message": "Messaggio / Richieste Speciali",
+    "messagePlaceholder": "Indica dettagli utili sul tuo soggiorno (orari di arrivo, esigenze particolari...)",
+    "submit": "Invia Richiesta di Prenotazione",
+    "submitting": "Invio in corso...",
+    "successTitle": "Richiesta Inviata con Successo!",
+    "successMessage": "Grazie per la tua richiesta di prenotazione. Ti contatteremo via email molto presto per confermare la disponibilità.",
+    "backHome": "Torna alla Home",
+    "sendNew": "Invia un'altra richiesta",
+    "errorTitle": "Errore di Invio",
+    "errorMessage": "Si è verificato un errore durante l'invio. Riprova o contattaci direttamente."
+  },
   "gites_data": {
     "gite-1": {
       "shortDescription": "Monolocale luminoso e affascinante.",
       "longDescription": "Un luminoso monolocale situato nel centro storico di Acciano, ideale per rigenerarsi in mezzo alla natura con vista sulle montagne abruzzesi."
     },
     "gite-2": {
-      "shortDescription": "Comfort generoso, viste splendide sulle montagne.",
-      "longDescription": "Una luminosa casa di due stanze in un ambiente tranquillo, ideale per rilassarsi in mezzo alla natura con vista sulle creste del Sirente."
-    },
-    "gite-3": {
-      "shortDescription": "Casa spaziosa e accogliente, con bella terrazza.",
-      "longDescription": "Casa spaziosa e accogliente, con bella terrazza."
+      "shortDescription": "Grande casa modulare composta da due ali, con splendida terrazza.",
+      "longDescription": "La casa Gran Gigante è una grande casa composta da due ali (l'ala Gigante e l'ala 26). Offre un'ottima capacità di accoglienza (6 posti letto) e la possibilità di essere affittata nella sua interezza o per singola ala.",
+      "wingsTitle": "Composizione della casa",
+      "wingsDesc": "Questa casa è composta da due ali modulari:",
+      "wingGigante": "Ala Gigante",
+      "wingGiganteDesc": "2 posti letto — Spazio accogliente e indipendente",
+      "wing26": "Ala 26",
+      "wing26Desc": "4 posti letto — Spaziosa con accesso diretto alla terrazza di 25 m²",
+      "wingsBookingNote": "È possibile prenotare l'intera casa (6 posti letto) oppure solo una delle due ali."
     }
   },
   "amenities": {
@@ -136,9 +166,13 @@
     "emergency": "+33 6 09 48 89 34",
     "emergencyLabel": "Dalla Francia",
     "emailLabel": "Email",
+    "emailAddress": "gabord35{'@'}gmail.com",
     "sendEmail": "Invia un'email",
     "emailSubject": "Richiesta informazioni — le case di Jérôme",
     "tagline": "Soggiorni autentici nel cuore del Parco Nazionale Sirente Velino.",
     "navigation": "Navigazione"
+  },
+  "footer": {
+    "allRightsReserved": "Tutti i diritti riservati."
   }
 }
