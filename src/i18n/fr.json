@@ -162,22 +162,61 @@
     },
     "places": {
       "title": "Commerces & Vie Locale",
-      "cantina": { "title": "La Cantina", "desc": "Le Bar du village, et son micro Market où vous trouverez plusieurs produits alimentaires, toilette, ménage et autres. 8h>13h 16h>19h. Horaires plus amples en août. Ferme le dimanche." },
-      "tabac": { "title": "Bureau de Tabac, paris", "desc": "Luca, très pro et souriant. super ambiance pour ce genre de lieu. Tabacchi di Castelvecchio." },
-      "komodo": { "title": "Le Komodo Bar", "desc": "Repas simples. Ouvert 7j/7 de 7h à 1h. Glaces délicieuses de production locale à 100%. Équipe jeune et pro. Clientèle variée." },
-      "alkhaffe": { "title": "Al Khaffè", "desc": "Tenue par Carmine et ses enfants. Clientèle plus mature." },
-      "achillopolis": { "title": "Achillopolis", "desc": "La principale association du village. Organise la légendaire fête \"Pizza fritta e birra artigianale\" de trois soirs à la mi-août. Vous y trouverez aussi en vente le livre sur l'histoire du Géant d'Acciano, un voyageur et bienfaiteur." },
-      "giuseppe": { "title": "Giuseppe cuoio", "desc": "Travaille le cuir, artisan créatif et de qualité." },
-      "klab": { "title": "K’lab", "desc": "Salle de billard." },
-      "pizzeria": { "title": "Pizzeria", "desc": "Pizzeria locale." }
+      "cantina": {
+        "title": "La Cantina",
+        "desc": "Le Bar du village, et son micro Market où vous trouverez plusieurs produits alimentaires, toilette, ménage et autres. 8h>13h 16h>19h. Horaires plus amples en août. Ferme le dimanche."
+      },
+      "tabac": {
+        "title": "Bureau de Tabac, paris",
+        "desc": "Luca, très pro et souriant. super ambiance pour ce genre de lieu. Tabacchi di Castelvecchio."
+      },
+      "komodo": {
+        "title": "Le Komodo Bar",
+        "desc": "Repas simples. Ouvert 7j/7 de 7h à 1h. Glaces délicieuses de production locale à 100%. Équipe jeune et pro. Clientèle variée."
+      },
+      "alkhaffe": {
+        "title": "Al Khaffè",
+        "desc": "Tenue par Carmine et ses enfants. Clientèle plus mature."
+      },
+      "achillopolis": {
+        "title": "Achillopolis",
+        "desc": "La principale association du village. Organise la légendaire fête \"Pizza fritta e birra artigianale\" de trois soirs à la mi-août. Vous y trouverez aussi en vente le livre sur l'histoire du Géant d'Acciano, un voyageur et bienfaiteur."
+      },
+      "giuseppe": {
+        "title": "Giuseppe cuoio",
+        "desc": "Travaille le cuir, artisan créatif et de qualité."
+      },
+      "klab": {
+        "title": "K’lab",
+        "desc": "Salle de billard."
+      },
+      "pizzeria": {
+        "title": "Pizzeria",
+        "desc": "Pizzeria locale."
+      }
     },
     "events": {
       "title": "Événements & Fêtes",
-      "kap": { "title": "Fête \"la Kap\"", "desc": "À Fontecchio, à 20min d'Acciano." },
-      "cerises": { "title": "La fête des Cerises \"La Sagra delle Ciliegie\"", "desc": "À Raiano, à 20min d'Acciano." },
-      "patronali": { "title": "Programma Feste Patronali", "desc": "Fêtes patronales d'Acciano." },
-      "parc": { "title": "Programme et info parc", "desc": "Informations et activités du parc naturel." },
-      "artichaut": { "title": "Fête des artichauts", "desc": "Fête locale célébrant les artichauts." }
+      "kap": {
+        "title": "Fête \"la Kap\"",
+        "desc": "À Fontecchio, à 20min d'Acciano."
+      },
+      "cerises": {
+        "title": "La fête des Cerises \"La Sagra delle Ciliegie\"",
+        "desc": "À Raiano, à 20min d'Acciano."
+      },
+      "patronali": {
+        "title": "Programma Feste Patronali",
+        "desc": "Fêtes patronales d'Acciano."
+      },
+      "parc": {
+        "title": "Programme et info parc",
+        "desc": "Informations et activités du parc naturel."
+      },
+      "artichaut": {
+        "title": "Fête des artichauts",
+        "desc": "Fête locale célébrant les artichauts."
+      }
     }
   },
   "contact": {
@@ -188,7 +227,7 @@
     "emergency": "+33 6 09 48 89 34",
     "emergencyLabel": "Depuis la France",
     "emailLabel": "Email",
-    "emailAddress": "gabord35{'@'}gmail.com",
+    "emailAddress": "info{'@'}bellacciano.it",
     "sendEmail": "Envoyer un email",
     "emailSubject": "Demande d'information — les maisons de Jérôme",
     "tagline": "Séjours authentiques au cœur du parc national Sirente Velino.",

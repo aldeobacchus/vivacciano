@@ -33,7 +33,7 @@ const selectedGiteObject = computed(() => {
   return gites.find(g => g.id === form.value.giteId) || null
 })
 
-const targetEmail = '27ffa91b3e91db40844f6784d2f6183c'
+const targetEmail = 'info@bellacciano.it'
 
 async function handleSubmit() {
   status.value = 'submitting'
