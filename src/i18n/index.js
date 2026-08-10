@@ -1,10 +1,11 @@
 import { createI18n } from "vue-i18n";
+import { getDefaultLocale } from "./detectLanguage";
 
 import fr from "./fr.json";
 import en from "./en.json";
 import it from "./it.json";
 
-const savedLocale = localStorage.getItem("locale") || "fr";
+const savedLocale = localStorage.getItem("locale") || getDefaultLocale();
 
 const i18n = createI18n({
   legacy: false,

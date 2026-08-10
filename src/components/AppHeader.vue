@@ -66,7 +66,7 @@
           <!-- SELECTEUR DE LANGUE (desktop) -->
           <div class="relative group">
             <button class="text-slate-700 hover:text-[#B05A2F] font-medium flex items-center gap-1.5 uppercase cursor-pointer py-1 px-2 rounded-md hover:bg-slate-50 transition">
-              <span class="text-base">{{ locale === 'fr' ? '🇫🇷' : locale === 'en' ? '🇬🇧' : '🇮🇹' }}</span>
+              <FlagIcon :code="locale" />
               <span class="text-sm font-semibold">{{ locale }}</span>
               <span class="text-[10px] text-slate-400 transition-transform group-hover:rotate-180">▼</span>
             </button>
@@ -76,28 +76,14 @@
                      transition-all duration-200 z-50 py-1.5 overflow-hidden"
             >
               <button
-                @click="changeLocale('fr')"
+                v-for="lang in availableLanguages"
+                :key="lang.code"
+                @click="changeLocale(lang.code)"
                 class="flex items-center gap-2.5 w-full text-left px-3.5 py-2 text-sm hover:bg-orange-50/80 text-slate-700 transition cursor-pointer"
-                :class="{ 'font-semibold text-orange-600 bg-orange-50/50': locale === 'fr' }"
+                :class="{ 'font-semibold text-orange-600 bg-orange-50/50': locale === lang.code }"
               >
-                <span class="text-base">🇫🇷</span>
-                <span>Français</span>
-              </button>
-              <button
-                @click="changeLocale('en')"
-                class="flex items-center gap-2.5 w-full text-left px-3.5 py-2 text-sm hover:bg-orange-50/80 text-slate-700 transition cursor-pointer"
-                :class="{ 'font-semibold text-orange-600 bg-orange-50/50': locale === 'en' }"
-              >
-                <span class="text-base">🇬🇧</span>
-                <span>English</span>
-              </button>
-              <button
-                @click="changeLocale('it')"
-                class="flex items-center gap-2.5 w-full text-left px-3.5 py-2 text-sm hover:bg-orange-50/80 text-slate-700 transition cursor-pointer"
-                :class="{ 'font-semibold text-orange-600 bg-orange-50/50': locale === 'it' }"
-              >
-                <span class="text-base">🇮🇹</span>
-                <span>Italiano</span>
+                <FlagIcon :code="lang.code" />
+                <span>{{ lang.label }}</span>
               </button>
             </div>
           </div>
@@ -153,28 +139,14 @@
         <div class="pt-4 border-t border-slate-200 mt-2 flex gap-2 justify-start items-center">
           <span class="text-sm text-slate-500 pl-1 mr-1"><Globe class="w-4 h-4" /></span>
           <button
-            @click="changeLocale('fr'); closeMenu()"
+            v-for="lang in availableLanguages"
+            :key="lang.code"
+            @click="changeLocale(lang.code); closeMenu()"
             class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm transition cursor-pointer border"
-            :class="locale === 'fr' ? 'bg-orange-500 text-white font-medium border-orange-500 shadow-xs' : 'bg-slate-50 text-slate-700 border-slate-200/80 hover:bg-slate-100'"
+            :class="locale === lang.code ? 'bg-orange-500 text-white font-medium border-orange-500 shadow-xs' : 'bg-slate-50 text-slate-700 border-slate-200/80 hover:bg-slate-100'"
           >
-            <span>🇫🇷</span>
-            <span>FR</span>
-          </button>
-          <button
-            @click="changeLocale('en'); closeMenu()"
-            class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm transition cursor-pointer border"
-            :class="locale === 'en' ? 'bg-orange-500 text-white font-medium border-orange-500 shadow-xs' : 'bg-slate-50 text-slate-700 border-slate-200/80 hover:bg-slate-100'"
-          >
-            <span>🇬🇧</span>
-            <span>EN</span>
-          </button>
-          <button
-            @click="changeLocale('it'); closeMenu()"
-            class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm transition cursor-pointer border"
-            :class="locale === 'it' ? 'bg-orange-500 text-white font-medium border-orange-500 shadow-xs' : 'bg-slate-50 text-slate-700 border-slate-200/80 hover:bg-slate-100'"
-          >
-            <span>🇮🇹</span>
-            <span>IT</span>
+            <FlagIcon :code="lang.code" />
+            <span>{{ lang.shortLabel }}</span>
           </button>
         </div>
 
@@ -185,13 +157,21 @@
 </template>
 
 <script setup>
-import { ref } from "vue"
+import { ref, onMounted } from "vue"
 import { RouterLink } from "vue-router"
 import { useI18n } from "vue-i18n"
 import { Globe, Menu } from "lucide-vue-next"
+import FlagIcon from "./ui/FlagIcon.vue"
 import { gites } from "../data/gites"
+import { useCountryLanguage } from "../i18n/detectLanguage"
 
 const { locale } = useI18n()
+const i18n = useI18n()
+const { availableLanguages, initIpDetection } = useCountryLanguage()
+
+onMounted(() => {
+  initIpDetection(i18n)
+})
 
 const mobileMenu = ref(false)
 const openGites = ref(false)

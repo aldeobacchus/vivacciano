@@ -1,7 +1,7 @@
 <script setup>
 import { computed, ref } from "vue"
 import { useRoute } from "vue-router"
-import { Users, BedDouble, Bath, MapPin, Coffee, Car, Mail } from "lucide-vue-next"
+import { Users, BedDouble, Bath, MapPin, Coffee, Car, Mail, Utensils } from "lucide-vue-next"
 import HoverCard from "../components/ui/HoverCard.vue"
 import GiteCarousel from "../components/GiteCarousel.vue"
 import { gites } from "../data/gites"
@@ -235,9 +235,9 @@ const showAmenities = ref(false)
           </p>
         </div>
 
-        <!-- Petit-déjeuner -->
+        <!-- Repas -->
         <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center flex flex-col items-center">
-          <Coffee class="w-10 h-10 text-[#B05A2F] mb-4" />
+          <Utensils class="w-10 h-10 text-[#B05A2F] mb-4" />
           <h3 class="text-lg font-semibold text-slate-800 mb-2">{{ $t('village.practical.breakfast.title') }}</h3>
           <p class="text-slate-600 leading-relaxed text-sm">
             {{ $t('village.practical.breakfast.desc') }}

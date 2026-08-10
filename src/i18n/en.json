@@ -42,7 +42,7 @@
   },
   "reservation": {
     "title": "Booking Request",
-    "subtitle": "Fill out the form below to request a booking at Jérôme's houses.",
+    "subtitle": "Fill out the form below to request a booking at Bellacciano's houses.",
     "selectGite": "Select House",
     "allGites": "Choose house...",
     "name": "Full Name",
@@ -67,11 +67,16 @@
     "errorMessage": "An error occurred while sending your request. Please try again or contact us directly."
   },
   "gites_data": {
-    "gite-1": {
+    "sole": {
       "shortDescription": "A bright and charming studio.",
-      "longDescription": "A bright studio located in the historic center of Acciano, ideal for recharging in the heart of nature with views of the Abruzzi mountains."
+      "longDescription": "A bright studio located in the historic center of Acciano, ideal for recharging in the heart of nature with views of the Abruzzi mountains.",
+      "captions": {
+        "sole_3": "Sublime view from the living room window.",
+        "sole_4": "View of the Abruzzi.",
+        "sole_key": "Self check-in and secure key box access."
+      }
     },
-    "gite-2": {
+    "gg": {
       "shortDescription": "Large modular house made of two wings, with a beautiful terrace.",
       "longDescription": "Gran Gigante is a large house composed of two wings (the Gigante wing and the 26 wing). It offers great accommodation capacity (6 guests) and can be rented either in its entirety or by individual wing.",
       "wingsTitle": "House Composition",
@@ -80,11 +85,15 @@
       "wingGiganteDesc": "2 guests — Cozy and independent space",
       "wing26": "26 Wing",
       "wing26Desc": "4 guests — Spacious with direct access to the 25 m² terrace",
-      "wingsBookingNote": "You can book either the entire house (6 guests) or just one of the two wings."
+      "wingsBookingNote": "You can book either the entire house (6 guests) or just one of the two wings.",
+      "captions": {
+        "26_12": "26 Wing - Living Room",
+        "gigante_1": "Gran Gigante Wing."
+      }
     }
   },
   "amenities": {
-    "kitchen": "Fully equipped kitchen",
+    "kitchen": "Fully equipped kitchen for 5-6 guests",
     "heating": "Heating",
     "fireplaces": "2 fireplaces",
     "hot_water": "Unlimited hot water",
@@ -116,26 +125,41 @@
     },
     "history": {
       "title": "History & Heritage",
-      "desc": "Surrounded by holm oak woods, Acciano is perched on a rocky spur between the Bufame and Pietre Fitte mountains, offering a striking view of the rocky ridges of Sirente. The steep slopes frame the valley where the Aterno-Pescara river flows. Founded in the 12th century, the village preserves the authenticity of its historic center and its centuries-old traditions."
+      "desc": "Surrounded by holm oak woods, Acciano is perched on a rocky spur between the Bufame and Pietre Fitte mountains, offering a striking view of the rocky ridges of Sirente. The steep slopes frame the valley where the Aterno-Pescara river flows. Founded in the 12th century, the village preserves the authenticity of its historic center and its centuries-old traditions.",
+      "giganteView": "The view from Gran Gigante"
     },
     "access": {
-      "title": "How to get there",
+      "title": "How to get here",
+      "subtitle": "3 main ways to reach us",
       "airport": "2 hours from Roma Fiumicino International Airport",
-      "car": {
-        "title": "By car",
-        "desc": "Car rental available at the airport. Easy access by car to the historic center, free parking 20-60m from the house."
+      "plane": {
+        "title": "By plane",
+        "desc": "Arrival 2 hours from Roma Fiumicino International Airport, then several options to reach the village:"
+      },
+      "carRental": {
+        "title": "Car rental",
+        "desc": "Available at the airport for your drive to Acciano."
       },
       "bus": {
         "title": "By bus",
-        "desc": "Various buses from Rome, stop 10 km from Acciano. We will pick you up free of charge."
+        "desc": "Various buses from Rome (departures every 2h30, around €20 per person), stop 10 km from Acciano. We will pick you up free of charge."
       },
       "shuttle": {
-        "title": "Private shuttle",
-        "desc": "On reservation from the airport: Car (3-4 pers.) €120 / Mini Van (7 pers.) €280"
+        "title": "Bellacciano Shuttle",
+        "desc": "On reservation: Car (3-4 guests) or Mini Van (7 guests)."
       },
       "taxi": {
         "title": "By taxi",
-        "desc": "Taxis available at the airport — approximately €360"
+        "desc": "Taxis available at the airport (approximately €360 per ride)."
+      },
+      "ownCar": {
+        "title": "With your personal vehicle",
+        "desc": "Easy access to the historic center of Acciano. Free parking 20-60m from the house."
+      },
+      "train": {
+        "title": "By train",
+        "badge": "Not recommended",
+        "desc": "Not recommended: there are only 1 to 2 trains per day at Acciano station."
       }
     },
     "welcome": {
@@ -146,10 +170,10 @@
     "practical": {
       "title": "Practical information",
       "locationTitle": "Location",
-      "location": "Jérôme's houses are located in the historic center of Acciano (12th century).",
+      "location": "Bellacciano's houses are located in the historic center of Acciano (12th century).",
       "breakfast": {
-        "title": "Breakfast",
-        "desc": "Optional breakfast at La Cantina: €4.60 per person. Located across from the main square, Piazza del Municipio."
+        "title": "Meals",
+        "desc": "Each house is equipped with a full kitchen, a Nespresso machine, Italian moka pots, and tableware. A mini-market is available at \"La Cantina\" bar."
       },
       "parking": {
         "title": "Parking",
@@ -160,19 +184,18 @@
       "title": "Activities & Discoveries",
       "desc": "Hiking in the Sirente-Velino Natural Park, discovery of medieval villages, Abruzzi gastronomy, local markets and much more."
     },
+    "gallery": {
+      "title": "The village in pictures"
+    },
     "places": {
       "title": "Shops & Local Life",
       "cantina": {
         "title": "La Cantina",
         "desc": "The village bar, with its micro Market where you will find food, toiletries, cleaning products and more. 8am>1pm 4pm>7pm. Extended hours in August. Closed on Sundays."
       },
-      "tabac": {
-        "title": "Tobacco Shop, betting",
-        "desc": "Luca, very professional and smiling. Great atmosphere for this kind of place. Tabacchi di Castelvecchio."
-      },
       "komodo": {
         "title": "Le Komodo Bar",
-        "desc": "Simple meals. Open 7/7 from 7am to 1am. Delicious 100% locally produced ice cream. Young and professional team. Diverse clientele."
+        "desc": "Simple meals. Open 7/7 from 7am to 1am. \"K'Lab\" pool hall. Delicious 100% locally produced ice cream. Young and professional team. Diverse clientele."
       },
       "alkhaffe": {
         "title": "Al Khaffè",
@@ -182,17 +205,16 @@
         "title": "Achillopolis",
         "desc": "The main village association. Organizes the legendary \"Pizza fritta e birra artigianale\" festival for three evenings in mid-August. You will also find for sale the book on the history of the Giant of Acciano, a traveler and benefactor."
       },
-      "giuseppe": {
-        "title": "Giuseppe cuoio",
-        "desc": "Leatherworker, creative and high-quality artisan."
-      },
-      "klab": {
-        "title": "K’lab",
-        "desc": "Billiard room."
-      },
       "pizzeria": {
         "title": "Pizzeria",
         "desc": "Local pizzeria."
+      }
+    },
+    "artisans": {
+      "title": "Artisans & Craftsmen",
+      "giuseppe": {
+        "title": "Giuseppe cuoio",
+        "desc": "Leatherworker, creative and high-quality artisan."
       }
     },
     "events": {
@@ -229,7 +251,7 @@
     "emailLabel": "Email",
     "emailAddress": "info{'@'}bellacciano.it",
     "sendEmail": "Send an email",
-    "emailSubject": "Information request — Jérôme's houses",
+    "emailSubject": "Information request — Bellacciano's houses",
     "tagline": "Authentic stays in the heart of Sirente Velino National Park.",
     "navigation": "Navigation"
   },

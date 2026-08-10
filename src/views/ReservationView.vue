@@ -33,11 +33,11 @@ const selectedGiteObject = computed(() => {
   return gites.find(g => g.id === form.value.giteId) || null
 })
 
-const targetEmail = 'info@bellacciano.it'
+const targetEmail = '0f9941f3392a314408f215d10290be65'
 
 async function handleSubmit() {
   status.value = 'submitting'
-  errorMessage.value = ''
+  errorMessage.value = 'An error occurred during the reservation'
 
   const giteName = selectedGiteObject.value ? selectedGiteObject.value.nom : 'Non spécifié'
 

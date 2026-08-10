@@ -33,45 +33,7 @@ const casa2628Amenities = [
 
 export const gites = [
   {
-    id: "gite-1",
-    nom: "Sole",
-    shortDescription: "Studio lumineux et charmant.",
-    longDescription:
-      "Un studio lumineux situé dans un environnement calme, idéal pour se ressourcer en pleine nature avec vue sur les montagnes.",
-    // Vous pouvez inscrire les images sous forme d'objet { url: "...", caption: "Description..." }
-    // ou sous forme de simple chemin texte "/images/...". Si caption est présent, il s'affichera dans le carrousel.
-    images: [
-      {
-        url: "/images/gites/sole/sole-1.jpg",
-        caption: "Salon."
-      },
-      {
-        url: "/images/gites/sole/sole-2.jpg",
-        caption: "Tablme à manger."
-      },
-      {
-        url: "/images/gites/sole/sole-3.jpg",
-        caption: "Sublime vue depuis la fenetre du salon."
-      },
-      {
-        url: "/images/gites/sole/sole-4.jpg",
-        caption: "Vue sur les abruzzes."
-      },
-      {
-        url: "/images/gites/sole/sole-key.jpeg",
-        caption: "Accès autonome et sécurisé par boîte à clés."
-      }
-    ],
-    maxPersons: 2,
-    bedrooms: 1,
-    bathrooms: 1,
-    price: 120,
-    amenities: commonAmenities,
-    airbnb: "https://www.airbnb.fr/",
-    booking: ""
-  },
-  {
-    id: "gite-2",
+    id: "gg",
     nom: "Gran Gigante",
     shortDescription: "Grande maison modulable en deux ailes avec belle terrasse.",
     longDescription:
@@ -81,72 +43,114 @@ export const gites = [
       { id: "26", name: "Aile 26", maxPersons: 4 }
     ],
     images: [
+      //{
+      //  url: "/images/gites/26/26-1.jpeg",
+      //  caption: "Grande cuisine toute équipée."
+      //},
+
+      //"/images/gites/26/26-2.jpeg",
+
+      //{
+      //  url: "/images/gites/26/26-5.jpeg",
+      //  caption: "Espace repas extérieur pour vos soirées d'été."
+      //},
+
+      //"/images/gites/26/26-4.jpeg",
+      //"/images/gites/26/26-3.jpeg",
+      //"/images/gites/26/26-6.jpeg",
+      //"/images/gites/26/26-7.jpeg",
+      //"/images/gites/26/26-8.jpeg",
+      //"/images/gites/26/26-9.jpeg",
+      //"/images/gites/26/26-10.jpeg",
+      //"/images/gites/26/26-11.jpeg",
       {
-        url: "/images/gites/26/26-1.jpeg",
-        caption: "Grande cuisine toute équipée."
+        url: "/images/gites/26/26-12.jpeg",
+        caption: "gites_data.gg.captions.26_12"
       },
-      "/images/gites/26/26-2.jpeg",
-      {
-        url: "/images/gites/26/26-5.jpeg",
-        caption: "Espace repas extérieur pour vos soirées d'été."
-      },
-      "/images/gites/26/26-4.jpeg",
-      "/images/gites/26/26-3.jpeg",
-      "/images/gites/26/26-6.jpeg",
-      "/images/gites/26/26-7.jpeg",
-      "/images/gites/26/26-8.jpeg",
-      "/images/gites/26/26-9.jpeg",
-      "/images/gites/26/26-10.jpeg",
-      "/images/gites/26/26-11.jpeg",
-      "/images/gites/26/26-12.jpeg",
-      "/images/gites/26/26-13.jpeg",
-      "/images/gites/26/26-14.jpeg",
-      "/images/gites/26/26-15.jpeg",
-      "/images/gites/26/26-16.jpeg",
-      "/images/gites/26/26-17.jpeg",
-      "/images/gites/26/26-18.jpeg",
-      "/images/gites/26/26-19.jpeg",
-      "/images/gites/26/26-20.jpeg",
-      "/images/gites/26/26-21.jpeg",
-      "/images/gites/26/26-22.jpeg",
-      "/images/gites/26/26-23.jpeg",
+      //"/images/gites/26/26-13.jpeg",
+      //"/images/gites/26/26-14.jpeg",
+      //"/images/gites/26/26-15.jpeg",
+      //"/images/gites/26/26-16.jpeg",
+      //"/images/gites/26/26-17.jpeg",
+      //"/images/gites/26/26-18.jpeg",
+      //"/images/gites/26/26-19.jpeg",
+      //"/images/gites/26/26-20.jpeg",
+      //"/images/gites/26/26-21.jpeg",
+      //"/images/gites/26/26-22.jpeg",
+      //"/images/gites/26/26-23.jpeg",
       "/images/gites/26/26--24.jpeg",
-      "/images/gites/26/26--25.jpeg",
-      "/images/gites/26/26-26.jpeg",
-      "/images/gites/26/26-27.jpeg",
-      "/images/gites/26/26-28.jpeg",
+      //"/images/gites/26/26--25.jpeg",
+      //"/images/gites/26/26-26.jpeg",
+      //"/images/gites/26/26-27.jpeg",
+      //"/images/gites/26/26-28.jpeg",
       "/images/gites/26/26-29.jpeg",
       "/images/gites/26/26-30.jpeg",
-      "/images/gites/26/26-31.jpeg",
-      "/images/gites/26/26-32.jpeg",
-      "/images/gites/26/26-33.jpeg",
-      "/images/gites/26/26-34.jpeg",
-      "/images/gites/26/26-35.jpeg",
+      //"/images/gites/26/26-31.jpeg",
+      //"/images/gites/26/26-32.jpeg",
+      //"/images/gites/26/26-33.jpeg",
+      //"/images/gites/26/26-34.jpeg",
+      //"/images/gites/26/26-35.jpeg",
       "/images/gites/26/26-36.jpeg",
-      "/images/gites/26/26-key.jpeg",
-      "/images/gites/26/26-street.jpeg",
+      {
+        url: "/images/gites/gigante/gigante-1.jpeg",
+        caption: "gites_data.gg.captions.gigante_1"
+      },
+
+      "/images/gites/gigante/gigante-2.jpeg",
+      "/images/gites/gigante/gigante-9.jpg",
+      "/images/gites/gigante/gigante-10.jpg",
+      "/images/gites/gigante/gigante-8.jpeg",
+      //"/images/gites/26/26-street.jpeg",
       "/images/gites/26/26-street2.jpeg",
       "/images/gites/26/26-street3.jpeg",
-      "/images/gites/26/26-street4.jpeg",
+      //"/images/gites/26/26-street4.jpeg",
       "/images/gites/26/26-street5.jpeg",
-      "/images/gites/gigante/gigante-1.jpeg",
-      "/images/gites/gigante/gigante-2.jpeg",
-      "/images/gites/gigante/gigante-3.jpeg",
+      //"/images/gites/gigante/gigante-3.jpeg",
       "/images/gites/gigante/gigante-4.jpeg",
       "/images/gites/gigante/gigante-5.jpeg",
       "/images/gites/gigante/gigante-6.jpeg",
-      "/images/gites/gigante/gigante-7.jpeg",
-      "/images/gites/gigante/gigante-8.jpeg",
-      "/images/gites/gigante/gigante-key.jpeg",
+      //"/images/gites/gigante/gigante-7.jpeg",
       "/images/gites/gigante/gigante-street.jpeg",
-      "/images/gites/gigante/gigante-street2.jpeg",
-      "/images/gites/gigante/gigante-street3.jpeg"
+      //"/images/gites/gigante/gigante-street2.jpeg",
+      //"/images/gites/gigante/gigante-street3.jpeg",
+      "/images/gites/gigante/gigante-key.jpeg",
+      "/images/gites/26/26-key.jpeg"
     ],
     maxPersons: 6,
     bedrooms: 5,
     bathrooms: 4,
     price: 240,
     amenities: casa2628Amenities,
+    airbnb: "https://www.airbnb.fr/",
+    booking: ""
+  },
+  {
+    id: "sole",
+    nom: "Sole",
+    shortDescription: "Studio lumineux et charmant.",
+    longDescription:
+      "Un studio lumineux situé dans un environnement calme, idéal pour se ressourcer en pleine nature avec vue sur les montagnes.",
+    // Vous pouvez inscrire les images sous forme d'objet { url: "...", caption: "Description..." }
+    // ou sous forme de simple chemin texte "/images/...". Si caption est présent, il s'affichera dans le carrousel.
+    images: [
+      {
+        url: "/images/gites/sole/sole-3.jpg",
+        caption: "gites_data.sole.captions.sole_3"
+      },
+      {
+        url: "/images/gites/sole/sole-4.jpg",
+        caption: "gites_data.sole.captions.sole_4"
+      },
+      {
+        url: "/images/gites/sole/sole-key.jpeg",
+        caption: "gites_data.sole.captions.sole_key"
+      }
+    ],
+    maxPersons: 2,
+    bedrooms: 1,
+    bathrooms: 1,
+    price: 120,
+    amenities: commonAmenities,
     airbnb: "https://www.airbnb.fr/",
     booking: ""
   }

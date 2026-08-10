@@ -21,6 +21,8 @@
     "gites": {
       "title": "Le case",
       "subtitle": "Ogni alloggio ha il suo fascino unico e una vista mozzafiato sulle montagne abruzzesi",
+      "parkTitle": "Un accesso privilegiato alla natura",
+      "parkDesc": "Le case hanno accesso a un parco con una vista splendida dove è possibile fare picnic privati.",
       "viewGite": "Vedi la casa",
       "book": "Prenota"
     }
@@ -40,7 +42,7 @@
   },
   "reservation": {
     "title": "Richiesta di Prenotazione",
-    "subtitle": "Compila il modulo sottostante per richiedere una prenotazione per le case di Jérôme.",
+    "subtitle": "Compila il modulo sottostante per richiedere una prenotazione per le case di Bellacciano.",
     "selectGite": "Seleziona Casa",
     "allGites": "Scegli la casa...",
     "name": "Nome e Cognome",
@@ -65,11 +67,16 @@
     "errorMessage": "Si è verificato un errore durante l'invio. Riprova o contattaci direttamente."
   },
   "gites_data": {
-    "gite-1": {
+    "sole": {
       "shortDescription": "Monolocale luminoso e affascinante.",
-      "longDescription": "Un luminoso monolocale situato nel centro storico di Acciano, ideale per rigenerarsi in mezzo alla natura con vista sulle montagne abruzzesi."
+      "longDescription": "Un luminoso monolocale situato nel centro storico di Acciano, ideale per rigenerarsi in mezzo alla natura con vista sulle montagne abruzzesi.",
+      "captions": {
+        "sole_3": "Splendida vista dalla finestra del soggiorno.",
+        "sole_4": "Vista sugli Abruzzi.",
+        "sole_key": "Accesso autonomo e sicuro tramite cassetta portachiavi."
+      }
     },
-    "gite-2": {
+    "gg": {
       "shortDescription": "Grande casa modulare composta da due ali, con splendida terrazza.",
       "longDescription": "La casa Gran Gigante è una grande casa composta da due ali (l'ala Gigante e l'ala 26). Offre un'ottima capacità di accoglienza (6 posti letto) e la possibilità di essere affittata nella sua interezza o per singola ala.",
       "wingsTitle": "Composizione della casa",
@@ -78,11 +85,15 @@
       "wingGiganteDesc": "2 posti letto — Spazio accogliente e indipendente",
       "wing26": "Ala 26",
       "wing26Desc": "4 posti letto — Spaziosa con accesso diretto alla terrazza di 25 m²",
-      "wingsBookingNote": "È possibile prenotare l'intera casa (6 posti letto) oppure solo una delle due ali."
+      "wingsBookingNote": "È possibile prenotare l'intera casa (6 posti letto) oppure solo una delle due ali.",
+      "captions": {
+        "26_12": "Ala 26 - Soggiorno",
+        "gigante_1": "Ala Gran Gigante."
+      }
     }
   },
   "amenities": {
-    "kitchen": "Cucina attrezzata",
+    "kitchen": "Cucina attrezzata 5-6 persone",
     "heating": "Riscaldamento",
     "fireplaces": "2 caminetti",
     "hot_water": "Acqua calda illimitata",
@@ -114,26 +125,41 @@
     },
     "history": {
       "title": "Storia & Patrimonio",
-      "desc": "Circondata da boschi di lecci, Acciano è arroccata su uno sperone di roccia tra i monti Bufame e Pietre Fitte, offrendo una vista suggestiva sulle creste rocciose del Sirente. I ripidi pendii incorniciano la valle dove scorre il fiume Aterno-Pescara. Fondato nel XII secolo, il borgo conserva l'autenticità del suo centro storico e le sue tradizioni secolari."
+      "desc": "Circondata da boschi di lecci, Acciano è arroccata su uno sperone di roccia tra i monti Bufame e Pietre Fitte, offrendo una vista suggestiva sulle creste rocciose del Sirente. I ripidi pendii incorniciano la valle dove scorre il fiume Aterno-Pescara. Fondato nel XII secolo, il borgo conserva l'autenticità del suo centro storico e le sue tradizioni secolari.",
+      "giganteView": "La vista da Gran Gigante"
     },
     "access": {
       "title": "Come arrivare",
+      "subtitle": "I 3 modi principali per raggiungerci",
       "airport": "A 2 ore dall'aeroporto Internazionale Roma Fiumicino",
-      "car": {
-        "title": "In auto",
-        "desc": "Noleggio auto disponibile in aeroporto. Accesso facile in auto al centro storico, parcheggio gratuito a 20-60m dalla casa."
+      "plane": {
+        "title": "In aereo",
+        "desc": "Arrivo a 2 ore dall'aeroporto Internazionale Roma Fiumicino, poi diverse opzioni per raggiungere il borgo:"
+      },
+      "carRental": {
+        "title": "Noleggio auto",
+        "desc": "Disponibile in aeroporto per guidare fino ad Acciano."
       },
       "bus": {
         "title": "In autobus",
-        "desc": "Vari autobus da Roma, fermata a 10 km da Acciano. Veniamo a prendervi gratuitamente."
+        "desc": "Vari autobus da Roma (partenze ogni 2h30, circa 20€ a persona), fermata a 10 km da Acciano. Veniamo a prendervi gratuitamente."
       },
       "shuttle": {
-        "title": "Navetta privata",
-        "desc": "Su prenotazione dall'aeroporto: Auto (3-4 pers.) 120€ / Mini Van (7 pers.) 280€"
+        "title": "Navetta Bellacciano",
+        "desc": "Su prenotazione: Auto (3-4 pers.) o Mini Van (7 pers.)."
       },
       "taxi": {
         "title": "In taxi",
-        "desc": "Taxi disponibili in aeroporto — circa 360€"
+        "desc": "Taxi disponibili in aeroporto (circa 360€ a corsa)."
+      },
+      "ownCar": {
+        "title": "Con il vostro veicolo privato",
+        "desc": "Accesso facile fino al centro storico di Acciano. Parcheggio gratuito a 20-60m a seconda della casa."
+      },
+      "train": {
+        "title": "In treno",
+        "badge": "Sconsigliato",
+        "desc": "Opzione sconsigliata: ci sono solo 1 o 2 treni al giorno alla stazione di Acciano."
       }
     },
     "welcome": {
@@ -143,10 +169,11 @@
     },
     "practical": {
       "title": "Informazioni pratiche",
-      "location": "Les Case di Jérôme si trovano nel centro storico di Acciano (XII secolo).",
+      "locationTitle": "Posizione",
+      "location": "Le Case di Bellacciano si trovano nel centro storico di Acciano (XII secolo).",
       "breakfast": {
-        "title": "Colazione",
-        "desc": "Colazione opzionale alla Cantina: 4,60€ a persona. Situata di fronte alla piazza principale, Piazza del Municipio."
+        "title": "Pasti",
+        "desc": "Ogni casa è dotata di cucina completa, macchina Nespresso, caffettiere italiane e servizio di stoviglie. Un mini-market è disponibile presso il bar \"La Cantina\"."
       },
       "parking": {
         "title": "Parcheggio",
@@ -156,6 +183,39 @@
     "activities": {
       "title": "Attività & Scoperte",
       "desc": "Escursioni nel Parco Naturale del Sirente-Velino, scoperta di borghi medievali, gastronomia abruzzese, mercati locali e molto altro."
+    },
+    "gallery": {
+      "title": "Il borgo in immagini"
+    },
+    "places": {
+      "title": "Commerci & Vita Locale",
+      "cantina": {
+        "title": "La Cantina",
+        "desc": "Il bar del paese e il suo micro Market dove troverete prodotti alimentari, per l'igiene, per la casa e altro. 8:00>13:00 16:00>19:00. Orari prolungati ad agosto. Chiuso la domenica."
+      },
+      "komodo": {
+        "title": "Le Komodo Bar",
+        "desc": "Pasti semplici. Aperto 7/7 dalle 7:00 all'1:00. Sala da biliardo « K'Lab ». Deliziosi gelati 100% locali. Team giovane e professionale. Clientela varia."
+      },
+      "alkhaffe": {
+        "title": "Al Khaffè",
+        "desc": "Gestito da Carmine e dai suoi figli. Clientela più matura."
+      },
+      "achillopolis": {
+        "title": "Achillopolis",
+        "desc": "La principale associazione del paese. Organizza la leggendaria festa \"Pizza fritta e birra artigianale\" di tre serate a metà agosto. Vi si trova anche in vendita il libro sulla storia del Gigante di Acciano, un viaggiatore e benefattore."
+      },
+      "pizzeria": {
+        "title": "Pizzeria",
+        "desc": "Pizzeria locale."
+      }
+    },
+    "artisans": {
+      "title": "Artigiani",
+      "giuseppe": {
+        "title": "Giuseppe cuoio",
+        "desc": "Lavora il cuoio, artigiano creativo e di qualità."
+      }
     }
   },
   "contact": {
@@ -168,7 +228,7 @@
     "emailLabel": "Email",
     "emailAddress": "info{'@'}bellacciano.it",
     "sendEmail": "Invia un'email",
-    "emailSubject": "Richiesta informazioni — le case di Jérôme",
+    "emailSubject": "Richiesta informazioni — le case di Bellacciano",
     "tagline": "Soggiorni autentici nel cuore del Parco Nazionale Sirente Velino.",
     "navigation": "Navigazione"
   },

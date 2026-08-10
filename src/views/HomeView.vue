@@ -1,6 +1,7 @@
 <script setup>
-import { gites } from "../data/gites"
 import { ref, onMounted, onUnmounted } from 'vue'
+import { Trees } from 'lucide-vue-next'
+import { gites } from "../data/gites"
 
 const scrollY = ref(0)
 let ticking = false
@@ -142,7 +143,7 @@ onUnmounted(() => {
         <div class="relative z-10 flex flex-col md:flex-row items-center gap-8">
           <div class="flex-1 text-left">
             <h3 class="text-xl font-semibold text-slate-800 mb-3 flex items-center gap-2">
-              <span class="text-2xl">🌲</span> {{ $t('home.gites.parkTitle') }}
+              <Trees class="w-6 h-6 text-[#B05A2F]" /> {{ $t('home.gites.parkTitle') }}
             </h3>
             <p class="text-slate-600 leading-relaxed text-[15px]">
               {{ $t('home.gites.parkDesc') }}

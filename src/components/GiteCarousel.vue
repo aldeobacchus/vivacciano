@@ -1,6 +1,9 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted, watch, nextTick } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { ChevronLeft, ChevronRight, Maximize2, X, Info } from 'lucide-vue-next'
+
+const { t, te } = useI18n()
 
 const props = defineProps({
   images: {
@@ -14,15 +17,24 @@ const props = defineProps({
   }
 })
 
-// Normalize images array so it handles both string URLs and object format { url, caption }
+// Normalize images array so it handles both string URLs, object format { url, caption }, and i18n keys
 const normalizedImages = computed(() => {
   return props.images.map(img => {
     if (typeof img === 'string') {
       return { url: img, caption: null }
     }
+    const rawCaption = img?.caption || img?.description || null
+    let caption = null
+    if (rawCaption) {
+      if (typeof rawCaption === 'string') {
+        caption = te(rawCaption) ? t(rawCaption) : rawCaption
+      } else if (typeof rawCaption === 'object') {
+        caption = rawCaption.fr || Object.values(rawCaption)[0] || null
+      }
+    }
     return {
       url: img?.url || img?.src || '',
-      caption: img?.caption || img?.description || null
+      caption
     }
   })
 })
