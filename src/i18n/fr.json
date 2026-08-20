@@ -73,7 +73,8 @@
       "captions": {
         "img_1": "Sublime vue depuis la fenêtre du salon.",
         "img_2": "Vue sur les Abruzzes.",
-        "img_3": "Accès autonome et sécurisé par boîte à clés."
+        "img_3": "Clé à votre disposition",
+        "ext": "Maison Sole - Vue extérieure"
       }
     },
     "gg": {
@@ -82,9 +83,24 @@
       "wingsTitle": "Composition de la maison",
       "wingsDesc": "Cette maison est composée de deux ailes modulables :",
       "wingGigante": "Aile Gigante",
-      "wingGiganteDesc": "2 couchages — Espace chaleureux et indépendant",
+      "wingGiganteBadge": "2 couchages",
+      "wingGiganteDesc": "2 pièces · 2 couchages · Salon · Cuisine complète équipée · Douche · WC",
+      "wingGiganteFeatures": [
+        "2 pièces",
+        "2 couchages",
+        "Salon",
+        "Cuisine complète équipée",
+        "Douche",
+        "WC"
+      ],
       "wing26": "Aile 26",
-      "wing26Desc": "4 couchages — Spacieuse avec belle terrasse de 25 m²",
+      "wing26Badge": "4 à 6 couchages",
+      "wing26Desc": "4 pièces · 4 couchages (2 couchages d'appoints possibles) · Grande terrasse",
+      "wing26Features": [
+        "4 pièces",
+        "4 couchages (2 couchages d'appoints possibles)",
+        "Grande terrasse"
+      ],
       "wingsBookingNote": "Vous pouvez réserver soit la totalité de la maison (6 couchages), soit seulement l'une des deux ailes.",
       "captions": {
         "img_1": "Aile 26 - Salon",
@@ -106,22 +122,22 @@
         "img_17": "Aile Gigante - Clé",
         "img_18": "Aile \"26\"",
         "img_19": "Aile \"26\"",
-        "img_20": "Aile Gigante"
+        "img_20": "Aile Gigante",
+        "ext": "Gran Gigante - Vue exterieure",
+        "view": "Vue depuis Gran Gigante"
       }
     }
   },
   "amenities": {
-    "kitchen": "Cuisine équipée 5-6 personnes",
-    "heating": "Chauffage",
-    "fireplaces": "2 cheminées",
-    "hot_water": "Eau chaude non limitée",
-    "coffee_capsules": "Machine à café capsules",
+    "kitchen": "Cuisine équipée dans chaque aile",
+    "fireplaces": "2 cheminées (aile 26)",
+    "coffee_capsules": "Machine à café capsules dans chaque aile",
     "coffee_italian": "Cafetière italienne",
     "candles": "Bougies d'ambiance",
     "hairdryer": "Sèche-cheveux",
     "clock": "Horloge et réveil",
     "extra_beds": "Couchage d'appoint",
-    "terrace": "Terrasse de 25 m²",
+    "terrace": "Terrasse de 25 m² dans l'aile 26",
     "dining_table": "Table à manger 6 à 10 personnes",
     "sun_loungers": "Chaises longues",
     "parasol": "Parasol",
@@ -129,7 +145,7 @@
     "plancha": "Plancha électrique",
     "mini_oven": "Mini-four",
     "outdoor_sink": "Évier extérieur",
-    "private_shower": "Douche et lavabo privatifs dans une chambre",
+    "dishes": "Vaisselle",
     "sink_each_floor": "Lavabo à chaque étage",
     "bathrobes": "Peignoirs de bain",
     "panoramic_view": "Vue panoramique",
@@ -196,7 +212,7 @@
       },
       "parking": {
         "title": "Parking",
-        "desc": "Accès facile et gratuit."
+        "desc": "Accès facile, gratuit."
       }
     },
     "activities": {
@@ -275,6 +291,7 @@
     "navigation": "Navigation"
   },
   "footer": {
-    "allRightsReserved": "Tous droits réservés."
+    "allRightsReserved": "Tous droits réservés.",
+    "legalNotice": "Mentions légales"
   }
 }

@@ -73,7 +73,8 @@
       "captions": {
         "img_1": "Sublime view from the living room window.",
         "img_2": "View of the Abruzzi.",
-        "img_3": "Self check-in and secure key box access."
+        "img_3": "Key at your disposal",
+        "ext": "Maison Sole - Exterior view"
       }
     },
     "gg": {
@@ -82,9 +83,24 @@
       "wingsTitle": "House Composition",
       "wingsDesc": "This house consists of two modular wings:",
       "wingGigante": "Gigante Wing",
-      "wingGiganteDesc": "2 guests — Cozy and independent space",
+      "wingGiganteBadge": "2 guests",
+      "wingGiganteDesc": "2 rooms · 2 guests · Living room · Fully equipped kitchen · Shower · WC",
+      "wingGiganteFeatures": [
+        "2 rooms",
+        "2 guests",
+        "Living room",
+        "Fully equipped kitchen",
+        "Shower",
+        "WC"
+      ],
       "wing26": "26 Wing",
-      "wing26Desc": "4 guests — Spacious with direct access to the 25 m² terrace",
+      "wing26Badge": "4 to 6 guests",
+      "wing26Desc": "4 rooms · 4 guests (2 extra beds possible) · Large terrace",
+      "wing26Features": [
+        "4 rooms",
+        "4 guests (2 extra beds possible)",
+        "Large terrace"
+      ],
       "wingsBookingNote": "You can book either the entire house (6 guests) or just one of the two wings.",
       "captions": {
         "img_1": "26 Wing - Living Room",
@@ -106,22 +122,22 @@
         "img_17": "Gigante Wing - Key",
         "img_18": "Wing \"26\"",
         "img_19": "Wing \"26\"",
-        "img_20": "Gigante Wing"
+        "img_20": "Gigante Wing",
+        "ext": "Gran Gigante - Exterior view",
+        "view": "View from Gran Gigante"
       }
     }
   },
   "amenities": {
-    "kitchen": "Fully equipped kitchen for 5-6 guests",
-    "heating": "Heating",
-    "fireplaces": "2 fireplaces",
-    "hot_water": "Unlimited hot water",
-    "coffee_capsules": "Capsule coffee machine",
+    "kitchen": "Fully equipped kitchen in each wing",
+    "fireplaces": "2 fireplaces (26 wing)",
+    "coffee_capsules": "Capsule coffee machine in each wing",
     "coffee_italian": "Italian moka pot",
     "candles": "Ambiance candles",
     "hairdryer": "Hairdryer",
     "clock": "Clock and alarm",
     "extra_beds": "Extra bed(s)",
-    "terrace": "25 m² terrace",
+    "terrace": "25 m² terrace in the 26 wing",
     "dining_table": "Dining table for 6 to 10 guests",
     "sun_loungers": "Sun loungers",
     "parasol": "Parasol",
@@ -129,7 +145,7 @@
     "plancha": "Electric griddle (plancha)",
     "mini_oven": "Mini-oven",
     "outdoor_sink": "Outdoor sink",
-    "private_shower": "Private shower and sink in one bedroom",
+    "dishes": "Dishes & tableware",
     "sink_each_floor": "Sink on each floor",
     "bathrobes": "Bathrobes",
     "panoramic_view": "Panoramic view",
@@ -196,7 +212,7 @@
       },
       "parking": {
         "title": "Parking",
-        "desc": "Easy access and free parking."
+        "desc": "Easy access, free."
       }
     },
     "activities": {
@@ -275,6 +291,7 @@
     "navigation": "Navigation"
   },
   "footer": {
-    "allRightsReserved": "All rights reserved."
+    "allRightsReserved": "All rights reserved.",
+    "legalNotice": "Legal Notice"
   }
 }

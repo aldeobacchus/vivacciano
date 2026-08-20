@@ -38,6 +38,11 @@
               <span class="text-[#B05A2F]">›</span> {{ $t('nav.contact') }}
             </RouterLink>
           </li>
+          <li>
+            <RouterLink to="/mentions-legales" class="hover:text-white transition-colors duration-200 flex items-center gap-2">
+              <span class="text-[#B05A2F]">›</span> {{ $t('footer.legalNotice', 'Mentions légales') }}
+            </RouterLink>
+          </li>
         </ul>
       </div>
 
@@ -46,9 +51,9 @@
         <h3 class="text-lg font-semibold tracking-wide uppercase text-slate-400 text-sm">
           {{ $t('contact.title') }}
         </h3>
-        <div class="space-y-2 text-sm text-slate-300">
+        <div class="space-y-3 text-sm text-slate-300">
           <p class="flex items-start gap-3">
-            <span class="text-[#B05A2F] mt-0.5">✉</span>
+            <Mail class="w-4 h-4 text-[#B05A2F] mt-0.5 shrink-0" />
             <span>
               <span class="block text-xs text-slate-500 uppercase">{{ $t('contact.emailLabel') }}</span>
               <a :href="`mailto:${$t('contact.emailAddress')}`" class="hover:text-white transition-colors">
@@ -57,7 +62,7 @@
             </span>
           </p>
           <p class="flex items-start gap-3">
-            <span class="text-[#B05A2F] mt-0.5">☏</span>
+            <Phone class="w-4 h-4 text-[#B05A2F] mt-0.5 shrink-0" />
             <span>
               <span class="block text-xs text-slate-500 uppercase">{{ $t('contact.phoneLabel') }}</span>
               <a :href="`tel:${$t('contact.phone')}`" class="hover:text-white transition-colors">
@@ -71,8 +76,11 @@
 
     <!-- Copyright -->
     <div class="border-t border-slate-800 relative z-10">
-      <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+      <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-slate-500">
         <p>© {{ new Date().getFullYear() }} — Bell'Acciano. {{ $t('footer.allRightsReserved', 'Tous droits réservés.') }}</p>
+        <RouterLink to="/mentions-legales" class="hover:text-slate-300 transition-colors">
+          {{ $t('footer.legalNotice', 'Mentions légales') }}
+        </RouterLink>
       </div>
     </div>
   </footer>
@@ -80,4 +88,5 @@
 
 <script setup>
 import { RouterLink } from 'vue-router'
+import { Mail, Phone } from 'lucide-vue-next'
 </script>

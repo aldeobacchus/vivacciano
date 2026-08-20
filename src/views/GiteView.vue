@@ -1,7 +1,7 @@
 <script setup>
 import { computed, ref } from "vue"
 import { useRoute } from "vue-router"
-import { Users, BedDouble, Bath, MapPin, Coffee, Car, Mail, Utensils } from "lucide-vue-next"
+import { Users, BedDouble, ShowerHead, MapPin, Coffee, Car, Mail, Utensils } from "lucide-vue-next"
 import HoverCard from "../components/ui/HoverCard.vue"
 import GiteCarousel from "../components/GiteCarousel.vue"
 import { gites } from "../data/gites"
@@ -56,7 +56,7 @@ const showAmenities = ref(false)
       </HoverCard>
 
       <HoverCard contentClass="bg-white p-5 border border-slate-50 flex items-center justify-center gap-3">
-        <Bath class="w-6 h-6 text-slate-400" />
+        <ShowerHead class="w-6 h-6 text-slate-400" />
         <span class="font-medium text-slate-700">{{ gite.bathrooms }} {{ $t('gite.bathrooms', gite.bathrooms) }}</span>
       </HoverCard>
 
@@ -81,33 +81,47 @@ const showAmenities = ref(false)
         <div class="grid sm:grid-cols-2 gap-6">
           <div class="bg-white p-5 rounded-xl border border-orange-100/80 shadow-sm flex flex-col justify-between">
             <div>
-              <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center justify-between mb-3">
                 <h4 class="font-bold text-slate-800 text-lg">
                   {{ $t('gites_data.' + gite.id + '.wingGigante') }}
                 </h4>
                 <span class="px-3 py-1 bg-orange-100 text-[#B05A2F] text-xs font-semibold rounded-full">
-                  2 couchages
+                  {{ $t('gites_data.' + gite.id + '.wingGiganteBadge') }}
                 </span>
               </div>
-              <p class="text-slate-600 text-sm">
-                {{ $t('gites_data.' + gite.id + '.wingGiganteDesc') }}
-              </p>
+              <ul class="space-y-2 text-slate-600 text-sm">
+                <li
+                  v-for="(feature, idx) in ($tm('gites_data.' + gite.id + '.wingGiganteFeatures') || [])"
+                  :key="idx"
+                  class="flex items-center gap-2"
+                >
+                  <span class="text-[#B05A2F] font-semibold text-xs">✓</span>
+                  <span>{{ feature }}</span>
+                </li>
+              </ul>
             </div>
           </div>
 
           <div class="bg-white p-5 rounded-xl border border-orange-100/80 shadow-sm flex flex-col justify-between">
             <div>
-              <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center justify-between mb-3">
                 <h4 class="font-bold text-slate-800 text-lg">
                   {{ $t('gites_data.' + gite.id + '.wing26') }}
                 </h4>
                 <span class="px-3 py-1 bg-orange-100 text-[#B05A2F] text-xs font-semibold rounded-full">
-                  4 couchages
+                  {{ $t('gites_data.' + gite.id + '.wing26Badge') }}
                 </span>
               </div>
-              <p class="text-slate-600 text-sm">
-                {{ $t('gites_data.' + gite.id + '.wing26Desc') }}
-              </p>
+              <ul class="space-y-2 text-slate-600 text-sm">
+                <li
+                  v-for="(feature, idx) in ($tm('gites_data.' + gite.id + '.wing26Features') || [])"
+                  :key="idx"
+                  class="flex items-center gap-2"
+                >
+                  <span class="text-[#B05A2F] font-semibold text-xs">✓</span>
+                  <span>{{ feature }}</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -187,6 +201,10 @@ const showAmenities = ref(false)
               <div class="flex items-center gap-3 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
                 <span class="text-[#B05A2F]">✓</span>
                 <span class="text-sm font-medium text-slate-700">Évier extérieur</span>
+              </div>
+              <div class="flex items-center gap-3 bg-slate-50 p-2.5 rounded-lg border border-slate-100">
+                <span class="text-[#B05A2F]">✓</span>
+                <span class="text-sm font-medium text-slate-700">Vaisselle</span>
               </div>
             </div>
           </div>

@@ -17,11 +17,18 @@ const props = defineProps({
   }
 })
 
-// Normalize images array so it handles both string URLs, object format { url, caption, id }, and i18n keys
+// Normalize and sort images array by ID so that images are displayed in order of their ID
 const normalizedImages = computed(() => {
-  return props.images.map((img, index) => {
+  const list = (props.images || []).map((img, index) => {
     if (typeof img === 'string') {
-      return { id: `img-${index}`, url: img, caption: null }
+      return {
+        id: `img-${index}`,
+        url: img,
+        caption: null,
+        _hasExplicitId: false,
+        _explicitId: null,
+        _originalIndex: index
+      }
     }
     const rawCaption = img?.caption || img?.description || null
     let caption = null
@@ -32,11 +39,36 @@ const normalizedImages = computed(() => {
         caption = rawCaption.fr || Object.values(rawCaption)[0] || null
       }
     }
+    const hasExplicitId = img?.id !== undefined && img?.id !== null && img?.id !== ''
     return {
-      id: img?.id || `img-${index}`,
+      id: hasExplicitId ? img.id : `img-${index}`,
       url: img?.url || img?.src || '',
-      caption
+      caption,
+      _hasExplicitId: hasExplicitId,
+      _explicitId: hasExplicitId ? img.id : null,
+      _originalIndex: index
     }
+  })
+
+  return list.sort((a, b) => {
+    if (a._hasExplicitId && b._hasExplicitId) {
+      const aNum = Number(a._explicitId)
+      const bNum = Number(b._explicitId)
+      if (!isNaN(aNum) && !isNaN(bNum)) {
+        return aNum - bNum
+      }
+      return String(a._explicitId).localeCompare(String(b._explicitId), undefined, {
+        numeric: true,
+        sensitivity: 'base'
+      })
+    }
+    if (a._hasExplicitId && !b._hasExplicitId) {
+      return -1
+    }
+    if (!a._hasExplicitId && b._hasExplicitId) {
+      return 1
+    }
+    return a._originalIndex - b._originalIndex
   })
 })
 

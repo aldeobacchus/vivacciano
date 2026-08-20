@@ -5,6 +5,7 @@ import GiteView from "../views/GiteView.vue";
 import VillageView from "../views/VillageView.vue";
 import ContactView from "../views/ContactView.vue";
 import ReservationView from "../views/ReservationView.vue";
+import LegalNoticeView from "../views/LegalNoticeView.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -37,6 +38,10 @@ const router = createRouter({
     {
       path: "/reservation",
       component: ReservationView,
+    },
+    {
+      path: "/mentions-legales",
+      component: LegalNoticeView,
     },
   ],
 });

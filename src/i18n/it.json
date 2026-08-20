@@ -73,7 +73,8 @@
       "captions": {
         "img_1": "Splendida vista dalla finestra del soggiorno.",
         "img_2": "Vista sugli Abruzzi.",
-        "img_3": "Accesso autonomo e sicuro tramite cassetta portachiavi."
+        "img_3": "Chiave a vostra disposizione",
+        "ext": "Casa Sole - Vista esterna"
       }
     },
     "gg": {
@@ -82,9 +83,24 @@
       "wingsTitle": "Composizione della casa",
       "wingsDesc": "Questa casa è composta da due ali modulari:",
       "wingGigante": "Ala Gigante",
-      "wingGiganteDesc": "2 posti letto — Spazio accogliente e indipendente",
+      "wingGiganteBadge": "2 posti letto",
+      "wingGiganteDesc": "2 locali · 2 posti letto · Soggiorno · Cucina completa attrezzata · Doccia · WC",
+      "wingGiganteFeatures": [
+        "2 locali",
+        "2 posti letto",
+        "Soggiorno",
+        "Cucina completa attrezzata",
+        "Doccia",
+        "WC"
+      ],
       "wing26": "Ala 26",
-      "wing26Desc": "4 posti letto — Spaziosa con accesso diretto alla terrazza di 25 m²",
+      "wing26Badge": "Da 4 a 6 posti letto",
+      "wing26Desc": "4 locali · 4 posti letto (2 posti letto aggiuntivi possibili) · Grande terrazza",
+      "wing26Features": [
+        "4 locali",
+        "4 posti letto (2 posti letto aggiuntivi possibili)",
+        "Grande terrazza"
+      ],
       "wingsBookingNote": "È possibile prenotare l'intera casa (6 posti letto) oppure solo una delle due ali.",
       "captions": {
         "img_1": "Ala 26 - Soggiorno",
@@ -106,22 +122,22 @@
         "img_17": "Ala Gigante - Chiave",
         "img_18": "Ala \"26\"",
         "img_19": "Ala \"26\"",
-        "img_20": "Ala Gigante"
+        "img_20": "Ala Gigante",
+        "ext": "Gran Gigante - Vista esterna",
+        "view": "Vista da Gran Gigante"
       }
     }
   },
   "amenities": {
-    "kitchen": "Cucina attrezzata 5-6 persone",
-    "heating": "Riscaldamento",
-    "fireplaces": "2 caminetti",
-    "hot_water": "Acqua calda illimitata",
-    "coffee_capsules": "Macchina da caffè a capsule",
+    "kitchen": "Cucina attrezzata in ogni ala",
+    "fireplaces": "2 caminetti (ala 26)",
+    "coffee_capsules": "Macchina da caffè a capsule in ogni ala",
     "coffee_italian": "Caffettiera moka",
     "candles": "Candele d'atmosfera",
     "hairdryer": "Asciugacapelli",
     "clock": "Orologio e sveglia",
     "extra_beds": "Letto/i supplementare/i",
-    "terrace": "Terrazza di 25 m²",
+    "terrace": "Terrazza di 25 m² nell'ala 26",
     "dining_table": "Tavolo da pranzo per 6-10 persone",
     "sun_loungers": "Lettini prendisole",
     "parasol": "Ombrellone",
@@ -129,7 +145,7 @@
     "plancha": "Plancha elettrica",
     "mini_oven": "Mini forno",
     "outdoor_sink": "Lavandino esterno",
-    "private_shower": "Doccia e lavandino privati in una camera",
+    "dishes": "Stoviglie",
     "sink_each_floor": "Lavandino ad ogni piano",
     "bathrobes": "Accappatoi",
     "panoramic_view": "Vista panoramica",
@@ -196,7 +212,7 @@
       },
       "parking": {
         "title": "Parcheggio",
-        "desc": "Accesso facile e gratuito."
+        "desc": "Accesso facile, gratuito."
       }
     },
     "activities": {
@@ -252,6 +268,7 @@
     "navigation": "Navigazione"
   },
   "footer": {
-    "allRightsReserved": "Tutti i diritti riservati."
+    "allRightsReserved": "Tutti i diritti riservati.",
+    "legalNotice": "Note legali"
   }
 }
