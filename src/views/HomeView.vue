@@ -2,11 +2,20 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { Trees } from 'lucide-vue-next'
 import { gites } from "../data/gites"
+import HoverCard from '../components/ui/HoverCard.vue'
 
 const scrollY = ref(0)
+const isMobile = ref(false)
 let ticking = false
 
+const checkMobile = () => {
+  if (typeof window !== 'undefined') {
+    isMobile.value = window.innerWidth < 768 || window.matchMedia('(pointer: coarse)').matches
+  }
+}
+
 const handleScroll = () => {
+  if (isMobile.value) return
   if (!ticking) {
     window.requestAnimationFrame(() => {
       scrollY.value = window.scrollY
@@ -16,13 +25,14 @@ const handleScroll = () => {
   }
 }
 
-import HoverCard from '../components/ui/HoverCard.vue'
-
 onMounted(() => {
+  checkMobile()
+  window.addEventListener('resize', checkMobile, { passive: true })
   window.addEventListener('scroll', handleScroll, { passive: true })
 })
 
 onUnmounted(() => {
+  window.removeEventListener('resize', checkMobile)
   window.removeEventListener('scroll', handleScroll)
 })
 </script>
@@ -35,11 +45,10 @@ onUnmounted(() => {
 
       <!-- IMAGE BACKGROUND -->
       <div
-        class="absolute inset-0 bg-cover bg-center scale-125 will-change-transform"
+        class="absolute inset-0 bg-cover bg-[65%_center] md:bg-center will-change-transform transform-gpu scale-110"
         :style="{
           backgroundImage: `url('/images/village/acciano-view.jpeg')`,
-          transform: `translate3d(0, ${scrollY * 0.4}px, 0)`,
-          filter: `blur(${Math.min(12, 0.5 + scrollY * 0.015)}px) brightness(0.95)`
+          transform: !isMobile && scrollY > 0 ? `translate3d(0, ${scrollY * 0.3}px, 0) scale(1.15)` : undefined
         }"
       ></div>
 
