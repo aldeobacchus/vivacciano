@@ -71,9 +71,9 @@
       "shortDescription": "A bright and charming studio.",
       "longDescription": "A bright studio located in the historic center of Acciano, ideal for recharging in the heart of nature with views of the Abruzzi mountains.",
       "captions": {
-        "sole_3": "Sublime view from the living room window.",
-        "sole_4": "View of the Abruzzi.",
-        "sole_key": "Self check-in and secure key box access."
+        "img_1": "Sublime view from the living room window.",
+        "img_2": "View of the Abruzzi.",
+        "img_3": "Self check-in and secure key box access."
       }
     },
     "gg": {
@@ -87,8 +87,26 @@
       "wing26Desc": "4 guests — Spacious with direct access to the 25 m² terrace",
       "wingsBookingNote": "You can book either the entire house (6 guests) or just one of the two wings.",
       "captions": {
-        "26_12": "26 Wing - Living Room",
-        "gigante_1": "Gran Gigante Wing."
+        "img_1": "26 Wing - Living Room",
+        "img_2": "26 Wing",
+        "img_3": "26 Wing",
+        "img_4": "26 Wing",
+        "img_5": "26 Wing",
+        "img_6": "Gigante Wing - Interior",
+        "img_7": "Gigante Wing",
+        "img_8": "Gigante Wing",
+        "img_9": "Gigante Wing",
+        "img_10": "26 Wing - Exterior view",
+        "img_11": "26 Wing - Exterior view",
+        "img_12": "26 Wing - Exterior view",
+        "img_13": "Gigante Wing",
+        "img_14": "Gigante Wing",
+        "img_15": "Gigante Wing",
+        "img_16": "Gigante Wing - Exterior view",
+        "img_17": "Gigante Wing - Key",
+        "img_18": "Wing \"26\"",
+        "img_19": "Wing \"26\"",
+        "img_20": "Gigante Wing"
       }
     }
   },
@@ -126,7 +144,8 @@
     "history": {
       "title": "History & Heritage",
       "desc": "Surrounded by holm oak woods, Acciano is perched on a rocky spur between the Bufame and Pietre Fitte mountains, offering a striking view of the rocky ridges of Sirente. The steep slopes frame the valley where the Aterno-Pescara river flows. Founded in the 12th century, the village preserves the authenticity of its historic center and its centuries-old traditions.",
-      "giganteView": "The view from Gran Gigante"
+      "giganteView": "The view from Gran Gigante",
+      "windowView": "View from the windows of each house"
     },
     "access": {
       "title": "How to get here",
@@ -134,7 +153,7 @@
       "airport": "2 hours from Roma Fiumicino International Airport",
       "plane": {
         "title": "By plane",
-        "desc": "Arrival 2 hours from Roma Fiumicino International Airport, then several options to reach the village:"
+        "desc": "Arrival at Roma Fiumicino International Airport, then several options to reach the village:"
       },
       "carRental": {
         "title": "Car rental",
@@ -142,11 +161,11 @@
       },
       "bus": {
         "title": "By bus",
-        "desc": "Various buses from Rome (departures every 2h30, around €20 per person), stop 10 km from Acciano. We will pick you up free of charge."
+        "desc": "Bus to Acciano approximately every 2.5 hours via Prontobus and Flixbus upon reservation (€36 round trip). Arrival at Pratola Sulmona where we will pick you up with the Bellacciano car. Bus tickets are free of charge for bookings of at least 2 people and two nights."
       },
       "shuttle": {
         "title": "Bellacciano Shuttle",
-        "desc": "On reservation: Car (3-4 guests) or Mini Van (7 guests)."
+        "desc": "On reservation: Car (3-4 guests) or Mini Van (7 guests). Paid service."
       },
       "taxi": {
         "title": "By taxi",

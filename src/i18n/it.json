@@ -71,9 +71,9 @@
       "shortDescription": "Monolocale luminoso e affascinante.",
       "longDescription": "Un luminoso monolocale situato nel centro storico di Acciano, ideale per rigenerarsi in mezzo alla natura con vista sulle montagne abruzzesi.",
       "captions": {
-        "sole_3": "Splendida vista dalla finestra del soggiorno.",
-        "sole_4": "Vista sugli Abruzzi.",
-        "sole_key": "Accesso autonomo e sicuro tramite cassetta portachiavi."
+        "img_1": "Splendida vista dalla finestra del soggiorno.",
+        "img_2": "Vista sugli Abruzzi.",
+        "img_3": "Accesso autonomo e sicuro tramite cassetta portachiavi."
       }
     },
     "gg": {
@@ -87,8 +87,26 @@
       "wing26Desc": "4 posti letto — Spaziosa con accesso diretto alla terrazza di 25 m²",
       "wingsBookingNote": "È possibile prenotare l'intera casa (6 posti letto) oppure solo una delle due ali.",
       "captions": {
-        "26_12": "Ala 26 - Soggiorno",
-        "gigante_1": "Ala Gran Gigante."
+        "img_1": "Ala 26 - Soggiorno",
+        "img_2": "Ala 26",
+        "img_3": "Ala 26",
+        "img_4": "Ala 26",
+        "img_5": "Ala 26",
+        "img_6": "Ala Gigante - Interno",
+        "img_7": "Ala Gigante",
+        "img_8": "Ala Gigante",
+        "img_9": "Ala Gigante",
+        "img_10": "Ala 26 - Vista esterna",
+        "img_11": "Ala 26 - Vista esterna",
+        "img_12": "Ala 26 - Vista esterna",
+        "img_13": "Ala Gigante",
+        "img_14": "Ala Gigante",
+        "img_15": "Ala Gigante",
+        "img_16": "Ala Gigante - Vista esterna",
+        "img_17": "Ala Gigante - Chiave",
+        "img_18": "Ala \"26\"",
+        "img_19": "Ala \"26\"",
+        "img_20": "Ala Gigante"
       }
     }
   },
@@ -126,7 +144,8 @@
     "history": {
       "title": "Storia & Patrimonio",
       "desc": "Circondata da boschi di lecci, Acciano è arroccata su uno sperone di roccia tra i monti Bufame e Pietre Fitte, offrendo una vista suggestiva sulle creste rocciose del Sirente. I ripidi pendii incorniciano la valle dove scorre il fiume Aterno-Pescara. Fondato nel XII secolo, il borgo conserva l'autenticità del suo centro storico e le sue tradizioni secolari.",
-      "giganteView": "La vista da Gran Gigante"
+      "giganteView": "La vista da Gran Gigante",
+      "windowView": "Vista dalle finestre di ogni casa"
     },
     "access": {
       "title": "Come arrivare",
@@ -134,7 +153,7 @@
       "airport": "A 2 ore dall'aeroporto Internazionale Roma Fiumicino",
       "plane": {
         "title": "In aereo",
-        "desc": "Arrivo a 2 ore dall'aeroporto Internazionale Roma Fiumicino, poi diverse opzioni per raggiungere il borgo:"
+        "desc": "Arrivo all'aeroporto Internazionale Roma Fiumicino, poi diverse opzioni per raggiungere il borgo:"
       },
       "carRental": {
         "title": "Noleggio auto",
@@ -142,11 +161,11 @@
       },
       "bus": {
         "title": "In autobus",
-        "desc": "Vari autobus da Roma (partenze ogni 2h30, circa 20€ a persona), fermata a 10 km da Acciano. Veniamo a prendervi gratuitamente."
+        "desc": "Autobus per Acciano circa ogni 2,5 ore tramite Prontobus e Flixbus su prenotazione (36€ andata e ritorno). Arrivo a Pratola Sulmona dove verremo a prendervi con l'auto Bellacciano. I biglietti dell'autobus sono gratuiti per prenotazioni di almeno 2 persone e due notti."
       },
       "shuttle": {
         "title": "Navetta Bellacciano",
-        "desc": "Su prenotazione: Auto (3-4 pers.) o Mini Van (7 pers.)."
+        "desc": "Su prenotazione: Auto (3-4 pers.) o Mini Van (7 pers.). Servizio a pagamento."
       },
       "taxi": {
         "title": "In taxi",

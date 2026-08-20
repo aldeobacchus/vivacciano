@@ -34,8 +34,8 @@ const showAmenities = ref(false)
         {{ gite.nom }}
       </h1>
 
-      <p class="text-slate-500 mt-2">
-        {{ $t('gites_data.' + gite.id + '.shortDescription') }}
+      <p class="mt-4 text-lg md:text-xl text-slate-700 font-medium leading-relaxed bg-orange-50/50 p-4 sm:p-6 rounded-xl border border-orange-100/80 shadow-sm">
+        {{ $t('gites_data.' + gite.id + '.longDescription') }}
       </p>
 
     </div>
@@ -67,9 +67,7 @@ const showAmenities = ref(false)
     ====================== -->
     <div class="mt-10 space-y-6">
 
-      <p class="text-slate-700 leading-relaxed text-lg">
-        {{ $t('gites_data.' + gite.id + '.longDescription') }}
-      </p>
+
 
       <!-- SECTIONS AILES (si Gran Gigante) -->
       <div v-if="gite.wings && gite.wings.length" class="mt-8 bg-orange-50/60 border border-orange-100 rounded-2xl p-6 sm:p-8">
@@ -228,7 +226,16 @@ const showAmenities = ref(false)
       <div class="grid md:grid-cols-3 gap-6">
 
         <!-- Localisation -->
-        <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center flex flex-col items-center">
+        <a v-if="gite.geolocation" :href="gite.geolocation" target="_blank" rel="noopener noreferrer" class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center flex flex-col items-center hover:shadow-md hover:border-orange-200 transition-all cursor-pointer">
+          <MapPin class="w-10 h-10 text-[#B05A2F] mb-4" />
+          <p class="text-slate-600 leading-relaxed text-sm mb-4">
+            {{ $t('village.practical.location') }}
+          </p>
+          <span class="mt-auto px-5 py-2.5 bg-[#B05A2F] text-white rounded-full text-sm font-medium hover:bg-[#964a25] transition-colors shadow-sm inline-flex items-center gap-2">
+            Voir sur la carte
+          </span>
+        </a>
+        <div v-else class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 text-center flex flex-col items-center">
           <MapPin class="w-10 h-10 text-[#B05A2F] mb-4" />
           <p class="text-slate-600 leading-relaxed text-sm">
             {{ $t('village.practical.location') }}

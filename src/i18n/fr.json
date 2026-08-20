@@ -71,13 +71,13 @@
       "shortDescription": "Studio lumineux et charmant.",
       "longDescription": "Un studio lumineux situé dans le centre historique d'Acciano, idéal pour se ressourcer en pleine nature avec vue sur les montagnes des Abruzzes.",
       "captions": {
-        "sole_3": "Sublime vue depuis la fenêtre du salon.",
-        "sole_4": "Vue sur les Abruzzes.",
-        "sole_key": "Accès autonome et sécurisé par boîte à clés."
+        "img_1": "Sublime vue depuis la fenêtre du salon.",
+        "img_2": "Vue sur les Abruzzes.",
+        "img_3": "Accès autonome et sécurisé par boîte à clés."
       }
     },
     "gg": {
-      "shortDescription": "Grande maison modulable composée de deux ailes, avec belle terrasse.",
+      "shortDescription": "La maison Gran Gigante se compose de deux ailes (l'aile Gigante et l'aile 26). Elle offre une belle capacité d'accueil (6 couchages) et la possibilité d'être louée dans sa totalité ou par aile individuelle.",
       "longDescription": "La maison Gran Gigante se compose de deux ailes (l'aile Gigante et l'aile 26). Elle offre une belle capacité d'accueil (6 couchages) et la possibilité d'être louée dans sa totalité ou par aile individuelle.",
       "wingsTitle": "Composition de la maison",
       "wingsDesc": "Cette maison est composée de deux ailes modulables :",
@@ -87,8 +87,26 @@
       "wing26Desc": "4 couchages — Spacieuse avec belle terrasse de 25 m²",
       "wingsBookingNote": "Vous pouvez réserver soit la totalité de la maison (6 couchages), soit seulement l'une des deux ailes.",
       "captions": {
-        "26_12": "Aile 26 - Salon",
-        "gigante_1": "Aile Gran Gigante."
+        "img_1": "Aile 26 - Salon",
+        "img_2": "Aile 26",
+        "img_3": "Aile 26",
+        "img_4": "Aile 26",
+        "img_5": "Aile 26",
+        "img_6": "Aile Gigante - Intérieur",
+        "img_7": "Aile Gigante",
+        "img_8": "Aile Gigante",
+        "img_9": "Aile Gigante",
+        "img_10": "Aile 26 - Vue extérieure",
+        "img_11": "Aile 26 - Vue extérieure",
+        "img_12": "Aile 26 - Vue extérieure",
+        "img_13": "Aile Gigante",
+        "img_14": "Aile Gigante",
+        "img_15": "Aile Gigante",
+        "img_16": "Aile Gigante - Vue extérieure",
+        "img_17": "Aile Gigante - Clé",
+        "img_18": "Aile \"26\"",
+        "img_19": "Aile \"26\"",
+        "img_20": "Aile Gigante"
       }
     }
   },
@@ -126,7 +144,8 @@
     "history": {
       "title": "Histoire & Patrimoine",
       "desc": "Entourée de bois de chênes verts, Acciano est perchée sur un éperon de roche entre les montagnes Bufame et Pietre Fitte, offrant une vue saisissante sur les crêtes rocheuses du Sirente. Les pentes abruptes encadrent la vallée où coule la rivière Aterno-Pescara. Le village, fondé au XIIe siècle, conserve l'authenticité de son centre historique et ses traditions séculaires.",
-      "giganteView": "La vue depuis Gran Gigante"
+      "giganteView": "La vue depuis Gran Gigante",
+      "windowView": "Vue depuis les fenêtres de chaque maison"
     },
     "access": {
       "title": "Comment venir",
@@ -134,19 +153,19 @@
       "airport": "À 2h de l'aéroport International Roma Fiumicino",
       "plane": {
         "title": "En avion",
-        "desc": "Arrivée à 2h de l'aéroport International Roma Fiumicino, puis plusieurs options pour rejoindre le village :"
+        "desc": "Arrivée à l'aéroport International Roma Fiumicino, puis plusieurs options pour rejoindre le village :"
       },
       "carRental": {
         "title": "Location de voiture",
         "desc": "Disponible à l'aéroport pour effectuer le trajet jusqu'à Acciano."
       },
       "bus": {
-        "title": "En bus",
-        "desc": "Bus divers depuis Rome (départ toutes les 2h30, environ 20€ par personne), arrêt à 10 km d'Acciano. Nous venons vous chercher sans frais."
+        "title": "En autobus",
+        "desc": "Autobus vers Acciano toutes les 2h30 environ, par les compagnies Prontobus et Flixbus sur réservation (36€ aller-retour). Arrivée à Pratola Sulmona où nous viendrons vous chercher avec la voiture Bellacciano. Les billets de bus sont gratuits à partir d'une réservation pour 2 personnes et deux nuits."
       },
       "shuttle": {
         "title": "Navette Bellacciano",
-        "desc": "Sur réservation : Auto (3-4 pers.) ou Mini Van (7 pers.)."
+        "desc": "Sur réservation : Auto (3-4 pers.) ou Mini Van (7 pers.). Service payant."
       },
       "taxi": {
         "title": "En taxi",

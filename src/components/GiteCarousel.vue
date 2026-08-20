@@ -17,11 +17,11 @@ const props = defineProps({
   }
 })
 
-// Normalize images array so it handles both string URLs, object format { url, caption }, and i18n keys
+// Normalize images array so it handles both string URLs, object format { url, caption, id }, and i18n keys
 const normalizedImages = computed(() => {
-  return props.images.map(img => {
+  return props.images.map((img, index) => {
     if (typeof img === 'string') {
-      return { url: img, caption: null }
+      return { id: `img-${index}`, url: img, caption: null }
     }
     const rawCaption = img?.caption || img?.description || null
     let caption = null
@@ -33,6 +33,7 @@ const normalizedImages = computed(() => {
       }
     }
     return {
+      id: img?.id || `img-${index}`,
       url: img?.url || img?.src || '',
       caption
     }
@@ -180,7 +181,7 @@ onUnmounted(() => {
     
     <!-- MAIN CAROUSEL DISPLAY -->
     <div
-      class="relative group w-full h-[55vh] md:h-[65vh] rounded-3xl overflow-hidden shadow-2xl bg-slate-950 transition-all duration-300"
+      class="relative group w-full max-w-3xl mx-auto aspect-square rounded-3xl overflow-hidden shadow-2xl bg-slate-950 transition-all duration-300"
       @touchstart="handleTouchStart"
       @touchend="handleTouchEnd"
     >
@@ -190,12 +191,17 @@ onUnmounted(() => {
           v-for="(img, idx) in normalizedImages"
           :key="img.url + idx"
           v-show="idx === currentIndex"
-          class="absolute inset-0 w-full h-full"
+          class="absolute inset-0 w-full h-full overflow-hidden flex items-center justify-center"
         >
           <img
             :src="img.url"
+            class="absolute inset-0 w-full h-full object-cover opacity-40 blur-2xl scale-110 pointer-events-none"
+            alt=""
+          />
+          <img
+            :src="img.url"
             :alt="`${altTitle} - Image ${idx + 1}`"
-            class="w-full h-full object-cover"
+            class="relative z-10 w-full h-full object-contain"
             loading="lazy"
           />
         </div>
@@ -261,7 +267,7 @@ onUnmounted(() => {
             <div class="mt-0.5 p-1 rounded bg-amber-500/20 text-amber-300 border border-amber-400/30 shrink-0">
               <Info class="w-3.5 h-3.5" />
             </div>
-            <p class="text-sm md:text-base font-light text-slate-100 leading-relaxed drop-shadow-sm">
+            <p class="text-lg md:text-xl font-semibold text-white leading-relaxed drop-shadow-md">
               {{ currentImg.caption }}
             </p>
           </div>
@@ -306,9 +312,9 @@ onUnmounted(() => {
           <!-- HEADER LIGHTBOX -->
           <div class="flex items-center justify-between z-10">
             <!-- Counter Badge -->
-            <div class="bg-white/10 text-white text-sm font-medium px-4 py-1.5 rounded-full border border-white/10">
+            <div class="bg-white/10 text-white text-sm font-medium px-4 py-1.5 rounded-full border border-white/10 flex items-center gap-1.5">
               <span class="text-amber-400 font-bold">{{ currentIndex + 1 }}</span>
-              <span class="text-slate-400 mx-1">/</span>
+              <span class="text-slate-400">/</span>
               <span>{{ normalizedImages.length }}</span>
             </div>
 
@@ -349,7 +355,7 @@ onUnmounted(() => {
 
           <!-- LIGHTBOX FOOTER (CAPTION & THUMBNAILS) -->
           <div class="z-10 space-y-3 max-w-4xl mx-auto w-full text-center">
-            <p v-if="currentImg.caption" class="text-slate-200 text-sm md:text-base bg-white/10 px-4 py-2 rounded-xl backdrop-blur-md inline-block border border-white/10">
+            <p v-if="currentImg.caption" class="text-white text-xl md:text-2xl font-semibold bg-black/40 px-6 py-4 rounded-xl backdrop-blur-md inline-block border border-white/20 drop-shadow-lg">
               {{ currentImg.caption }}
             </p>
           </div>

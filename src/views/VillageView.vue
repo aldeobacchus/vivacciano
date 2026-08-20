@@ -121,18 +121,11 @@ const villageImages = [
               alt="Acciano"
               class="w-full h-[230px] md:h-[250px] object-cover transition-transform duration-500 group-hover:scale-105"
             />
-          </div>
-          <div class="relative group rounded-2xl overflow-hidden shadow-xl">
-            <img
-              src="/images/gites/gigante/gigante-8.jpeg"
-              alt="La vue depuis Gran Gigante"
-              class="w-full h-[230px] md:h-[250px] object-cover transition-transform duration-500 group-hover:scale-105"
-            />
             <!-- OVERLAY CAPTION -->
             <div class="absolute bottom-0 inset-x-0 z-10 p-3 md:p-4 bg-gradient-to-t from-slate-950/90 via-slate-950/60 to-transparent text-white backdrop-blur-[2px]">
               <div class="flex items-center gap-2.5">
                 <p class="text-sm font-light text-slate-100 drop-shadow-sm">
-                  {{ $t('village.history.giganteView') }}
+                  {{ $t('village.history.windowView') }}
                 </p>
               </div>
             </div>
@@ -168,21 +161,21 @@ const villageImages = [
 
             <!-- 4 Options depuis l'aéroport -->
             <div class="grid md:grid-cols-2 gap-4">
-              <!-- Location de voiture -->
-              <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 flex items-start gap-3">
-                <Car class="w-6 h-6 text-[#B05A2F] shrink-0 mt-0.5" />
-                <div>
-                  <h4 class="font-semibold text-slate-800 text-sm mb-1">{{ $t('village.access.carRental.title') }}</h4>
-                  <p class="text-xs text-slate-600 leading-relaxed">{{ $t('village.access.carRental.desc') }}</p>
-                </div>
-              </div>
-
               <!-- En bus -->
               <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 flex items-start gap-3">
                 <Bus class="w-6 h-6 text-[#B05A2F] shrink-0 mt-0.5" />
                 <div>
                   <h4 class="font-semibold text-slate-800 text-sm mb-1">{{ $t('village.access.bus.title') }}</h4>
                   <p class="text-xs text-slate-600 leading-relaxed">{{ $t('village.access.bus.desc') }}</p>
+                </div>
+              </div>
+
+              <!-- Location de voiture -->
+              <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 flex items-start gap-3">
+                <Car class="w-6 h-6 text-[#B05A2F] shrink-0 mt-0.5" />
+                <div>
+                  <h4 class="font-semibold text-slate-800 text-sm mb-1">{{ $t('village.access.carRental.title') }}</h4>
+                  <p class="text-xs text-slate-600 leading-relaxed">{{ $t('village.access.carRental.desc') }}</p>
                 </div>
               </div>
 
