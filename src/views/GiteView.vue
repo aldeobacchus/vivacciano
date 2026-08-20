@@ -100,6 +100,15 @@ const showAmenities = ref(false)
                 </li>
               </ul>
             </div>
+            <div class="mt-5 pt-3 border-t border-slate-100 flex justify-end">
+              <router-link
+                :to="`/reservation?gite=${gite.id}&wing=gigante`"
+                class="inline-flex items-center gap-1 text-sm font-semibold text-[#B05A2F] hover:text-[#964a25] transition-colors"
+              >
+                <span>{{ $t('reservation.bookThisWing') }}</span>
+                <span aria-hidden="true">&rarr;</span>
+              </router-link>
+            </div>
           </div>
 
           <div class="bg-white p-5 rounded-xl border border-orange-100/80 shadow-sm flex flex-col justify-between">
@@ -123,11 +132,26 @@ const showAmenities = ref(false)
                 </li>
               </ul>
             </div>
+            <div class="mt-5 pt-3 border-t border-slate-100 flex justify-end">
+              <router-link
+                :to="`/reservation?gite=${gite.id}&wing=26`"
+                class="inline-flex items-center gap-1 text-sm font-semibold text-[#B05A2F] hover:text-[#964a25] transition-colors"
+              >
+                <span>{{ $t('reservation.bookThisWing') }}</span>
+                <span aria-hidden="true">&rarr;</span>
+              </router-link>
+            </div>
           </div>
         </div>
 
-        <div class="mt-6 pt-4 border-t border-orange-200/60 text-sm text-slate-600 font-medium text-center">
-          {{ $t('gites_data.' + gite.id + '.wingsBookingNote') }}
+        <div class="mt-6 pt-4 border-t border-orange-200/60 text-sm text-slate-600 font-medium text-center flex flex-col sm:flex-row items-center justify-between gap-3">
+          <span>{{ $t('gites_data.' + gite.id + '.wingsBookingNote') }}</span>
+          <router-link
+            :to="`/reservation?gite=${gite.id}&wing=all`"
+            class="text-xs font-semibold text-[#B05A2F] hover:underline"
+          >
+            {{ $t('reservation.bookEntireHouse') }} &rarr;
+          </router-link>
         </div>
       </div>
 
